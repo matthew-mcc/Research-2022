@@ -1,0 +1,129 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Phidget22.NET/1.10.20220413": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/Phidget22.NET.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Phidget22.NET.dll": {}
+        },
+        "build": {
+          "build/Phidget22.NET.props": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Phidget22.NET/1.10.20220413": {
+      "sha512": "w/eY2dNgtsYyyoKOerD5Gn+4XlxqmoJBh5boiwIjd69sz7V5jc1j5NIqfwQH6Lc2F+uP8jgdpmpHzJhohLJvEA==",
+      "type": "package",
+      "path": "phidget22.net/1.10.20220413",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NativeDlls/x64/phidget22.dll",
+        "NativeDlls/x86/phidget22.dll",
+        "build/Phidget22.NET.props",
+        "lib/net20/Phidget22.NET.dll",
+        "lib/net20/Phidget22.NET.pdb",
+        "lib/net20/Phidget22.NET.xml",
+        "lib/net40/Phidget22.NET.dll",
+        "lib/net40/Phidget22.NET.pdb",
+        "lib/net40/Phidget22.NET.xml",
+        "lib/net45/Phidget22.NET.dll",
+        "lib/net45/Phidget22.NET.pdb",
+        "lib/net45/Phidget22.NET.xml",
+        "lib/net46/Phidget22.NET.dll",
+        "lib/net46/Phidget22.NET.pdb",
+        "lib/net46/Phidget22.NET.xml",
+        "lib/netcoreapp1.0/Phidget22.NET.deps.json",
+        "lib/netcoreapp1.0/Phidget22.NET.dll",
+        "lib/netcoreapp1.0/Phidget22.NET.pdb",
+        "lib/netcoreapp1.0/Phidget22.NET.xml",
+        "lib/netcoreapp2.0/Phidget22.NET.deps.json",
+        "lib/netcoreapp2.0/Phidget22.NET.dll",
+        "lib/netcoreapp2.0/Phidget22.NET.pdb",
+        "lib/netcoreapp2.0/Phidget22.NET.xml",
+        "lib/netstandard1.3/Phidget22.NET.deps.json",
+        "lib/netstandard1.3/Phidget22.NET.dll",
+        "lib/netstandard1.3/Phidget22.NET.pdb",
+        "lib/netstandard1.3/Phidget22.NET.xml",
+        "lib/netstandard2.0/Phidget22.NET.deps.json",
+        "lib/netstandard2.0/Phidget22.NET.dll",
+        "lib/netstandard2.0/Phidget22.NET.pdb",
+        "lib/netstandard2.0/Phidget22.NET.xml",
+        "phidget22.net.1.10.20220413.nupkg.sha512",
+        "phidget22.net.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Phidget22.NET >= 1.10.20220413"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mattm\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\GIT\\Research-2022\\CSharp\\app\\app.csproj",
+      "projectName": "app",
+      "projectPath": "C:\\GIT\\Research-2022\\CSharp\\app\\app.csproj",
+      "packagesPath": "C:\\Users\\mattm\\.nuget\\packages\\",
+      "outputPath": "C:\\GIT\\Research-2022\\CSharp\\app\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\mattm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Phidget22.NET": {
+            "target": "Package",
+            "version": "[1.10.20220413, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

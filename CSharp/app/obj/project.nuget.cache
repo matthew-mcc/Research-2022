@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RVPA1sUqu3ncl71cUB8aQZIvpz3VbTmE7YHZt1h9Dv+nkmD5LtrP50cq/aOV46rxZ3J+mEHuugLxNpm6jSb+Kw==",
+  "success": true,
+  "projectFilePath": "C:\\GIT\\Research-2022\\CSharp\\app\\app.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mattm\\.nuget\\packages\\phidget22.net\\1.10.20220413\\phidget22.net.1.10.20220413.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "app/1.0.0": {
+        "dependencies": {
+          "Phidget22.NET": "1.10.20220413"
+        },
+        "runtime": {
+          "app.dll": {}
+        }
+      },
+      "Phidget22.NET/1.10.20220413": {
+        "runtime": {
+          "lib/netcoreapp2.0/Phidget22.NET.dll": {
+            "assemblyVersion": "1.1.10.11",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "app/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Phidget22.NET/1.10.20220413": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w/eY2dNgtsYyyoKOerD5Gn+4XlxqmoJBh5boiwIjd69sz7V5jc1j5NIqfwQH6Lc2F+uP8jgdpmpHzJhohLJvEA==",
+      "path": "phidget22.net/1.10.20220413",
+      "hashPath": "phidget22.net.1.10.20220413.nupkg.sha512"
+    }
+  }
+}
