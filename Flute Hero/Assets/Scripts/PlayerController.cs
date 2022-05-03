@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Phidget22;
 
+
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -12,13 +13,12 @@ public class PlayerController : MonoBehaviour
     
 
     VoltageInput ch;
-
+    
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        ch = new VoltageInput();
-        ch.Channel = phidgetChannel;
-        ch.Open(5000);
+        initializePhidget();
     }
 
     // Update is called once per frame
@@ -28,10 +28,18 @@ public class PlayerController : MonoBehaviour
         float moveDirection = VoltageToMovement();
         
         rb.velocity = new Vector2(0, moveDirection * moveSpeed);
-    }
-
-    float VoltageToMovement(){
         
+    }
+    
+    
+    void initializePhidget(){
+        ch = new VoltageInput();
+        ch.Channel = phidgetChannel;
+        ch.Open(5000);
+    }
+    float VoltageToMovement(){
+       
+
         double currentVoltage = ch.Voltage;
         double maxVoltage = 5;
         double minVoltage = 0;
@@ -40,4 +48,7 @@ public class PlayerController : MonoBehaviour
         float moveDirection = (float) voltagePosition;
         return moveDirection;
     }
+
+    
+    
 }
