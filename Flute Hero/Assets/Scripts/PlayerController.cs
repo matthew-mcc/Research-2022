@@ -18,15 +18,15 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        initializePhidget();
+        //initializePhidget();
     }
 
     // Update is called once per frame
     void Update()
     {
         //float moveDirection = Input.GetAxisRaw("Vertical"); //-1 is down + 1 is up
-        float moveDirection = VoltageToMovement();
-        
+        //float moveDirection = VoltageToMovement();
+        float moveDirection = Input.GetAxisRaw("Vertical");
         rb.velocity = new Vector2(0, moveDirection * moveSpeed);
         
     }
