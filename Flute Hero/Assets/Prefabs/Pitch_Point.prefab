@@ -138,5 +138,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   boxCollider: {fileID: 0}
-  startPosX: 3
-  startPosY: -3
