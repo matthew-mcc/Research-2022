@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoxCollider: {fileID: 0}
   rb: {fileID: 0}
+  scrollSpeed: -4
 --- !u!1 &537331057922760264
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoxCollider: {fileID: 0}
   rb: {fileID: 0}
+  scrollSpeed: -4
 --- !u!1 &537331058539978421
 GameObject:
   m_ObjectHideFlags: 0

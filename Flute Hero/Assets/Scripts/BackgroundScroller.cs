@@ -9,7 +9,7 @@ public class BackgroundScroller : MonoBehaviour
     public Rigidbody2D rb;
 
     private float width;
-    private float scrollSpeed = -2f;
+    [SerializeField] public float scrollSpeed = -2f;
     void Start()
     {
         BoxCollider = GetComponent<BoxCollider2D>();

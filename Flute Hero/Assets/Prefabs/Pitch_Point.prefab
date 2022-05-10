@@ -138,3 +138,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   boxCollider: {fileID: 0}
+  moveSpeed: -4

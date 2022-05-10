@@ -7,11 +7,13 @@ public class CollisionHandler : MonoBehaviour
 
     int score;
 
-    [SerializeField] ParticleSystem pickupParticle;
+    //[SerializeField] ParticleSystem pickupParticle;
 
     Collider2D currentCollider;
+    
     private void Start() {
         currentCollider = GetComponent<Collider2D>();
+        
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "Player"){
@@ -20,8 +22,9 @@ public class CollisionHandler : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other) {
         Destroy(other.gameObject);
-        pickupParticle.Play();
+        //pickupParticle.Play();
         score++;
+        
         Debug.Log(score);
     }
 

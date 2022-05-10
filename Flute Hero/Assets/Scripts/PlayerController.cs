@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D rb;
-    public float moveSpeed = 5f;
+    [SerializeField] public float moveSpeed = 100f;
     public int phidgetChannel = 0;
     
 
