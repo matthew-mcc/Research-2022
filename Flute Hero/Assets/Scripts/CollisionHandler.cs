@@ -25,7 +25,8 @@ public class CollisionHandler : MonoBehaviour
         //pickupParticle.Play();
         score++;
         
-        Debug.Log(score);
+        //Debug.Log(score);
     }
-
+    
+    
 }

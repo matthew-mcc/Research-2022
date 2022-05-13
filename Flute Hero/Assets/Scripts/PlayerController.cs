@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D rb;
+    
+    private SpriteRenderer rend;
     [SerializeField] public float moveSpeed = 100f;
     public int phidgetChannel = 0;
     
@@ -18,6 +20,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rend = GetComponent<SpriteRenderer>();
         //initializePhidget();
     }
 
@@ -27,6 +30,15 @@ public class PlayerController : MonoBehaviour
         //float moveDirection = Input.GetAxisRaw("Vertical"); //-1 is down + 1 is up
         //float moveDirection = VoltageToMovement();
         float moveDirection = Input.GetAxisRaw("Vertical");
+        // Debug.Log(moveDirection);
+        // if(moveDirection > 0){
+        //     //change color to up
+        //     rend.material.SetColor("_Color", Color.red);
+        // }
+        // if(moveDirection < 0 ){
+        //     //change color to down
+        // }
+        
         rb.velocity = new Vector2(0, moveDirection * moveSpeed);
         
     }
@@ -47,6 +59,11 @@ public class PlayerController : MonoBehaviour
         double voltagePosition = currentVoltage / medianVoltage - 1;
         float moveDirection = (float) voltagePosition;
         return moveDirection;
+    }
+
+    private void OnParticleCollision(GameObject other) {
+        Debug.Log("Hit a particle!");
+        //Iterate score here
     }
 
     

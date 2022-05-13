@@ -605,29 +605,81 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: ShapeModule.type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: ShapeModule.m_Scale.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: ShapeModule.m_Rotation.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: ShapeModule.alignToDirection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: 1.5707963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: InitialModule.startRotation.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316693537318336288, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105071952400555092, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105071952400555092, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105071952400555092, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: CollisionModule.collisionMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105071952400555092, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105071952400555092, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8446458199958742691, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
       propertyPath: m_Name
       value: Emitter
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446458199958742692, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
-      propertyPath: numLines
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446458199958742692, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
-      propertyPath: numPoints
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446458199958742692, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
-      propertyPath: maxVoltage
-      value: 3.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446458199958742692, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
-      propertyPath: minVoltage
-      value: 3.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446458199958742692, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
-      propertyPath: timeBetweenPoints
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8446458199958742695, guid: f89f1cecd42faa748a3faba0be972e4f, type: 3}
       propertyPath: m_RootOrder

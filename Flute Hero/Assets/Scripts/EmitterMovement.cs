@@ -34,7 +34,7 @@ public class EmitterMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         readFile();
        
-        StartCoroutine(spawner());
+       //StartCoroutine(spawner());
         StartCoroutine(moveEmitter());
         
     }
@@ -52,24 +52,24 @@ public class EmitterMovement : MonoBehaviour
 
     }
     IEnumerator moveEmitter(){
-
+        Vector2 EndPos;
+        Vector2 currentPos;
         
         foreach(var val in voltageFromFile.Take(numLines)){
-            float movePos = val;
-            
-            if(val > 3.4){
-                //we care about this value so lets scale it
+            float elapsedTime = 0;
+            float waitTime = tickRate;
+            currentPos = rb.transform.position;
+            EndPos = new Vector2(rb.transform.position.x, val);
 
-
-                movePos = ((val - inputMin) / (inputMax - inputMin)) * 10;
-                
-                
+            //float angle = Mathf.Atan2(EndPos.y, EndPos.x) * Mathf.Rad2Deg;
+            //rb.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            while (elapsedTime < waitTime){
+                rb.transform.position = Vector2.Lerp(currentPos, EndPos, (elapsedTime / waitTime));
+                elapsedTime += Time.deltaTime;
+                yield return null;
             }
-
-           
-            rb.transform.position = new Vector2(rb.transform.position.x, (-1)*(movePos - 5)); //Needs to be scaled a bit, dependant on what lucie wants
-            //Debug.Log(val);
-            yield return new WaitForSeconds(tickRate); //1/60 was giving wrong val
+            //rb.transform.position = new Vector2(rb.transform.position.x, val); //Needs to be scaled a bit, dependant on what lucie wants
+            //yield return new WaitForSeconds(tickRate); //1/60 was giving wrong val
         }
     }
     private void spawnPoint(){
@@ -87,30 +87,28 @@ public class EmitterMovement : MonoBehaviour
         // foreach (string line in lines){
         //     Debug.Log(line);
         // }
+        float scaledMovePos;
+        
         foreach(string line in lines){ //change if u want diff nums of lines...
             string temp = line;
             string[] splitWords = temp.Split('	');
             try{
                 float value = float.Parse(splitWords[1]);
                 if(value > 3){
-                    voltageFromFile.Add(value);
+
+                    //scaling function used to be in the coroutine which moves the emitter
+                    if(value > 3.4){
+                        scaledMovePos = ((value - inputMin) / (inputMax - inputMin)) * 8;
+                        scaledMovePos = (-1) * (scaledMovePos-4);
+                        voltageFromFile.Add(scaledMovePos);
+                    }
+                        
                     //Debug.Log(value);
                 }
             }
             catch{
                 Debug.Log("Can't convert that to a float!");
             }
-        
-
-            // Need to have +5 y and -5 y as the range
-            // so therefore the 3.8 should get converted to 5, the 3.3 should get converted to -5
-            //Also need to invert the movement...
-
-            /*
-                Currently I have values between like 3 and 4, but I need them to be scaled to -5 closer to 4 and 5 closer to 3.
-                Might wanna tweak it to be between 3.5 and 3.8 depends on the other data, make it serialized
-                https://stats.stackexchange.com/questions/281162/scale-a-number-between-a-range
-            */
 
             
             
@@ -128,5 +126,7 @@ public class EmitterMovement : MonoBehaviour
     {
         
         //TODO: Implement movement of the square based on data
+        //rb.transform.Translate(Vector2.right * 2 * Time.deltaTime);
+        //rb.transform.LookAt();
     }
 }
