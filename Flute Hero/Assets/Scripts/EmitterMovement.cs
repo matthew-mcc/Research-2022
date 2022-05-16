@@ -19,6 +19,7 @@ public class EmitterMovement : MonoBehaviour
     [SerializeField] private float inputMax = 3.74f;
     [SerializeField] private float inputMin = 3.67f;
     [SerializeField] private float tickRate = 0.0167f;
+    [SerializeField] private float hMovespeed = 4f;
 
     
 
@@ -36,6 +37,7 @@ public class EmitterMovement : MonoBehaviour
        
        //StartCoroutine(spawner());
         StartCoroutine(moveEmitter());
+        
         
     }
     IEnumerator spawner(){
@@ -59,15 +61,17 @@ public class EmitterMovement : MonoBehaviour
             float elapsedTime = 0;
             float waitTime = tickRate;
             currentPos = rb.transform.position;
-            EndPos = new Vector2(rb.transform.position.x, val);
-
+            EndPos = new Vector2(rb.transform.position.x, val); //delete the + factor if you want to go back to original movement
+           
             //float angle = Mathf.Atan2(EndPos.y, EndPos.x) * Mathf.Rad2Deg;
             //rb.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             while (elapsedTime < waitTime){
+                
                 rb.transform.position = Vector2.Lerp(currentPos, EndPos, (elapsedTime / waitTime));
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
+            
             //rb.transform.position = new Vector2(rb.transform.position.x, val); //Needs to be scaled a bit, dependant on what lucie wants
             //yield return new WaitForSeconds(tickRate); //1/60 was giving wrong val
         }
@@ -124,7 +128,7 @@ public class EmitterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+         
         //TODO: Implement movement of the square based on data
         //rb.transform.Translate(Vector2.right * 2 * Time.deltaTime);
         //rb.transform.LookAt();

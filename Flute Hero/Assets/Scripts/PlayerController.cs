@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     
     private SpriteRenderer rend;
     [SerializeField] public float moveSpeed = 100f;
+    [SerializeField] public float moveSpeedHorizontal = 4f;
     public int phidgetChannel = 0;
     
 
@@ -39,8 +40,8 @@ public class PlayerController : MonoBehaviour
         //     //change color to down
         // }
         
-        rb.velocity = new Vector2(0, moveDirection * moveSpeed);
-        
+        rb.velocity = new Vector2(moveSpeedHorizontal, moveDirection * moveSpeed);
+    
     }
     
     
