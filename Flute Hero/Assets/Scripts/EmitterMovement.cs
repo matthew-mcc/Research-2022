@@ -21,6 +21,13 @@ public class EmitterMovement : MonoBehaviour
     [SerializeField] private float tickRate = 0.0167f;
     [SerializeField] private float hMovespeed = 4f;
 
+    [SerializeField] private Color upColor;
+    [SerializeField] private Color downColor;
+
+    
+    private ParticleSystem ps;
+    private SpriteRenderer sr;
+
     
 
     
@@ -33,6 +40,8 @@ public class EmitterMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        ps = GetComponent<ParticleSystem>();
+        sr = GetComponent<SpriteRenderer>();
         readFile();
        
        //StartCoroutine(spawner());
@@ -56,13 +65,26 @@ public class EmitterMovement : MonoBehaviour
     IEnumerator moveEmitter(){
         Vector2 EndPos;
         Vector2 currentPos;
+
+        //Color upColor = new Color(245/255f, 40/255f, 145/255f, 0.8f);
+        //Color downColor = new Color(39/255f, 245/255f, 187/255f, 0.8f);
         
         foreach(var val in voltageFromFile.Take(numLines)){
+
+            var main = ps.main;
             float elapsedTime = 0;
             float waitTime = tickRate;
             currentPos = rb.transform.position;
             EndPos = new Vector2(rb.transform.position.x, val); //delete the + factor if you want to go back to original movement
            
+           if(EndPos.y >= currentPos.y){
+               main.startColor = upColor;
+               sr.color = upColor;
+           }
+           if(EndPos.y < currentPos.y){
+               main.startColor = downColor;
+               sr.color = downColor;
+           }
             //float angle = Mathf.Atan2(EndPos.y, EndPos.x) * Mathf.Rad2Deg;
             //rb.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             while (elapsedTime < waitTime){
@@ -75,6 +97,8 @@ public class EmitterMovement : MonoBehaviour
             //rb.transform.position = new Vector2(rb.transform.position.x, val); //Needs to be scaled a bit, dependant on what lucie wants
             //yield return new WaitForSeconds(tickRate); //1/60 was giving wrong val
         }
+        
+        
     }
     private void spawnPoint(){
         

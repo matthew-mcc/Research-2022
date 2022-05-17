@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     
     private SpriteRenderer rend;
     [SerializeField] public float moveSpeed = 100f;
-    [SerializeField] public float moveSpeedHorizontal = 4f;
+    //[SerializeField] public float moveSpeedHorizontal = 4f;
     public int phidgetChannel = 0;
     
 
@@ -22,15 +22,15 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rend = GetComponent<SpriteRenderer>();
-        //initializePhidget();
+        initializePhidget();
     }
 
     // Update is called once per frame
     void Update()
     {
         //float moveDirection = Input.GetAxisRaw("Vertical"); //-1 is down + 1 is up
-        //float moveDirection = VoltageToMovement();
-        float moveDirection = Input.GetAxisRaw("Vertical");
+        float moveDirection = VoltageToMovement();
+        //float moveDirection = Input.GetAxisRaw("Vertical");
         // Debug.Log(moveDirection);
         // if(moveDirection > 0){
         //     //change color to up
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         //     //change color to down
         // }
         
-        rb.velocity = new Vector2(moveSpeedHorizontal, moveDirection * moveSpeed);
+        rb.velocity = new Vector2(0, moveDirection * moveSpeed);
     
     }
     
@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
     }
     float VoltageToMovement(){
        
+       //If needed will have to scale the voltage moreso here...
 
         double currentVoltage = ch.Voltage;
         double maxVoltage = 5;
