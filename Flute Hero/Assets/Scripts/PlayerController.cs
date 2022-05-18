@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         //     //change color to down
         // }
         
-        rb.velocity = new Vector2(0, moveDirection * moveSpeed);
+        rb.velocity = new Vector2(0, (-1)*moveDirection * moveSpeed);
     
     }
     
@@ -53,10 +53,11 @@ public class PlayerController : MonoBehaviour
     float VoltageToMovement(){
        
        //If needed will have to scale the voltage moreso here...
-
+        
         double currentVoltage = ch.Voltage;
-        double maxVoltage = 5;
-        double minVoltage = 0;
+        Debug.Log(ch.Voltage);
+        double maxVoltage = 4.01;
+        double minVoltage = 3.6;
         double medianVoltage = (maxVoltage + minVoltage) /2;
         double voltagePosition = currentVoltage / medianVoltage - 1;
         float moveDirection = (float) voltagePosition;
