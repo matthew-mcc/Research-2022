@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Phidget22;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class CalibratePlayer : MonoBehaviour
@@ -14,14 +15,16 @@ public class CalibratePlayer : MonoBehaviour
     [SerializeField] float verticalMoveSpeed = 100f;
     
 
-    private float maxVoltage = 4.01f;
-    private float minVoltage = 3.6f;
+    public float maxVoltage = 4.01f;
+    public float minVoltage = 3.6f;
   
     [SerializeField] int phidgetChannel = 0;
 
     //might want to set these to be true initially, and can begin calibration whenenver you want...
     private bool maxCalibrated = false;
     private bool minCalibrated = false;
+
+   
 
     private int toCalibrate; // --> 0 to calibrate max, 1 to calibrate min
 
@@ -67,6 +70,9 @@ public class CalibratePlayer : MonoBehaviour
             timerStarted = true;
             toCalibrate = 1;
         }
+        if (Input.GetKey(KeyCode.M)){
+            SceneManager.LoadScene("Menu");
+        }
 
         if (timerStarted){
             
@@ -106,6 +112,7 @@ public class CalibratePlayer : MonoBehaviour
         }
         if(maxCalibrated && minCalibrated){
             voltageText.text = "Max: " + maxVoltage.ToString() + " Min: " + minVoltage.ToString();
+            
             //Debug.Log("MaxVoltage: " + maxVoltage);
             //Debug.Log("MinVoltage: " + minVoltage);
             float moveDirection = VoltageToMovement();

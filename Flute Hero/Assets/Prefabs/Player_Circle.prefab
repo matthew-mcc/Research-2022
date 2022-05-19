@@ -138,8 +138,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  moveSpeed: 50
+  maxVoltage: 4.01
+  minVoltage: 3.6
+  verticalMoveSpeed: 100
   phidgetChannel: 1
+  calibrationTime: 3
+  defaultColor: {r: 1, g: 0.5176471, b: 0.29803923, a: 1}
+  calibrateColor: {r: 0.9528302, g: 0.24719654, b: 0.2826557, a: 1}
 --- !u!114 &7869066375336874287
 MonoBehaviour:
   m_ObjectHideFlags: 0
