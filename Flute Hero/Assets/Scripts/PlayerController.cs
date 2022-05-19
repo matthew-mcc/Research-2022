@@ -30,15 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         //float moveDirection = Input.GetAxisRaw("Vertical"); //-1 is down + 1 is up
         float moveDirection = VoltageToMovement();
-        //float moveDirection = Input.GetAxisRaw("Vertical");
-        // Debug.Log(moveDirection);
-        // if(moveDirection > 0){
-        //     //change color to up
-        //     rend.material.SetColor("_Color", Color.red);
-        // }
-        // if(moveDirection < 0 ){
-        //     //change color to down
-        // }
+        
         
         rb.velocity = new Vector2(0, (-1)*moveDirection * moveSpeed);
     

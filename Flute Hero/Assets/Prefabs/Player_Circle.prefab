@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.98346853, a: 1}
+  m_Color: {r: 1, g: 0.5162066, b: 0.2971698, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -138,8 +138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  moveSpeed: 5
-  phidgetChannel: 0
+  moveSpeed: 50
+  phidgetChannel: 1
 --- !u!114 &7869066375336874287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,4 +152,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf63f2012088c64599e24fe2df32a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupParticle: {fileID: 0}

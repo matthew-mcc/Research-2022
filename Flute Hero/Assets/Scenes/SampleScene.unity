@@ -410,14 +410,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 537331057726982347, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
-      propertyPath: scrollSpeed
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 537331058412828225, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
-      propertyPath: scrollSpeed
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 537331058822957837, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -535,42 +527,6 @@ PrefabInstance:
     - target: {fileID: 1558588019079612602, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2180016600198429784, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
-      propertyPath: moveSpeed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6357766906121912764, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
-      propertyPath: prefab
-      value: 
-      objectReference: {fileID: 121184563480779909, guid: cd37ba1b092484c4180389378aaacaa7, type: 3}
-    - target: {fileID: 6357766906121912764, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
-      propertyPath: isRandom
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6357766906121912764, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
-      propertyPath: numPoints
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6357766906121912764, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
-      propertyPath: timeBetweenPoints
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6487996901786878829, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
-      propertyPath: m_Color.b
-      value: 0.2971698
-      objectReference: {fileID: 0}
-    - target: {fileID: 6487996901786878829, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5162066
-      objectReference: {fileID: 0}
-    - target: {fileID: 6487996901786878829, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6487996901786878829, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8723925482477225195, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_RootOrder
