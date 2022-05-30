@@ -5,6 +5,11 @@ using Phidget22;
 using UnityEngine.SceneManagement;
 
 
+public static class PlayerInformation{
+    public static bool fullyCalibrated = false;
+    public static double maxVoltage = 4.01;
+    public static double minVoltage = 3.6;
+}
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,14 +19,15 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer sr;
     
     //Max Min Voltage -> can be serialized Manually
-    public double maxVoltage = 4.01;
-    public double minVoltage = 3.6;
+    // public double maxVoltage = 4.01;
+    // public double minVoltage = 3.6;
 
     [SerializeField] public float verticalMoveSpeed = 100f;
     //[SerializeField] public float moveSpeedHorizontal = 4f;
     [SerializeField] int phidgetChannel = 0;
     
     //Calibration Flags
+    
     public bool maxCalibrated = false;
     public bool minCalibrated = false;
     
@@ -46,10 +52,13 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
-       
+        
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        if(!minCalibrated || !maxCalibrated){
+        // if(!minCalibrated || !maxCalibrated){
+        //     sr.color = calibrateColor;
+        // }
+        if(!PlayerInformation.fullyCalibrated){
             sr.color = calibrateColor;
         }
         currentTime = calibrationTime;
@@ -59,6 +68,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        if(minCalibrated && maxCalibrated){
+            PlayerInformation.fullyCalibrated = true;
+        }
         
         if (Input.GetKeyDown(KeyCode.UpArrow)){
             timerStarted = true;
@@ -71,6 +84,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.M)){
             SceneManager.LoadScene("Menu");
         }
+        if (Input.GetKey(KeyCode.C)){
+            SceneManager.LoadScene("Calibration");
+        }
 
         if (timerStarted){
 
@@ -79,7 +95,8 @@ public class PlayerController : MonoBehaviour
                 maxVoltageArr.Add(ch.Voltage);
 
                 if(currentTime <= 0){
-                    maxVoltage = (float) averageList(maxVoltageArr);
+                    PlayerInformation.maxVoltage = (float) averageList(maxVoltageArr);
+                    //maxVoltage = (float) averageList(maxVoltageArr);
                     maxCalibrated = true;
                     timerStarted = false;
                     currentTime = calibrationTime;
@@ -91,7 +108,8 @@ public class PlayerController : MonoBehaviour
                 minVoltageArr.Add(ch.Voltage);
 
                 if (currentTime <= 0){
-                    minVoltage = (float) averageList(minVoltageArr);
+                    PlayerInformation.minVoltage = (float) averageList(minVoltageArr);
+                    //minVoltage = (float) averageList(minVoltageArr);
                     minCalibrated = true;
                     timerStarted = false;
                     currentTime = calibrationTime;
@@ -99,7 +117,8 @@ public class PlayerController : MonoBehaviour
             }
         }
         
-        if(maxCalibrated && minCalibrated){
+        //if(maxCalibrated && minCalibrated){
+        if(PlayerInformation.fullyCalibrated){
             sr.color = defaultColor;
             float moveDirection = VoltageToMovement();
             rb.velocity = new Vector2(0, (-1)*moveDirection * verticalMoveSpeed);
@@ -128,7 +147,7 @@ public class PlayerController : MonoBehaviour
         
         double currentVoltage = ch.Voltage;
     
-        double medianVoltage = (maxVoltage + minVoltage) /2;
+        double medianVoltage = (PlayerInformation.maxVoltage + PlayerInformation.minVoltage) /2;
         double voltagePosition = currentVoltage / medianVoltage - 1;
         float moveDirection = (float) voltagePosition;
         return moveDirection;

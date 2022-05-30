@@ -39,7 +39,7 @@ public class Calibration : MonoBehaviour
                 timerText.text = playerController.currentTime.ToString();
                 if (playerController.currentTime <= 0){
                     timerText.text = "Done!";
-                    voltageText.text = "MaxVoltage: " + playerController.maxVoltage.ToString();
+                    voltageText.text = "MaxVoltage: " + PlayerInformation.maxVoltage.ToString();
                 }
 
             }
@@ -47,13 +47,13 @@ public class Calibration : MonoBehaviour
                 timerText.text = playerController.currentTime.ToString();
                 if (playerController.currentTime <= 0){
                     timerText.text = "Done!";
-                    voltageText.text = "MinVoltage: " + playerController.minVoltage.ToString();
+                    voltageText.text = "MinVoltage: " + PlayerInformation.minVoltage.ToString();
                 }
             }
             
         }
         if(playerController.maxCalibrated && playerController.minCalibrated){
-            voltageText.text = "Max: " + playerController.maxVoltage.ToString() + " Min: " + playerController.minVoltage.ToString();
+            voltageText.text = "Max: " + PlayerInformation.maxVoltage.ToString() + " Min: " + PlayerInformation.minVoltage.ToString();
         }
     }
 }
