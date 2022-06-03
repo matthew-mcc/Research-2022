@@ -87,6 +87,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.C)){
             SceneManager.LoadScene("Calibration");
         }
+        if (Input.GetKey(KeyCode.R)){
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        }
 
         if (timerStarted){
 

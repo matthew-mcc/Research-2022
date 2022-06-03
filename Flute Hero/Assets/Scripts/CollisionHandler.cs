@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -21,9 +22,8 @@ public class CollisionHandler : MonoBehaviour
         }
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        Destroy(other.gameObject);
-        //pickupParticle.Play();
-        score++;
+        
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         
         //Debug.Log(score);
     }
