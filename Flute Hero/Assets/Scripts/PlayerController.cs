@@ -60,9 +60,7 @@ public class PlayerController : MonoBehaviour
         
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        // if(!minCalibrated || !maxCalibrated){
-        //     sr.color = calibrateColor;
-        // }
+        
         if(!PlayerInformation.fullyCalibrated){
             sr.color = calibrateColor;
         }
