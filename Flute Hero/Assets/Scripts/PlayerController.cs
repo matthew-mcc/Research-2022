@@ -8,9 +8,10 @@ using UnityEngine.SceneManagement;
 
 public static class PlayerInformation{
     public static bool fullyCalibrated = false;
-    public static double maxVoltage = 3.5;
-    public static double minVoltage = 3.3;
-}
+    public static double maxVoltage = 0.227;
+    public static double minVoltage = 0.34;
+}   
+//For my belts - 0.243, 0.34 seem to be magic numbers - why did it suddenly decide to start working today??
 
 public class PlayerController : MonoBehaviour
 {
@@ -72,11 +73,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        previousVoltage = (float) ch.Voltage;
+        //previousVoltage = (float) ch.Voltage;
         //Debug.Log("Interval: " + ch.DataInterval);
         //Debug.Log("Max: " + PlayerInformation.maxVoltage);
         //Debug.Log("Min:" + PlayerInformation.minVoltage);
-        Debug.Log("Current Voltage: " + ch.Voltage);
+        
         if(minCalibrated && maxCalibrated){
             PlayerInformation.fullyCalibrated = true;
         }
@@ -88,6 +89,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow)){
             timerStarted = true;
             toCalibrate = "Min";
+        }
+        if (Input.GetKeyDown(KeyCode.S)){
+            minCalibrated = true;
+            maxCalibrated = true;
         }
         if (Input.GetKey(KeyCode.M)){
             SceneManager.LoadScene("Menu");
@@ -133,13 +138,9 @@ public class PlayerController : MonoBehaviour
         if(PlayerInformation.fullyCalibrated){
             sr.color = defaultColor;
             float moveDirection = VoltageToMovement();
-            //Debug.Log(moveDirection);
-            float voltNum = (float) Math.Abs(ch.Voltage - previousVoltage);
-            Debug.Log("Threshold: " + voltNum);
-            if( voltNum > 0.1){
-                Debug.Log("holding");
-                rb.velocity = new Vector2(0, (-1)*moveDirection * verticalMoveSpeed);
-            }
+            
+            rb.velocity = new Vector2(0, (-1)*moveDirection * verticalMoveSpeed);
+            
             
         }
 
@@ -153,6 +154,7 @@ public class PlayerController : MonoBehaviour
         
         ch.Open(5000);
         ch.DataInterval = 50;
+        ch.SensorType = VoltageSensorType.Voltage; //Not sure if we need this...
         
     }
 
@@ -167,8 +169,11 @@ public class PlayerController : MonoBehaviour
        
        
         
-        double currentVoltage = ch.Voltage;
-    
+        //double currentVoltage = ch.Voltage;
+        double currentVoltage = Math.Round(ch.Voltage, 3);
+        
+        
+        Debug.Log("Current Voltage: " + currentVoltage);
         double medianVoltage = (PlayerInformation.maxVoltage + PlayerInformation.minVoltage) /2;
         double voltagePosition = currentVoltage / medianVoltage - 1;
         float moveDirection = (float) voltagePosition;
