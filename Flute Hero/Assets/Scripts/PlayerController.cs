@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using Phidget22;
 using UnityEngine.SceneManagement;
@@ -7,8 +8,8 @@ using UnityEngine.SceneManagement;
 
 public static class PlayerInformation{
     public static bool fullyCalibrated = false;
-    public static double maxVoltage = 4.01;
-    public static double minVoltage = 3.6;
+    public static double maxVoltage = 3.5;
+    public static double minVoltage = 3.3;
 }
 
 public class PlayerController : MonoBehaviour
@@ -23,6 +24,8 @@ public class PlayerController : MonoBehaviour
     // public double minVoltage = 3.6;
 
     [SerializeField] public float verticalMoveSpeed = 100f;
+
+    
     //[SerializeField] public float moveSpeedHorizontal = 4f;
     [SerializeField] int phidgetChannel = 0;
     
@@ -35,6 +38,7 @@ public class PlayerController : MonoBehaviour
     private bool calibrationAllowed = false; //May be a way to use this flag to allow callibration only on calibrate level.
 
     //Timer Information
+    private float previousVoltage = 0f;
     public bool timerStarted = false;
     public float currentTime;
     [SerializeField] float calibrationTime = 3f;
@@ -68,7 +72,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        previousVoltage = (float) ch.Voltage;
+        //Debug.Log("Interval: " + ch.DataInterval);
+        //Debug.Log("Max: " + PlayerInformation.maxVoltage);
+        //Debug.Log("Min:" + PlayerInformation.minVoltage);
+        Debug.Log("Current Voltage: " + ch.Voltage);
         if(minCalibrated && maxCalibrated){
             PlayerInformation.fullyCalibrated = true;
         }
@@ -98,7 +106,7 @@ public class PlayerController : MonoBehaviour
                 maxVoltageArr.Add(ch.Voltage);
 
                 if(currentTime <= 0){
-                    PlayerInformation.maxVoltage = (float) averageList(maxVoltageArr);
+                    //PlayerInformation.maxVoltage = (float) averageList(maxVoltageArr);
                     //maxVoltage = (float) averageList(maxVoltageArr);
                     maxCalibrated = true;
                     timerStarted = false;
@@ -111,7 +119,8 @@ public class PlayerController : MonoBehaviour
                 minVoltageArr.Add(ch.Voltage);
 
                 if (currentTime <= 0){
-                    PlayerInformation.minVoltage = (float) averageList(minVoltageArr);
+                    //PlayerInformation.minVoltage = (float) averageList(minVoltageArr);
+                    
                     //minVoltage = (float) averageList(minVoltageArr);
                     minCalibrated = true;
                     timerStarted = false;
@@ -124,7 +133,14 @@ public class PlayerController : MonoBehaviour
         if(PlayerInformation.fullyCalibrated){
             sr.color = defaultColor;
             float moveDirection = VoltageToMovement();
-            rb.velocity = new Vector2(0, (-1)*moveDirection * verticalMoveSpeed);
+            //Debug.Log(moveDirection);
+            float voltNum = (float) Math.Abs(ch.Voltage - previousVoltage);
+            Debug.Log("Threshold: " + voltNum);
+            if( voltNum > 0.1){
+                Debug.Log("holding");
+                rb.velocity = new Vector2(0, (-1)*moveDirection * verticalMoveSpeed);
+            }
+            
         }
 
     }
@@ -134,7 +150,10 @@ public class PlayerController : MonoBehaviour
     void initializePhidget(){
         ch = new VoltageInput();
         ch.Channel = phidgetChannel;
+        
         ch.Open(5000);
+        ch.DataInterval = 50;
+        
     }
 
     double averageList(List<double> arr){
