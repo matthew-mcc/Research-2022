@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2180016600198429784}
   - component: {fileID: 7869066375336874287}
   m_Layer: 0
-  m_Name: Player_Circle
+  m_Name: AB_Belt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
