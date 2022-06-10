@@ -12,6 +12,8 @@ public static class PlayerInformation
     public static bool fullyCalibrated = false;
     public static double maxVoltage = 3.6;
     public static double minVoltage = 3.35;
+    
+    
 }   
 
 

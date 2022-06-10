@@ -30,6 +30,6 @@ public class MainMenu : MonoBehaviour
     }
     
     public void LevelFour(){
-        SceneManager.LoadScene("Level_4");
+        SceneManager.LoadScene("Plane_Hoops");
     }
 }
