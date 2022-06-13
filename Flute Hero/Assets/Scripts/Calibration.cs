@@ -8,7 +8,8 @@ public class Calibration : MonoBehaviour
 {
 
     [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] TextMeshProUGUI voltageText;
+    [SerializeField] TextMeshProUGUI abText;
+    [SerializeField] TextMeshProUGUI ribText;
 
     //PlayerController playerController;
     AB_Belt_Controller AbController;
@@ -24,9 +25,11 @@ public class Calibration : MonoBehaviour
     void Start()
     {
 
-        voltageText.text = "Up to calibrate Max, Down to Calibrate Min";
+        ribText.text = "Up+j to calibrate max, up+j to calibrate min";
+        abText.text = "Up+a to calibrate max, up+a to calibrate min";
         //timerText.text = playerController.currentTime.ToString();
-        timerText.text = AbController.currentTime.ToString();
+        //timerText.text = AbController.currentTime.ToString();
+        timerText.text = "Timer!";
     }
 
     // Update is called once per frame
@@ -34,12 +37,20 @@ public class Calibration : MonoBehaviour
     {
         //if (playerController.timerStarted && playerController.toCalibrate == "Max"){
         if (AbController.timerStarted && AbController.toCalibrate == "Max"){
-            voltageText.text = "AB Max Voltage Calibration!";
+            abText.text = "AB Max Voltage Calibration!";
         }
         //if (playerController.timerStarted && playerController.toCalibrate == "Min"){
         if (AbController.timerStarted && AbController.toCalibrate == "Min"){
-            voltageText.text = "Min Voltage Calibration!";
+            abText.text = "AB Min Voltage Calibration!";
         }
+        if (RibController.timerStarted && RibController.toCalibrate == "Max"){
+            ribText.text = "Rib Max Voltage Calibration!";
+        }
+        if (RibController.timerStarted && RibController.toCalibrate == "Min"){
+            ribText.text = "Rib Min Voltage Calibration!";
+        }
+
+        
 
         //if (playerController.timerStarted){
         if (AbController.timerStarted){
@@ -51,7 +62,7 @@ public class Calibration : MonoBehaviour
                 //if (playerController.currentTime <= 0){
                 if (AbController.currentTime <= 0){
                     timerText.text = "Done!";
-                    voltageText.text = "MaxVoltage: " + ABBeltInformation.maxVoltage.ToString();
+                    abText.text = "AB MaxVoltage: " + ABBeltInformation.maxVoltage.ToString();
                 }
 
             }
@@ -62,14 +73,39 @@ public class Calibration : MonoBehaviour
                 //if (playerController.currentTime <= 0){
                 if (AbController.currentTime <= 0){
                     timerText.text = "Done!";
-                    voltageText.text = "MinVoltage: " + ABBeltInformation.minVoltage.ToString();
+                    abText.text = "AB MinVoltage: " + ABBeltInformation.minVoltage.ToString();
                 }
             }
             
         }
+
+        if (RibController.timerStarted){
+
+            if(RibController.toCalibrate == "Max"){
+                timerText.text = RibController.currentTime.ToString();
+
+                if (RibController.currentTime <= 0){
+                    timerText.text = "Done!";
+                    ribText.text = "Rib MaxVoltage: " + RibBeltInformation.maxVoltage.ToString();
+                }
+            }
+
+            if(RibController.toCalibrate == "Min"){
+                timerText.text = RibController.currentTime.ToString();
+
+                if (RibController.currentTime <= 0){
+                    timerText.text = "Done!";
+                    ribText.text = "Rib MinVoltage: " + RibBeltInformation.minVoltage.ToString();
+                }
+            }
+        }
         //if(playerController.maxCalibrated && playerController.minCalibrated){
         if(AbController.maxCalibrated && AbController.minCalibrated){
-            voltageText.text = "Max: " + ABBeltInformation.maxVoltage.ToString() + " Min: " + ABBeltInformation.minVoltage.ToString();
+            abText.text = "AB --> Max: " + ABBeltInformation.maxVoltage.ToString() + " Min: " + ABBeltInformation.minVoltage.ToString();
+        }
+
+        if(RibController.maxCalibrated && RibController.minCalibrated){
+            ribText.text = "Rib --> Max: " + RibBeltInformation.maxVoltage.ToString() + " Min: " + RibBeltInformation.minVoltage.ToString();
         }
     }
 }

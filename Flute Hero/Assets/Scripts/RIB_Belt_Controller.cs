@@ -71,12 +71,12 @@ public class RIB_Belt_Controller : MonoBehaviour
             RibBeltInformation.fullyCalibrated = true;
         }
         //Calibrate max keybind
-        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.R)){
+        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.J)){
             timerStarted = true;
             toCalibrate = "Max";
         }
         //Calibrate min keybind
-        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.R)){
+        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.J)){
             timerStarted = true;
             toCalibrate = "Min";
         }
@@ -129,7 +129,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         }
         //Unlocking Movement if BOTH max and min are calibrated (fullyCalibrated)
         if(RibBeltInformation.fullyCalibrated){
-            Debug.Log(ch.Voltage);
+            //Debug.Log(ch.Voltage);
             sr.color = defaultColor;
             
             Vector2 currentPos = rb.transform.position;
@@ -179,7 +179,7 @@ public class RIB_Belt_Controller : MonoBehaviour
 
         double movePos = (5 - -5) * ((currentVoltage - RibBeltInformation.minVoltage) / (RibBeltInformation.maxVoltage - RibBeltInformation.minVoltage)) + -5;
 
-        Debug.Log(movePos);
+        //Debug.Log(movePos);
 
         //Error checking against extremely odd values, ensure that can never go off screen.
         if(movePos > 5){
