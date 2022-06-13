@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6487996901786878829}
   - component: {fileID: 6905130532376284015}
   - component: {fileID: 5193901135144836884}
-  - component: {fileID: 2180016600198429784}
   - component: {fileID: 7869066375336874287}
+  - component: {fileID: 563595707}
   m_Layer: 0
   m_Name: AB_Belt
   m_TagString: Untagged
@@ -125,26 +125,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!114 &2180016600198429784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558588019079612602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c72eb19f831bdc743856922c6d157a9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  maxVoltage: 4.01
-  minVoltage: 3.6
-  verticalMoveSpeed: 100
-  phidgetChannel: 1
-  calibrationTime: 3
-  defaultColor: {r: 1, g: 0.5176471, b: 0.29803923, a: 1}
-  calibrateColor: {r: 0.9528302, g: 0.24719654, b: 0.2826557, a: 1}
 --- !u!114 &7869066375336874287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,3 +137,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf63f2012088c64599e24fe2df32a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &563595707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558588019079612602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860d32664b468b54abb2366f35cc66a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  verticalMoveSpeed: 100
+  phidgetChannel: 1
+  defaultXPos: -6.5
+  maxCalibrated: 0
+  minCalibrated: 0
+  toCalibrate: 
+  timerStarted: 0
+  currentTime: 0
+  calibrationTime: 3
+  defaultColor: {r: 0.8396226, g: 0.46683452, b: 0, a: 1}
+  calibrateColor: {r: 1, g: 0, b: 0.083632946, a: 1}

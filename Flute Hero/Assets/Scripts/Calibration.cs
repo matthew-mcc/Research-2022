@@ -34,7 +34,7 @@ public class Calibration : MonoBehaviour
     {
         //if (playerController.timerStarted && playerController.toCalibrate == "Max"){
         if (AbController.timerStarted && AbController.toCalibrate == "Max"){
-            voltageText.text = "Max Voltage Calibration!";
+            voltageText.text = "AB Max Voltage Calibration!";
         }
         //if (playerController.timerStarted && playerController.toCalibrate == "Min"){
         if (AbController.timerStarted && AbController.toCalibrate == "Min"){

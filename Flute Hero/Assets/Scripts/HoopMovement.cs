@@ -23,5 +23,9 @@ public class HoopMovement : MonoBehaviour
         if (rb.transform.position.x < -10){
             Destroy(rb.gameObject);
         }
+
+        if (-rb.transform.position.x < playerPosX - 0.5){
+            //Animation to warn of missing one..
+        }
     }
 }
