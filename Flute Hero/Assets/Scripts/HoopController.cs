@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,8 @@ public class HoopController : MonoBehaviour
 
     [SerializeField] private float startingXPos = 15f;
 
+    [SerializeField] string filePath = @"C:\GIT\Research\Research-2022\Flute Hero\Assets\Level Texts\AB_Hoop_Easy.txt";
+
     private SpriteRenderer sr;
 
     //For now data will look like --> (string, float) --> (start, hoopYpos) or (end, hoopYPos)
@@ -34,16 +37,27 @@ public class HoopController : MonoBehaviour
         // ADDING MOCK DATA
         //-2.5 start, 2.5 end x2
 
-        positions.Add(("Start", -2.5f, "End", 2.5f));
-        positions.Add(("Start", -2.5f, "End", 2.5f));
-        positions.Add(("Start", -3f, "End", 3f));
-        positions.Add(("Start", -3.5f, "End", 3.5f));
-        positions.Add(("Done", 1000f, "Done", 1000f));
+        
 
+        ReadFile();
         StartCoroutine(spawnHoops());
     }
 
-   
+    private void ReadFile()
+    {
+        string[] lines = System.IO.File.ReadAllLines(filePath);
+        foreach(string line in lines){
+            string[] values = line.Split(' ');
+            
+            float val1 = float.Parse(values[1]);
+            float val3 = float.Parse(values[3]);
+
+            positions.Add((values[0], val1, values[2], val3));
+            
+            
+        }
+        
+    }
 
     IEnumerator spawnHoops(){
         foreach(var item in positions){

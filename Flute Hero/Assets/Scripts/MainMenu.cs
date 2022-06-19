@@ -32,4 +32,33 @@ public class MainMenu : MonoBehaviour
     public void LevelFour(){
         SceneManager.LoadScene("Plane_Hoops");
     }
+
+    // Hoop Levels
+
+    //Ab
+    public void Ab_Hoop_Easy(){
+        SceneManager.LoadScene("Ab_Hoop_Easy");
+    }
+    public void Ab_Hoop_Med(){
+        SceneManager.LoadScene("Ab_Hoop_Medium");
+    }
+    public void Ab_Hoop_Hard(){
+        SceneManager.LoadScene("Ab_Hoop_Hard");
+    }
+
+    //Rib
+    public void Rib_Hoop_Easy(){
+        SceneManager.LoadScene("Rib_Hoop_Easy");
+    }
+    public void Rib_Hoop_Med(){
+        SceneManager.LoadScene("Rib_Hoop_Medium");
+    }
+    public void Rib_Hoop_Hard(){
+        SceneManager.LoadScene("Rib_Hoop_Hard");
+    }
+
+    //Bar Levels
+    public void Bar_Easy(){
+        SceneManager.LoadScene("Bar_Easy");
+    }
 }

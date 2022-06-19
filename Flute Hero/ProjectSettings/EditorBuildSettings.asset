@@ -26,4 +26,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Plane_Hoops.unity
     guid: a3ae7055d1b7140439be74cb04e1251b
+  - enabled: 1
+    path: Assets/Scenes/Hoops/Ab_Hoop_Easy.unity
+    guid: cc6229a9ea04284438dc327a94fc28e6
+  - enabled: 1
+    path: Assets/Scenes/Hoops/Ab_Hoop_Hard.unity
+    guid: 9270d85c232eec14b8cac5cbfc1d5dd2
+  - enabled: 1
+    path: Assets/Scenes/Hoops/Ab_Hoop_Medium.unity
+    guid: 1cc57f9dafe3f9340a1c14ae5662aa6e
+  - enabled: 1
+    path: Assets/Scenes/Hoops/Rib_Hoop_Easy.unity
+    guid: 1935d5681326db740b1978c486b71e8d
+  - enabled: 1
+    path: Assets/Scenes/Hoops/Rib_Hoop_Hard.unity
+    guid: 04c548322df344f4eb48982648406492
+  - enabled: 1
+    path: Assets/Scenes/Hoops/Rib_Hoop_Medium.unity
+    guid: eba9084a3e8d7304ca9d584cf4ac1dd9
+  - enabled: 1
+    path: Assets/Scenes/Bars/Bar_Easy.unity
+    guid: 652222d2db363a14aa4f7fdf8802b905
   m_configObjects: {}
