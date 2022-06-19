@@ -23,11 +23,12 @@ public class CollisionHandler : MonoBehaviour
     }
     //IF collision breaks check the tags
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag != "Hoop"){
-            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        // if(other.gameObject.tag != "Hoop" || other.gameObject.tag != "Ab_Bar"){
+        //     Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
             
-        }
-        else{
+        // }
+        
+        
             
             GameObject parent = other.gameObject;
             Debug.Log(parent.transform.GetChild(0).name);
@@ -39,6 +40,10 @@ public class CollisionHandler : MonoBehaviour
             hoopParticles.Play();
             parent.GetComponent<SpriteRenderer>().enabled = false;
             
+        
+
+        if(other.gameObject.tag == "Ab_Bar"){
+            Debug.Log("Hit an Ab Bar!");
         }
         
         

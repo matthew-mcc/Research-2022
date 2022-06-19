@@ -25,6 +25,9 @@ public class AB_Belt_Controller : MonoBehaviour
 
     [SerializeField] public float verticalMoveSpeed = 100f;
     
+    [SerializeField] public float maxRange = 4;
+    [SerializeField] public float minRange = -4.5f;
+
     
     [SerializeField] int phidgetChannel = 1;
     [SerializeField] float defaultXPos = -6.5f;
@@ -171,6 +174,7 @@ public class AB_Belt_Controller : MonoBehaviour
         //ASK LUCIE REGARDING THE ROUNDING OF VOLTAGE... 3 DIGITS SHOULD BE JUST FINE
         double currentVoltage = Math.Round(ch.Voltage, 3);
         
+        
 
         /*
         Formula for Normalization: https://stats.stackexchange.com/questions/281162/scale-a-number-between-a-range
@@ -180,16 +184,16 @@ public class AB_Belt_Controller : MonoBehaviour
         Where: scaling some var x into the range [a, b]
         */
 
-        double movePos = (5 - -5) * ((currentVoltage - ABBeltInformation.minVoltage) / (ABBeltInformation.maxVoltage - ABBeltInformation.minVoltage)) + -5;
+        double movePos = (maxRange - minRange) * ((currentVoltage - ABBeltInformation.minVoltage) / (ABBeltInformation.maxVoltage - ABBeltInformation.minVoltage)) + minRange;
 
         //Debug.Log(movePos);
 
         //Error checking against extremely odd values, ensure that can never go off screen.
-        if(movePos > 5){
-            return 5.0f;
+        if(movePos > maxRange){
+            return (float) maxRange;
         }
-        if(movePos < -5){
-            return -5.0f;
+        if(movePos < minRange){
+            return (float) minRange;
         }
         else{
             return (float) movePos;

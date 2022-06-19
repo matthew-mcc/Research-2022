@@ -130,6 +130,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: maxRange
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: minRange
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: defaultColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: defaultColor.g
+      value: 0.5954504
+      objectReference: {fileID: 0}
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: defaultColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: calibrateColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: calibrateColor.g
+      value: 0.5768082
+      objectReference: {fileID: 0}
     - target: {fileID: 1558588019079612602, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_Name
       value: AB_Belt
@@ -256,9 +284,53 @@ PrefabInstance:
       propertyPath: defaultXPos
       value: -6.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: defaultColor.b
+      value: 0.35605478
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: defaultColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: defaultColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: calibrateColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: calibrateColor.g
+      value: 0.5852002
+      objectReference: {fileID: 0}
     - target: {fileID: 1558588019079612602, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: m_Name
       value: Rib_Belt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558588019079612602, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180016600198429784, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: defaultColor.b
+      value: 0.14563942
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180016600198429784, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: defaultColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180016600198429784, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: calibrateColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180016600198429784, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: calibrateColor.g
+      value: 0.53955877
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180016600198429784, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: calibrateColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8723925482477225195, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: m_RootOrder
@@ -304,8 +376,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2180016600198429784, guid: 915e213e5188db844958b84c79101a0f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+--- !u!1 &1432665200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1558588019079612602, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+  m_PrefabInstance: {fileID: 1166193027}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2138154408
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,3 +468,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7245151533119338144
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671618, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: abBelt
+      value: 
+      objectReference: {fileID: 1432665200}
+    - target: {fileID: 7245151533781671618, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: heighThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245151533781671678, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
+      propertyPath: m_Name
+      value: AB Bar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}

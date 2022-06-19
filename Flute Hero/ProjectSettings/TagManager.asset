@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Hoop
+  - Ab_Bar
   layers:
   - Default
   - TransparentFX
