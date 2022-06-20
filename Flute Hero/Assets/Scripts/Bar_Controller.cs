@@ -24,6 +24,7 @@ public class Bar_Controller : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         if(ABBeltInformation.fullyCalibrated){
+            
             rb.transform.position = new Vector2(rb.transform.position.x, AbController.maxRange - heightThreshold);
         }
         
