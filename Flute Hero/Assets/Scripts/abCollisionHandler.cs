@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class CollisionHandler : MonoBehaviour
+public class abCollisionHandler : MonoBehaviour
 {
 
     int score;
-    float ab_score = 0f;
+    float totalScore = 0f;
 
     [SerializeField] float score_modifier = 2f;
     [SerializeField] TextMeshProUGUI scoreText;
@@ -17,13 +17,14 @@ public class CollisionHandler : MonoBehaviour
 
     Collider2D currentCollider;
     [SerializeField] GameObject bar;
-    [SerializeField] Color aboveBarColor;
-    [SerializeField] Color atBarColor;
+    [SerializeField] Color abAboveBarColor;
+    [SerializeField] Color abAtBarColor;
     Scene currentScene;
     
     private void Start() {
         currentCollider = GetComponent<Collider2D>();
         currentScene = SceneManager.GetActiveScene();
+        scoreText.color = abAtBarColor;
         
     }
     private void OnCollisionEnter2D(Collision2D other) {
@@ -68,12 +69,12 @@ public class CollisionHandler : MonoBehaviour
             Color parentColor = parent.GetComponent<SpriteRenderer>().color;
             ParticleSystem abParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
             ParticleSystem.MainModule settings = abParticles.main;
-            settings.startColor = atBarColor;
+            settings.startColor = abAtBarColor;
             
             abParticles.Play();
 
-            scoreText.color = atBarColor;
-            ab_score += (1f/score_modifier);
+            scoreText.color = abAtBarColor;
+            totalScore += (1f/score_modifier);
 
 
         }
@@ -83,20 +84,20 @@ public class CollisionHandler : MonoBehaviour
     private void Update() {
         
         
-        if(currentScene.name == "Bar_Easy"){
-            scoreText.text = ab_score.ToString();
+        if(currentScene.name == "Bar_Easy" || currentScene.name == "Bar_Medium" || currentScene.name == "Bar_Hard"){
+            scoreText.text = totalScore.ToString();
             
             GameObject ab_parent = currentCollider.gameObject;
             ParticleSystem abParticles = ab_parent.transform.GetChild(0).GetComponent<ParticleSystem>();
             ParticleSystem.MainModule settings = abParticles.main;
             if(ab_parent.transform.position.y > (bar.transform.position.y + bar.transform.localScale.y)){
-                settings.startColor = aboveBarColor;
+                settings.startColor = abAboveBarColor;
                 abParticles.Play();
-                scoreText.color = aboveBarColor;
-                ab_score += (2f/score_modifier);
+                //scoreText.color = abAboveBarColor;
+                totalScore += (2f/score_modifier);
             }
         }
-        Debug.Log(ab_score);
+        Debug.Log(totalScore);
         
         
     }

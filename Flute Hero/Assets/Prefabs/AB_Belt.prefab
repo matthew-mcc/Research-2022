@@ -4953,8 +4953,8 @@ MonoBehaviour:
   score_modifier: 2
   scoreText: {fileID: 0}
   bar: {fileID: 0}
-  aboveBarColor: {r: 1, g: 0, b: 0.8370819, a: 1}
-  atBarColor: {r: 0, g: 1, b: 0.9693396, a: 1}
+  abAboveBarColor: {r: 1, g: 0, b: 0.7721429, a: 1}
+  abAtBarColor: {r: 0, g: 1, b: 0.89260936, a: 1}
 --- !u!114 &563595707
 MonoBehaviour:
   m_ObjectHideFlags: 0

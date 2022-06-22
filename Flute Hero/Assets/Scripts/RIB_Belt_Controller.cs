@@ -19,7 +19,8 @@ public class RIB_Belt_Controller : MonoBehaviour
     
     SpriteRenderer sr;
     
-    
+    [SerializeField] public float maxRange = 3f;
+    [SerializeField] public float minRange = -3f;
 
     [SerializeField] public float verticalMoveSpeed = 100f;
     
@@ -133,7 +134,7 @@ public class RIB_Belt_Controller : MonoBehaviour
             sr.color = defaultColor;
             
             Vector2 currentPos = rb.transform.position;
-            Vector2 endPos = new Vector2(defaultXPos, VoltageToPosition());
+            Vector2 endPos = new Vector2(rb.transform.position.x, VoltageToPosition());
             
             rb.transform.position = Vector2.Lerp(currentPos, endPos, Time.deltaTime); //woot woot this is mucho bueno 
            
@@ -177,16 +178,16 @@ public class RIB_Belt_Controller : MonoBehaviour
         Where: scaling some var x into the range [a, b]
         */
 
-        double movePos = (5 - -5) * ((currentVoltage - RibBeltInformation.minVoltage) / (RibBeltInformation.maxVoltage - RibBeltInformation.minVoltage)) + -5;
+        double movePos = (maxRange - minRange) * ((currentVoltage - RibBeltInformation.minVoltage) / (RibBeltInformation.maxVoltage - RibBeltInformation.minVoltage)) + minRange;
 
         //Debug.Log(movePos);
 
         //Error checking against extremely odd values, ensure that can never go off screen.
-        if(movePos > 5){
-            return 5.0f;
+        if(movePos > maxRange){
+            return (float) maxRange;
         }
-        if(movePos < -5){
-            return -5.0f;
+        if(movePos < minRange){
+            return (float) minRange;
         }
         else{
             return (float) movePos;

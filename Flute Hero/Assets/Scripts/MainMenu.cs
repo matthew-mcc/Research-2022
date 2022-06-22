@@ -61,4 +61,10 @@ public class MainMenu : MonoBehaviour
     public void Bar_Easy(){
         SceneManager.LoadScene("Bar_Easy");
     }
+    public void Bar_Medium(){
+        SceneManager.LoadScene("Bar_Medium");
+    }
+    public void Bar_Hard(){
+        SceneManager.LoadScene("Bar_Hard");
+    }
 }

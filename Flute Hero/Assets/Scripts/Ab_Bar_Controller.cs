@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bar_Controller : MonoBehaviour
+public class Ab_Bar_Controller : MonoBehaviour
 {
 
     AB_Belt_Controller AbController;

@@ -3040,7 +3040,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 38576983}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Ab_Hoop_Easy
+        m_MethodName: Bar_Hard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6327,7 +6327,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 38576983}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Ab_Hoop_Easy
+        m_MethodName: Bar_Medium
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
