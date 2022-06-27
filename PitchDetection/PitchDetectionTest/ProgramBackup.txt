@@ -1,0 +1,82 @@
+﻿
+/*
+
+https://github.com/naudio/NAudio/blob/master/Docs/RecordWavFileWinFormsWaveIn.md
+Notes:
+
+The waveindata available method records audio data as a byte array. The use for this is WaveInEventArgs.Buffer
+*/
+
+
+int SampleRate = 44100;
+int BitDepth = 16;
+int BufferMilliseconds = 20;
+//double[] AudioValues = new double[SampleRate * BufferMilliseconds / 1000];
+double[] FftValues;
+double[] AudioValues;
+
+var waveIn = new NAudio.Wave.WaveInEvent
+{
+    DeviceNumber = 0, // indicates which microphone to use
+    WaveFormat = new NAudio.Wave.WaveFormat(rate: SampleRate, bits: BitDepth, channels: 1),
+    BufferMilliseconds = 20
+};
+
+
+
+waveIn.DataAvailable += WaveIn_DataAvailable;
+waveIn.StartRecording();
+
+Console.WriteLine("C# Audio Level Meter");
+Console.WriteLine("(press any key to exit)");
+Console.ReadKey();
+
+
+
+void WaveIn_DataAvailable(object? sender, NAudio.Wave.WaveInEventArgs e)
+{
+    // copy buffer into an array of integers
+    Int16[] values = new Int16[e.Buffer.Length / 2];
+
+    //e.buffer contains all of the audio values that we want, it is a byte array. We need to convert the byte array to samples
+    //The recommended conversion is to 16 bit signed integers as we do in the values section.
+
+    //In th example, this is the line in which the audiovalues are converted to Usable values
+    //WE can also use wavebuffer to convert from a byte[] to a short[] or a float[]
+    // AudioValues[i] = BitConverter.ToInt16(e.Buffer, i * 2);
+
+    Buffer.BlockCopy(e.Buffer, 0, values, 0, e.Buffer.Length);
+    
+    //Trying things here..
+    AudioValues = new double[SampleRate * BufferMilliseconds / 1000];
+    double[] paddedAudio = FftSharp.Pad.ZeroPad(AudioValues);
+    double[] FftMag = FftSharp.Transform.FFTmagnitude(paddedAudio);
+
+
+    // determine the highest value as a fraction of the maximum possible value
+    float fraction = (float)values.Max() / 32768;
+
+    // print a level meter using the console
+    string bar = new('#', (int)(fraction * 70));
+    string meter = "[" + bar.PadRight(60, '-') + "]";
+
+    //these two lines are formatting the bar...
+    //Console.CursorLeft = 0;
+    //Console.CursorVisible = false;
+    //Console.Write($"{meter} {fraction * 100:00.0}%");
+    printArr(values);
+    //my formatting
+    //Console.Write(values.Length);
+    //Console.Write("\n");
+    
+}
+
+void printArr(Int16[] arr){
+    foreach(var val in arr){
+        Console.WriteLine(val);
+        
+        
+        
+    }
+}
+
