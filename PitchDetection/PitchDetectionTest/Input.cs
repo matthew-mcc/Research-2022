@@ -7,23 +7,54 @@ namespace PitchDetection{
     public class Sound{
 
 
-        int inputDevice = 0;
-        int sampleRate = 44100;
-        int bitDepth = 16;
-        int channelCount = 1;
+        
+        int sampleRate = 44100; //Standard sample rate for modern day audio
+        int bitDepth = 16; //Not sure what this is for
+        int channelCount = 1; //Assuming mono channel 
         int BufferMiliseconds = 20; // not really sure why we need this..
 
         Double[] audioValues;
         Double[] fftValues;
 
-        public void beginInput(){
+
+        //This entire function is just selecting the recording device..
+        public int SelectMicrophone(){
+            int inputDevice = 0;
+            bool isValidChoice = false;
+
+            do{
+                Console.Clear();
+                Console.WriteLine("Please select your input device: ");
+
+                for(int i = 0; i < WaveInEvent.DeviceCount; i++){
+                    Console.WriteLine(i + ". " + WaveInEvent.GetCapabilities(i).ProductName);
+                }
+                Console.WriteLine();
+
+                try{
+                    if(int.TryParse(Console.ReadLine(), out inputDevice)){
+                        isValidChoice = true;
+                        Console.WriteLine("You have chosen: " + WaveInEvent.GetCapabilities(inputDevice).ProductName + ".\n");
+                    }
+                    else{
+                        isValidChoice = false;
+                    }
+                }
+                catch{
+                    throw new ArgumentException("Device # chosen is out of range :(\n");
+                }
+            } while(isValidChoice == false);
+            return inputDevice;
+        }
+
+        public void beginInput(int deviceNum){
 
             audioValues = new Double[sampleRate * BufferMiliseconds / 1000];
             
 
             //Making an Naudio wave in event!
             WaveInEvent wave = new WaveInEvent(){
-                DeviceNumber = inputDevice, //mic to use
+                DeviceNumber = deviceNum, //mic to use
                 WaveFormat = new WaveFormat(sampleRate, bitDepth, channelCount), //Format of the wave
                 BufferMilliseconds = BufferMiliseconds //idk
             };
@@ -45,7 +76,7 @@ namespace PitchDetection{
 
                 //Console.Write(maxPeak!)
                 //Console.Write();
-                FFT();
+                CalculateFFt();
             }while(!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape));
             
             
@@ -56,17 +87,17 @@ namespace PitchDetection{
         // Event which does things with the wave.
         void WaveIn_DataAvailable(object sender, WaveInEventArgs e){
             for(int i = 0; i < e.Buffer.Length / 2; i++){
+
+                //Converts the e.Buffer -> which is a byte array -> to int16 numbers
                 audioValues[i] = BitConverter.ToInt16(e.Buffer, i*2);
                 
             }
 
         }
         
-        public void Print(){
-            Console.WriteLine("yo!");
-        }
 
-        public void FFT(){
+
+        public void CalculateFFt(){
 
             //Ensuring the array is a power of 2 
             double[] paddedAudio = FftSharp.Pad.ZeroPad(audioValues);
@@ -90,7 +121,7 @@ namespace PitchDetection{
 
             //Found this online - not sure how it works..
             double peakFrequency = fftPeriod * peakIndex;
-            Console.Write(Math.Round(peakFrequency, 0) + " hz");
+            Console.Write(Math.Round(peakFrequency, 0) + " hz"); //Rounding to nearest int
 
         }
 
