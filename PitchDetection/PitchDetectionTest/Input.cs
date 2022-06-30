@@ -1,6 +1,13 @@
 using NAudio.Wave;
 using System;
-using FftSharp;
+using FftSharp; 
+
+/*
+Notes + References:
+fft lib --> https://github.com/swharden/FftSharp
+audio input lib --> https://github.com/SjB/NAudio
+baseline tutorial --> https://swharden.com/csdv/audio/naudio/
+*/
 
 namespace PitchDetection{
 
@@ -13,8 +20,16 @@ namespace PitchDetection{
         int channelCount = 1; //Assuming mono channel 
         int BufferMiliseconds = 20; // not really sure why we need this..
 
+        int targetFreq = 440; //A 440
+
+        int t = 0;
+        
+
         Double[] audioValues;
+        Double[] audioValuesTest;
         Double[] fftValues;
+
+      
 
 
         //This entire function is just selecting the recording device..
@@ -49,9 +64,10 @@ namespace PitchDetection{
 
         public void beginInput(int deviceNum){
 
-            audioValues = new Double[sampleRate * BufferMiliseconds / 1000];
+            audioValues = new Double[sampleRate * BufferMiliseconds / 1000]; //current values are 882
+            audioValuesTest = new Double[sampleRate * BufferMiliseconds / 1000]; //current values are 882
             
-
+            
             //Making an Naudio wave in event!
             WaveInEvent wave = new WaveInEvent(){
                 DeviceNumber = deviceNum, //mic to use
@@ -74,9 +90,13 @@ namespace PitchDetection{
                 Console.CursorLeft = 0;
                 Console.CursorVisible = false;
 
-                //Console.Write(maxPeak!)
-                //Console.Write();
-                CalculateFFt();
+
+                //CalculateFFt();
+                
+               
+
+                
+                
             }while(!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape));
             
             
@@ -84,15 +104,51 @@ namespace PitchDetection{
 
             
         }
-        // Event which does things with the wave.
-        void WaveIn_DataAvailable(object sender, WaveInEventArgs e){
-            for(int i = 0; i < e.Buffer.Length / 2; i++){
 
+      
+        
+
+        // Event which does things with the wave.
+
+        //This is getting called 50 times a second...
+        void WaveIn_DataAvailable(object sender, WaveInEventArgs e){
+            
+
+            t+=1; // --> t = 50, 100, 150 every second.
+            
+            if(t>50){
+                
+                t = 0;
+            }
+            
+            
+            
+            for(int i = 0; i < e.Buffer.Length / 2; i++){
+                //Console.WriteLine(i);
                 //Converts the e.Buffer -> which is a byte array -> to int16 numbers
                 audioValues[i] = BitConverter.ToInt16(e.Buffer, i*2);
-                
-            }
 
+                //Console.WriteLine(t * 882 / sampleRate);
+                double sinVal = Math.Sin(2 * Math.PI * targetFreq * (t * 882 / sampleRate));
+                double cosVal = Math.Sin(2 * Math.PI * targetFreq * (t * 882 / sampleRate));
+
+                Console.WriteLine(((t*882) + i ));
+               // Console.WriteLine("t: " + t + " i: " + i);
+
+
+                
+
+            }
+            
+
+            
+            //every 1/50th of a second we are getting 882 new values to compare to.
+
+            
+            
+            
+            
+           
         }
         
 
@@ -107,6 +163,7 @@ namespace PitchDetection{
             //copy values into fftValues - current-most values stored in fftValues
             fftValues = new double[fftMag.Length];
             Array.Copy(fftMag, fftValues, fftMag.Length);
+            //Console.WriteLine("length" + fftValues.Length);
 
             int peakIndex = 0;
             //Get the peak index of fftMag (the psd)
@@ -118,12 +175,19 @@ namespace PitchDetection{
 
             //Returning the distance between each FFT point in freq units (hertz)
             double fftPeriod = FftSharp.Transform.FFTfreqPeriod(sampleRate, fftMag.Length);
+            //Console.WriteLine("period: " + fftPeriod);
 
             //Found this online - not sure how it works..
             double peakFrequency = fftPeriod * peakIndex;
-            Console.Write(Math.Round(peakFrequency, 0) + " hz"); //Rounding to nearest int
+            Console.Write(Math.Round(peakFrequency, 0) + " hz"); //Rounding to nearest decimal point
+
 
         }
+
+        
+        
+
+    
 
         
     }
