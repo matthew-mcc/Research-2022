@@ -95,6 +95,9 @@ namespace PitchDetection{
                 if(Math.Abs(freq_per - 330) < accuracyThreshold){
                    Console.Write("Middle E 330hz!");
                 }
+                else{
+                    Console.Write("Don't Know that note yet!");
+                }
                // Console.Write(freq_per);
             }while(!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape));
             
