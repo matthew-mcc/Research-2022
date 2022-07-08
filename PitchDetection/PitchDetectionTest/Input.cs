@@ -7,6 +7,11 @@ Notes + References:
 fft lib --> https://github.com/swharden/FftSharp
 audio input lib --> https://github.com/SjB/NAudio
 baseline tutorial --> https://swharden.com/csdv/audio/naudio/
+
+Current Todos:
+
+1. Real Time Graphing
+
 */
 
 namespace PitchDetection{
@@ -26,8 +31,15 @@ namespace PitchDetection{
         const float sample_freq = 44100;
         float freq_per = 0f;
 
-    
+        float minThreshold = 200f;
+        List<float> freqSums = new List<float>();
 
+        float[] freqArr = new float[50*10];
+        float[] midiArr = new float[50*5];
+
+        List<byte> rawData = new List<byte>();
+
+        int timerChecker = 0;
         //This entire function is just selecting the recording device..
         public int SelectMicrophone(){
             int inputDevice = 0;
@@ -85,20 +97,25 @@ namespace PitchDetection{
                 Console.CursorVisible = false;
                 
                 
-                if(Math.Abs(freq_per-440) < accuracyThreshold){
+                // if(Math.Abs(freq_per-440) < accuracyThreshold){
                     
-                    Console.Write("Middle A 440hz!");
-                }
-                if(Math.Abs(freq_per-262) < accuracyThreshold){
-                   Console.Write("Middle C 262hz!");
-                }
-                if(Math.Abs(freq_per - 330) < accuracyThreshold){
-                   Console.Write("Middle E 330hz!");
-                }
-                else{
-                    Console.Write("Don't Know that note yet!");
-                }
+                //     Console.Write("Middle A 440hz!");
+                // }
+                // if(Math.Abs(freq_per-262) < accuracyThreshold){
+                //    Console.Write("Middle C 262hz!");
+                // }
+                // if(Math.Abs(freq_per - 330) < accuracyThreshold){
+                //    Console.Write("Middle E 330hz!");
+                // }
+                // else{
+                //     Console.Write("Don't Know that note yet!");
+
+                //}
+
+                //Console.WriteLine(hzToMidi(freq_per, 2));
                // Console.Write(freq_per);
+               Console.WriteLine(timerChecker);
+               
             }while(!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape));
             
             
@@ -115,7 +132,7 @@ namespace PitchDetection{
         void WaveIn_DataAvailable(object sender, WaveInEventArgs e){
             
 
-            
+           
             
             float sum = 0.0f;
             float sum_old = 0.0f;
@@ -130,8 +147,9 @@ namespace PitchDetection{
                 //Console.WriteLine(i);
                 //Converts the e.Buffer -> which is a byte array -> to int16 numbers
                 
+                //Console.WriteLine(e.Buffer[i]);
 
-                
+                rawData.Add(e.Buffer[i]);
                 for(int k = 0; k < e.Buffer.Length-i; k++){
                     sum+=(float)((e.Buffer[k]-128) * (e.Buffer[k+i] - 128));
                 }
@@ -153,6 +171,24 @@ namespace PitchDetection{
 
             freq_per = sample_freq/period; //Current Freq in Hertz
             
+            try{
+                freqArr[timerChecker] = freq_per;
+                timerChecker+=1;
+            }
+            catch{
+                Console.WriteLine("Array is full!");
+
+                string[] outArray = new string[rawData.Count];
+                for(int i = 0; i < rawData.Count; i++){
+                    outArray[i] = rawData[i].ToString();
+                }
+                File.WriteAllLines("raw.txt", outArray);
+
+
+            }
+            
+            
+            
             
             Console.CursorLeft = 0;
             Console.CursorVisible = false;
@@ -162,6 +198,15 @@ namespace PitchDetection{
         
            
         }
+
+        float hzToMidi(float freq, int decPlaces){
+            double rawVal = 69f + 12*Math.Log2(freq/440f);
+
+            float midiVal = (float) Math.Round(rawVal, decPlaces);
+            return midiVal;
+        }
+
+        
         
 
         
