@@ -2,8 +2,8 @@
 
 // #include "AltoSaxVib_C4.h"
 // #include "Piano_C4.h"
-#include "Guitar_C5.h"
-// #include "C4.h"
+//#include "Guitar_C5.h"
+#include "C4.h"
 
 // Sample Frequency in Hz
 const float sample_freq = 22050;
@@ -21,9 +21,10 @@ void main() {
 //   for( int i = 0; i < len; i++ ) {
 //       fprintf( stdout, "%g %g\n", (float)i/sample_freq, (float)(rawData[i] - 128) / 128.0 );
 //   }
-  
+    printf("%d", len);
     for( int i = 0; i < len; i++ ) {
         // Autocorrelation
+       
         sum_old = sum;
         sum = 0.0;
         for( int k = 0; k < len-i; k++ ) {
@@ -33,11 +34,14 @@ void main() {
     
         // Peak Detect State Machine
         if (pd_state == 2 && (sum-sum_old) <=0) {
-            period = i;
+            period = i-1;
             pd_state = 3;
         }
+        
         if (pd_state == 1 && (sum > thresh) && (sum-sum_old) > 0) pd_state = 2;
         if (!i) {
+            
+            
             thresh = sum * 0.5;
             pd_state = 1;
         }

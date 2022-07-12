@@ -29,6 +29,11 @@ namespace PitchDetection{
         const float sample_freq = 44100;
         float freq_per = 0f;
 
+        bool hasHappened = true;
+        
+        //for output file
+        int timer = 0;
+        float[] freqArr = new float[50*5];
 
         
 
@@ -91,9 +96,9 @@ namespace PitchDetection{
                 Console.CursorVisible = false;
                 
                 
-               
+            Console.WriteLine(freq_per);
 
-                Console.WriteLine(freq_per);
+               
                
             }while(!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape));
             
@@ -110,24 +115,61 @@ namespace PitchDetection{
         //This is getting called 50 times a second...
         void WaveIn_DataAvailable(object sender, WaveInEventArgs e){
             
-            
-           
-            //Need to convert the byte array to proper format:
-            short[] values = new short[e.Buffer.Length/2]; //try this - the 32 bit might be cranky.
 
-            //figure this shit out
-            for(int i = 0; i < e.Buffer.Length/2; i+=2){
-                //Console.WriteLine(i);
-                values[i] = (short)(e.Buffer[i+1] << 8 | e.Buffer[i]);
-                //Console.WriteLine(values[i]);
+            
+            
+            //Need to convert the byte array to proper format:
+            float[] values = new float[e.Buffer.Length/2]; //try this - the 32 bit might be cranky.
+
+            
+            Byte[] xRaw = e.Buffer;
+            
+            //vakue = high_Byte << 8 | lowByte
+            
+            //xLo = 0, 2, 4
+            //xhi = 1, 3, 5
+            for(int i = 0; i < xRaw.Length/2; i++){
+                //val = xhigh * 256 + xlo
+                //values[0] = xRaw[1] * 256 + xRaw[0] --> i = 0
+                //values[1] = xRaw[3] * 256 + xRaw[2] --> i = 1
+                //values[2] = xRaw[5] * 256 + xRaw[4] --> i = 2 // this has type Int32
+                values[i] = xRaw[(i*2) + 1] * 256 + xRaw[i*2];
+            }
+            
+            for(int i = 0; i < values.Length; i++){
+                if(values[i] >= 32768){
+                    values[i] = values[i] - 65536;
+                }
+            }
+            for(int i = 0; i < values.Length; i++){
+
+                values[i] = values[i] / 32768;
                 
             }
 
+        
+            
+
+
+
+
+            
+
+            // if(hasHappened){
+            //     hasHappened = false;
+            //     string[] outArr = new string[values.Length];
+            //     for(int i = 0; i < outArr.Length; i++){
+            //             outArr[i] = values[i].ToString();
+            //     }
+            //     File.WriteAllLines("rawValsCurrent.txt", outArr);
+            // }
             
             
             
             
-            float sum_old = 0.0f;
+            
+            
+            float sum_old;
             float sum = 0.0f;
             float thresh = 0f;
         
@@ -147,7 +189,7 @@ namespace PitchDetection{
                 sum = 0.0f;
                 
                 for(int k = 0; k < values.Length-i; k++){
-                    sum+= (float)((values[k]-128) * (values[k+i]-128)/256f);
+                    sum+= (float)((values[k]) * (values[k+i]));
                 }
 
                 if(pd_state == 2 && (sum-sum_old) <=0){
@@ -158,6 +200,7 @@ namespace PitchDetection{
                     pd_state = 2;
                 }
                 if(pd_state == 0){
+                    
                     thresh = sum * 0.5f;
                     pd_state = 1;
                 }
@@ -166,6 +209,24 @@ namespace PitchDetection{
             }
 
             freq_per = sample_freq/period; //Current Freq in Hertz
+            
+            try{
+                freqArr[timer] = freq_per;
+                timer+=1;
+            }
+            catch{
+
+                Console.WriteLine("Arr is full!");
+                string[] outArr = new string[freqArr.Length];
+                for(int i = 0; i < freqArr.Length; i++){
+                    float midival = hzToMidi(freqArr[i], 4);
+
+                    //outArr[i] = midival.ToString();
+                    outArr[i] = freqArr[i].ToString();
+                }
+                File.WriteAllLines("Final.txt", outArr);
+            }
+            
             
             
             
@@ -187,7 +248,9 @@ namespace PitchDetection{
             return midiVal;
         }
 
-        
+        void autoCorrelationTest(){
+            
+        }
         
 
         
