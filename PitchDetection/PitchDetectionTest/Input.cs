@@ -25,21 +25,15 @@ namespace PitchDetection{
         int channelCount = 1; //Assuming mono channel 
         int BufferMiliseconds = 20; // not really sure why we need this..
 
-        float accuracyThreshold = 5f;
-        float targetFreq = 440f;
 
         const float sample_freq = 44100;
         float freq_per = 0f;
 
-        float minThreshold = 200f;
-        List<float> freqSums = new List<float>();
 
-        float[] freqArr = new float[50*10];
-        float[] midiArr = new float[50*5];
+        
 
-        List<byte> rawData = new List<byte>();
 
-        int timerChecker = 0;
+       
         //This entire function is just selecting the recording device..
         public int SelectMicrophone(){
             int inputDevice = 0;
@@ -97,24 +91,9 @@ namespace PitchDetection{
                 Console.CursorVisible = false;
                 
                 
-                // if(Math.Abs(freq_per-440) < accuracyThreshold){
-                    
-                //     Console.Write("Middle A 440hz!");
-                // }
-                // if(Math.Abs(freq_per-262) < accuracyThreshold){
-                //    Console.Write("Middle C 262hz!");
-                // }
-                // if(Math.Abs(freq_per - 330) < accuracyThreshold){
-                //    Console.Write("Middle E 330hz!");
-                // }
-                // else{
-                //     Console.Write("Don't Know that note yet!");
+               
 
-                //}
-
-                //Console.WriteLine(hzToMidi(freq_per, 2));
-               // Console.Write(freq_per);
-               Console.WriteLine(timerChecker);
+                Console.WriteLine(freq_per);
                
             }while(!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape));
             
@@ -131,27 +110,44 @@ namespace PitchDetection{
         //This is getting called 50 times a second...
         void WaveIn_DataAvailable(object sender, WaveInEventArgs e){
             
-
+            
            
+            //Need to convert the byte array to proper format:
+            short[] values = new short[e.Buffer.Length/2]; //try this - the 32 bit might be cranky.
+
+            //figure this shit out
+            for(int i = 0; i < e.Buffer.Length/2; i+=2){
+                //Console.WriteLine(i);
+                values[i] = (short)(e.Buffer[i+1] << 8 | e.Buffer[i]);
+                //Console.WriteLine(values[i]);
+                
+            }
+
             
-            float sum = 0.0f;
+            
+            
+            
             float sum_old = 0.0f;
+            float sum = 0.0f;
             float thresh = 0f;
-            
-         
+        
             int pd_state = 0;
             int period = 0;
 
-            //95% sure that e.Buffer contains 8-bit unsigned integers..
-            for(int i = 0; i < e.Buffer.Length; i++){
+
+
+            //Autocorrelation
+            for(int i = 0; i < values.Length; i++){ //Needs to change..
                 //Console.WriteLine(i);
                 //Converts the e.Buffer -> which is a byte array -> to int16 numbers
                 
                 //Console.WriteLine(e.Buffer[i]);
-
-                rawData.Add(e.Buffer[i]);
-                for(int k = 0; k < e.Buffer.Length-i; k++){
-                    sum+=(float)((e.Buffer[k]-128) * (e.Buffer[k+i] - 128));
+                
+                sum_old = sum;
+                sum = 0.0f;
+                
+                for(int k = 0; k < values.Length-i; k++){
+                    sum+= (float)((values[k]-128) * (values[k+i]-128)/256f);
                 }
 
                 if(pd_state == 2 && (sum-sum_old) <=0){
@@ -171,21 +167,6 @@ namespace PitchDetection{
 
             freq_per = sample_freq/period; //Current Freq in Hertz
             
-            try{
-                freqArr[timerChecker] = freq_per;
-                timerChecker+=1;
-            }
-            catch{
-                Console.WriteLine("Array is full!");
-
-                string[] outArray = new string[rawData.Count];
-                for(int i = 0; i < rawData.Count; i++){
-                    outArray[i] = rawData[i].ToString();
-                }
-                File.WriteAllLines("raw.txt", outArray);
-
-
-            }
             
             
             
