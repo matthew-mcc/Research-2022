@@ -1,13 +1,13 @@
 
 
 from signal import valid_signals
-from scipy import signal
+from scipy import signal, fft
 import numpy as np
 import matplotlib.pyplot as plt
 import math
-xvals = []
-vals = []
-f = open(R'C:\GIT\Research-2022\PitchDetection\PitchDetectionTest\UsefulData\Guitarc4.txt', 'r')
+vals2 = []
+vals1 = []
+f = open(R'C:\GIT\Research-2022\PitchDetection\PitchDetectionTest\UsefulData\A4_After_Packing.txt', 'r')
 
 
 for val in f:
@@ -16,16 +16,24 @@ for val in f:
     # going to attempt some peak detection and only get those values
     
     #if(float(val) < 264):
-    vals.append(float(val))
+    vals1.append(float(val))
 
-y_mean = [np.mean(vals)]*len(vals)
 
-print(y_mean)
+#y_mean = [np.mean(vals)]*len(vals)
 
-plt.title("C4 - 261.626hz")
-plt.ylabel("Input Recording(Hz)")
+# f1 = open(R'C:\GIT\Research-2022\PitchDetection\PitchDetectionTest\UsefulData\corrected.mat', 'r')
+
+# for val in f1:
+
+#     vals2.append(float(val))
+
+
+plt.title("A4 After Packing")
+plt.ylabel("Sample Value")
 plt.xlabel("# Samples (time)")
-plt.plot(vals)
-plt.plot(y_mean, color='red', label=y_mean[0])
+plt.xlim([0, 5000])
+plt.plot(vals1, 'b', label = "Corrected2.txt",)
+#plt.plot(vals2, 'r', label = "Corrected.mat")
+#plt.plot(y_mean, color='red', label=y_mean[0])
 plt.legend()
 plt.show()

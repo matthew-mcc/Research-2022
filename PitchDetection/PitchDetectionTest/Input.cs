@@ -25,17 +25,22 @@ namespace PitchDetection{
         int channelCount = 1; //Assuming mono channel 
         int BufferMiliseconds = 20; // not really sure why we need this..
 
+        const int numSeconds = 10;
 
         const float sample_freq = 44100;
         float freq_per = 0f;
 
-        bool hasHappened = true;
         
+        const float target_freq = 440f;
         //for output file
-        int timer = 0;
-        float[] freqArr = new float[50*5];
-
+        int freqTimer = 0;
+        int timerBeforePacking = 0;
+        int timerAfterPacking = 0;
+        float[] freqArr = new float[50*numSeconds];
+        byte[] beforePacking = new byte[1764*50*numSeconds];
+        float[] afterPacking = new float[1764/2*50*numSeconds];
         
+        string noteName = "A4";
 
 
        
@@ -75,9 +80,9 @@ namespace PitchDetection{
             
             //Making an Naudio wave in event!
             WaveInEvent wave = new WaveInEvent(){
-                DeviceNumber = deviceNum, //mic to use
-                WaveFormat = new WaveFormat(sampleRate, bitDepth, channelCount), //Format of the wave
-                BufferMilliseconds = BufferMiliseconds //idk
+                DeviceNumber = deviceNum, 
+                WaveFormat = new WaveFormat(sampleRate, bitDepth, channelCount), 
+                BufferMilliseconds = BufferMiliseconds 
             };
 
             wave.DataAvailable += WaveIn_DataAvailable; //Adding data to our wave from the event below..
@@ -96,7 +101,7 @@ namespace PitchDetection{
                 Console.CursorVisible = false;
                 
                 
-            Console.WriteLine(freq_per);
+            //Console.WriteLine(freq_per);
 
                
                
@@ -119,15 +124,34 @@ namespace PitchDetection{
             
             
             //Need to convert the byte array to proper format:
-            float[] values = new float[e.Buffer.Length/2]; //try this - the 32 bit might be cranky.
+            float[] values = new float[e.Buffer.Length/2]; 
 
             
+            Console.WriteLine(timerBeforePacking);
+            //OUTPUT RAW DATA
             Byte[] xRaw = e.Buffer;
             
-            //vakue = high_Byte << 8 | lowByte
+            try{
+                for(int i = 0; i < xRaw.Length; i++){
+                    beforePacking[timerBeforePacking] = xRaw[i];
+                    timerBeforePacking+=1;
+                }
+                
+            }
+            catch{
+                Console.WriteLine("Before Packing Array is Full!");
+                string[] outArr = new string[beforePacking.Length];
+                for(int i = 0; i < beforePacking.Length; i++){
+                    outArr[i] = beforePacking[i].ToString();
+                }
+                string filePath = noteName + "_Before_Packing.txt";
+                File.WriteAllLines(filePath, outArr);
+            }
             
             //xLo = 0, 2, 4
             //xhi = 1, 3, 5
+
+            //refactor dis
             for(int i = 0; i < xRaw.Length/2; i++){
                 //val = xhigh * 256 + xlo
                 //values[0] = xRaw[1] * 256 + xRaw[0] --> i = 0
@@ -147,22 +171,34 @@ namespace PitchDetection{
                 
             }
 
-        
-            
-
-
-
-
-            
-
-            // if(hasHappened){
-            //     hasHappened = false;
-            //     string[] outArr = new string[values.Length];
-            //     for(int i = 0; i < outArr.Length; i++){
-            //             outArr[i] = values[i].ToString();
-            //     }
-            //     File.WriteAllLines("rawValsCurrent.txt", outArr);
+            // for(int i = 0; i < values.Length; i++){
+            //     values[i] = values[i] / target_freq;
             // }
+            
+            try{
+                for(int i = 0; i < values.Length; i++){
+                    afterPacking[timerAfterPacking] = values[i];
+                    timerAfterPacking+=1;
+                }
+                
+            }
+            catch{
+                Console.WriteLine("After Packing Array Full!");
+                string[] outArr = new string[afterPacking.Length];
+                for(int i = 0; i < afterPacking.Length; i++){
+                    outArr[i] = afterPacking[i].ToString();
+                }
+                string filePath = noteName + "_After_Packing.txt";
+                File.WriteAllLines(filePath, outArr);
+            }
+
+            
+
+
+
+
+            
+
             
             
             
@@ -175,15 +211,8 @@ namespace PitchDetection{
         
             int pd_state = 0;
             int period = 0;
-
-
-
             //Autocorrelation
             for(int i = 0; i < values.Length; i++){ //Needs to change..
-                //Console.WriteLine(i);
-                //Converts the e.Buffer -> which is a byte array -> to int16 numbers
-                
-                //Console.WriteLine(e.Buffer[i]);
                 
                 sum_old = sum;
                 sum = 0.0f;
@@ -204,19 +233,20 @@ namespace PitchDetection{
                     thresh = sum * 0.5f;
                     pd_state = 1;
                 }
-          
-
             }
-
             freq_per = sample_freq/period; //Current Freq in Hertz
             
+
+            //OUTPUT FREQ ARR
             try{
-                freqArr[timer] = freq_per;
-                timer+=1;
+                freqArr[freqTimer] = freq_per; //stores freq Arr
+
+                
+                freqTimer+=1;
             }
             catch{
 
-                Console.WriteLine("Arr is full!");
+                Console.WriteLine("Frequency Array is full!");
                 string[] outArr = new string[freqArr.Length];
                 for(int i = 0; i < freqArr.Length; i++){
                     float midival = hzToMidi(freqArr[i], 4);
@@ -224,7 +254,8 @@ namespace PitchDetection{
                     //outArr[i] = midival.ToString();
                     outArr[i] = freqArr[i].ToString();
                 }
-                File.WriteAllLines("Final.txt", outArr);
+                string filePath = noteName + "_Autocorrelated_Frequency.txt";
+                File.WriteAllLines(filePath, outArr);
             }
             
             
@@ -248,9 +279,8 @@ namespace PitchDetection{
             return midiVal;
         }
 
-        void autoCorrelationTest(){
-            
-        }
+        
+        
         
 
         
