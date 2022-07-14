@@ -97,7 +97,7 @@ public class abCollisionHandler : MonoBehaviour
                 totalScore += (2f/score_modifier);
             }
         }
-        Debug.Log(totalScore);
+        
         
         
     }

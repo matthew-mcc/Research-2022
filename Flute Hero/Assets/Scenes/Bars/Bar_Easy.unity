@@ -277,6 +277,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8622f84c6b3c30540b5da38879117d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sampleRate: 44100
+  bitDepth: 16
+  channelCount: 1
+  BufferMiliseconds: 20
+  onTarget: {r: 1, g: 0.8675709, b: 0, a: 1}
+  offTarget: {r: 1, g: 0, b: 0, a: 1}
+  targetFrequency: 261.6
+  accuracyThreshold: 0.5
+  mic_number: 0
 --- !u!1 &711134521
 GameObject:
   m_ObjectHideFlags: 0
