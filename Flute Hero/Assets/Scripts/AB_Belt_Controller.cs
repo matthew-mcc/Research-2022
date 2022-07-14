@@ -86,19 +86,19 @@ public class AB_Belt_Controller : MonoBehaviour
             toCalibrate = "Min";
         }
         //Main menu keybind
-        if (Input.GetKey(KeyCode.M)){
-            SceneManager.LoadScene("Menu");
-        }
+        // if (Input.GetKey(KeyCode.M)){
+        //     SceneManager.LoadScene("Menu");
+        // }
 
         //Calibration scene keybind
-        if (Input.GetKey(KeyCode.C)){
-            SceneManager.LoadScene("Calibration");
-        }
+        // if (Input.GetKey(KeyCode.C)){
+        //     SceneManager.LoadScene("Calibration");
+        // }
 
         //Reload level keybind
-        if (Input.GetKey(KeyCode.R)){
-            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
-        }
+        // if (Input.GetKey(KeyCode.R)){
+        //     Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        // }
 
         //Main calibration statement
         if (timerStarted){

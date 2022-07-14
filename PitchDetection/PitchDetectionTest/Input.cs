@@ -101,7 +101,7 @@ namespace PitchDetection{
                 Console.CursorVisible = false;
                 
                 
-            //Console.WriteLine(freq_per);
+            Console.WriteLine(freq_per);
 
                
                
@@ -114,9 +114,7 @@ namespace PitchDetection{
         }
 
       
-        
-
-       
+         
         //This is getting called 50 times a second...
         void WaveIn_DataAvailable(object sender, WaveInEventArgs e){
             
