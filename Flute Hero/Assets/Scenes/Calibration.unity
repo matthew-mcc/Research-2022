@@ -462,6 +462,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: defaultColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: defaultColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 563595707, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: defaultColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1558588019079612602, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_Name
       value: AB_Belt
@@ -587,6 +599,22 @@ PrefabInstance:
     - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: defaultXPos
       value: -6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: defaultColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: defaultColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: defaultColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: defaultColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1558588019079612602, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: m_Name

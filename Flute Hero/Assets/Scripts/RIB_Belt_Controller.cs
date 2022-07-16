@@ -18,6 +18,7 @@ public class RIB_Belt_Controller : MonoBehaviour
     public Rigidbody2D rb;
     
     SpriteRenderer sr;
+    Scene currentScene;
     
     [SerializeField] public float maxRange = 3f;
     [SerializeField] public float minRange = -3f;
@@ -56,7 +57,7 @@ public class RIB_Belt_Controller : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        
+        currentScene = SceneManager.GetActiveScene();
         if(!RibBeltInformation.fullyCalibrated){
             sr.color = calibrateColor;
         }
@@ -72,29 +73,20 @@ public class RIB_Belt_Controller : MonoBehaviour
             RibBeltInformation.fullyCalibrated = true;
         }
         //Calibrate max keybind
-        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.J)){
+
+        if(currentScene.name == "Calibration"){
+            if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.J)){
             timerStarted = true;
             toCalibrate = "Max";
+            }
+            //Calibrate min keybind
+            if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.J)){
+                timerStarted = true;
+                toCalibrate = "Min";
+            }
         }
-        //Calibrate min keybind
-        if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.J)){
-            timerStarted = true;
-            toCalibrate = "Min";
-        }
-        //Main menu keybind
-        // if (Input.GetKey(KeyCode.M)){
-        //     SceneManager.LoadScene("Menu");
-        // }
-
-        //Calibration scene keybind
-        // if (Input.GetKey(KeyCode.C)){
-        //     SceneManager.LoadScene("Calibration");
-        // }
-
-        //Reload level keybind
-        // if (Input.GetKey(KeyCode.R)){
-        //     Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
-        // }
+        
+        
 
         //Main calibration statement
         if (timerStarted){

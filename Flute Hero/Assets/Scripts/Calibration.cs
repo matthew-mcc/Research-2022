@@ -16,7 +16,7 @@ public class Calibration : MonoBehaviour
     RIB_Belt_Controller RibController;
     [SerializeField] GameObject abBelt;
     [SerializeField] GameObject ribBelt;
-    // Start is called before the first frame update
+    // Start is called before the first frame update --> Maybe make this into start ?? Why is it in awake
     void Awake() {
         //playerController = player.GetComponent<PlayerController>();
         AbController = abBelt.GetComponent<AB_Belt_Controller>();
