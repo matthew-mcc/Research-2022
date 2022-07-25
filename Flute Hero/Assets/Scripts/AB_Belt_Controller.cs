@@ -47,13 +47,15 @@ public class AB_Belt_Controller : MonoBehaviour
     public float currentTime;
     [SerializeField] float calibrationTime = 3f;
 
+    public float currentVoltageForText;
+
     //Lists to average
     private List<double> maxVoltageArr = new List<double>();
     private List<double> minVoltageArr = new List<double>();
 
-    //coloring
-    [SerializeField] private Color defaultColor;
-    [SerializeField] private Color calibrateColor;
+
+    
+
 
     public VoltageInput ch;
     // Start is called before the first frame update
@@ -63,9 +65,7 @@ public class AB_Belt_Controller : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         currentScene = SceneManager.GetActiveScene();
         
-        if(!ABBeltInformation.fullyCalibrated){
-            sr.color = calibrateColor;
-        }
+        
         currentTime = calibrationTime;
         initializePhidget();
     }
@@ -74,18 +74,24 @@ public class AB_Belt_Controller : MonoBehaviour
     void Update()
     {
         //Always checking for full calibration
+
+        currentVoltageForText = (float) ch.Voltage;
+
+        
+
+        
         if(minCalibrated && maxCalibrated){
             ABBeltInformation.fullyCalibrated = true;
         }
         //Calibrate max keybind
 
-        if(currentScene.name == "Calibration"){
-            if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.A)){
+        if(currentScene.name == "AB_Calibration"){
+            if (Input.GetKey(KeyCode.UpArrow)){
             timerStarted = true;
             toCalibrate = "Max";
             }
         //Calibrate min keybind
-            if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.A)){
+            if (Input.GetKey(KeyCode.DownArrow)){
                 timerStarted = true;
                 toCalibrate = "Min";
             }
@@ -107,6 +113,7 @@ public class AB_Belt_Controller : MonoBehaviour
                     maxCalibrated = true;
                     timerStarted = false;
                     currentTime = calibrationTime;
+                    
                 }
             }
 
@@ -122,13 +129,14 @@ public class AB_Belt_Controller : MonoBehaviour
                     minCalibrated = true;
                     timerStarted = false;
                     currentTime = calibrationTime;
+                    
                 }
             }
         }
         //Unlocking Movement if BOTH max and min are calibrated (fullyCalibrated)
         if(ABBeltInformation.fullyCalibrated){
             //Debug.Log(ch.Voltage);
-            sr.color = defaultColor;
+            
             
             Vector2 currentPos = rb.transform.position;
             Vector2 endPos = new Vector2(defaultXPos, VoltageToPosition());
@@ -160,6 +168,8 @@ public class AB_Belt_Controller : MonoBehaviour
         }
         return sum / arr.Count;
     }
+
+   
 
     //Gets the current voltage value, scales it to a position relative to the scene's scale and then linearly interpolates to that position
     float VoltageToPosition(){
