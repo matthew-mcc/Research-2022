@@ -85,7 +85,7 @@ public class AB_Calibration : MonoBehaviour
         
        
         if(ABBeltInformation.fullyCalibrated){
-            infoText.text = "Calibration Reached!";
+            infoText.text = "Calibration Reached, M for Main Menu!";
             minText.text = "Min: " + Math.Round(ABBeltInformation.minVoltage, 4).ToString() + " V";
             maxText.text = "Max: " + Math.Round(ABBeltInformation.maxVoltage, 4).ToString() + " V";
         }

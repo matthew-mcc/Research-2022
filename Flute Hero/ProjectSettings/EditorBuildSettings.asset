@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bars/Bar_Medium.unity
     guid: 7136bd70b409b9d4fb695ed61795e4cf
+  - enabled: 1
+    path: Assets/Scenes/RIB_Calibration.unity
+    guid: 7d1e4f394898fab4491a3cba89ab053c
   m_configObjects: {}

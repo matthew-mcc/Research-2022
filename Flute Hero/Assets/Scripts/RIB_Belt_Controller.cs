@@ -47,10 +47,8 @@ public class RIB_Belt_Controller : MonoBehaviour
     private List<double> maxVoltageArr = new List<double>();
     private List<double> minVoltageArr = new List<double>();
 
-    //coloring
-    [SerializeField] private Color defaultColor;
-    [SerializeField] private Color calibrateColor;
-
+   
+    public float currentVoltageForText;
     public VoltageInput ch;
     // Start is called before the first frame update
     void Start()
@@ -58,9 +56,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         currentScene = SceneManager.GetActiveScene();
-        if(!RibBeltInformation.fullyCalibrated){
-            sr.color = calibrateColor;
-        }
+        
         currentTime = calibrationTime;
         initializePhidget();
     }
@@ -69,18 +65,20 @@ public class RIB_Belt_Controller : MonoBehaviour
     void Update()
     {
         //Always checking for full calibration
+
+        currentVoltageForText = (float) ch.Voltage;
         if(minCalibrated && maxCalibrated){
             RibBeltInformation.fullyCalibrated = true;
         }
         //Calibrate max keybind
 
-        if(currentScene.name == "Calibration"){
-            if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.J)){
+        if(currentScene.name == "RIB_Calibration"){
+            if (Input.GetKey(KeyCode.UpArrow)){
             timerStarted = true;
             toCalibrate = "Max";
             }
             //Calibrate min keybind
-            if (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.J)){
+            if (Input.GetKey(KeyCode.DownArrow)){
                 timerStarted = true;
                 toCalibrate = "Min";
             }
@@ -123,7 +121,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         //Unlocking Movement if BOTH max and min are calibrated (fullyCalibrated)
         if(RibBeltInformation.fullyCalibrated){
             //Debug.Log(ch.Voltage);
-            sr.color = defaultColor;
+            
             
             Vector2 currentPos = rb.transform.position;
             Vector2 endPos = new Vector2(rb.transform.position.x, VoltageToPosition());

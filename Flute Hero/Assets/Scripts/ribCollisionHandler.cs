@@ -66,10 +66,9 @@ public class ribCollisionHandler : MonoBehaviour
         if(other.gameObject.tag == "Rib_Bar"){
 
             GameObject parent = currentCollider.gameObject;
-            Color parentColor = parent.GetComponent<SpriteRenderer>().color;
             ParticleSystem ribParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
-            ParticleSystem.MainModule settings = ribParticles.main;
-            settings.startColor = ribAtBarColor;
+            ParticleSystem.EmissionModule emissionSettings = ribParticles.emission;
+            emissionSettings.rateOverTime = 50;
             
             ribParticles.Play();
 
@@ -89,9 +88,9 @@ public class ribCollisionHandler : MonoBehaviour
             
             GameObject rib_parent = currentCollider.gameObject;
             ParticleSystem ribParticles = rib_parent.transform.GetChild(0).GetComponent<ParticleSystem>();
-            ParticleSystem.MainModule settings = ribParticles.main;
+            ParticleSystem.EmissionModule emissionSettings = ribParticles.emission;
             if(rib_parent.transform.position.y > (bar.transform.position.y + bar.transform.localScale.y)){
-                settings.startColor = ribAboveBarColor;
+                emissionSettings.rateOverTime = 100;
                 ribParticles.Play();
                 //scoreText.color = ribAboveBarColor;
                 totalScore += (2f/score_modifier);

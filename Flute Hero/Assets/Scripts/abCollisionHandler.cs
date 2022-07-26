@@ -66,14 +66,15 @@ public class abCollisionHandler : MonoBehaviour
         if(other.gameObject.tag == "Ab_Bar"){
 
             GameObject parent = currentCollider.gameObject;
-            Color parentColor = parent.GetComponent<SpriteRenderer>().color;
-            ParticleSystem abParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
-            ParticleSystem.MainModule settings = abParticles.main;
-            settings.startColor = abAtBarColor;
             
+            ParticleSystem abParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
+            
+            ParticleSystem.EmissionModule emissionSettings = abParticles.emission;
+            
+            emissionSettings.rateOverTime = 50;
             abParticles.Play();
 
-            scoreText.color = abAtBarColor;
+            //scoreText.color = abAtBarColor;
             totalScore += (1f/score_modifier);
 
 
@@ -90,8 +91,10 @@ public class abCollisionHandler : MonoBehaviour
             GameObject ab_parent = currentCollider.gameObject;
             ParticleSystem abParticles = ab_parent.transform.GetChild(0).GetComponent<ParticleSystem>();
             ParticleSystem.MainModule settings = abParticles.main;
+            ParticleSystem.EmissionModule emissionSettings = abParticles.emission;
             if(ab_parent.transform.position.y > (bar.transform.position.y + bar.transform.localScale.y)){
-                settings.startColor = abAboveBarColor;
+                //settings.startColor = abAboveBarColor;
+                emissionSettings.rateOverTime = 100;
                 abParticles.Play();
                 //scoreText.color = abAboveBarColor;
                 totalScore += (2f/score_modifier);

@@ -10,8 +10,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Data_Level");
     }
 
-    public void Calibrate(){
-        SceneManager.LoadScene("Calibration");
+    public void CalibrateAB(){
+        SceneManager.LoadScene("AB_Calibration");
+    }
+    public void CalibrateRIB(){
+        SceneManager.LoadScene("RIB_Calibration");
     }
 
     public void QuitGame(){
