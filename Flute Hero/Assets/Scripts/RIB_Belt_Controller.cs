@@ -50,6 +50,8 @@ public class RIB_Belt_Controller : MonoBehaviour
    
     public float currentVoltageForText;
     public VoltageInput ch;
+
+    public float newCurrentVoltage = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,7 +68,7 @@ public class RIB_Belt_Controller : MonoBehaviour
     {
         //Always checking for full calibration
 
-        currentVoltageForText = (float) ch.Voltage;
+        currentVoltageForText = newCurrentVoltage;
         if(minCalibrated && maxCalibrated){
             RibBeltInformation.fullyCalibrated = true;
         }
@@ -92,7 +94,7 @@ public class RIB_Belt_Controller : MonoBehaviour
             //Calibrating Max
             if (toCalibrate == "Max"){
                 currentTime -= Time.deltaTime;
-                maxVoltageArr.Add(ch.Voltage);
+                maxVoltageArr.Add(newCurrentVoltage);
 
                 if(currentTime <= 0){
                     RibBeltInformation.maxVoltage = (float) averageList(maxVoltageArr);
@@ -106,7 +108,7 @@ public class RIB_Belt_Controller : MonoBehaviour
             //Calibrating Min
             if (toCalibrate == "Min"){
                 currentTime -= Time.deltaTime;
-                minVoltageArr.Add(ch.Voltage);
+                minVoltageArr.Add(newCurrentVoltage);
 
                 if (currentTime <= 0){
                     RibBeltInformation.minVoltage = (float) averageList(minVoltageArr);
@@ -138,6 +140,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         ch = new VoltageInput();
         ch.Channel = phidgetChannel;
         ch.Error+=phidgetErrorHandler;
+        ch.VoltageChange += voltageChange;
         try{
             ch.Open(5000);
         }
@@ -155,6 +158,11 @@ public class RIB_Belt_Controller : MonoBehaviour
         Debug.Log("Description: " + e.Description);
     }
 
+    public void voltageChange(object sender, Phidget22.Events.VoltageInputVoltageChangeEventArgs e){
+        float voltage = (float) e.Voltage;
+        newCurrentVoltage = voltage;
+    }
+
     //Helper function to take the average of a list
     double averageList(List<double> arr){
         double sum = 0;
@@ -169,7 +177,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         
         //ASK LUCIE REGARDING THE ROUNDING OF VOLTAGE... 3 DIGITS SHOULD BE JUST FINE
         
-        double currentVoltage = Math.Round(ch.Voltage, 3);
+        double currentVoltage = Math.Round(newCurrentVoltage, 3);
         
 
         /*
@@ -198,6 +206,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         
     }
     private void OnApplicationQuit() {
+        ch.VoltageChange-= voltageChange;
         ch.Close();
         ch = null;
 

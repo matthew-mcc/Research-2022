@@ -43,15 +43,21 @@ public class abCollisionHandler : MonoBehaviour
         if(other.gameObject.tag == "Hoop"){
 
     
-            GameObject parent = other.gameObject;
-            //Debug.Log(parent.transform.GetChild(0).name);
+            // GameObject parent = other.gameObject;
+            // //Debug.Log(parent.transform.GetChild(0).name);
 
-            Color parentColor = parent.GetComponent<SpriteRenderer>().color;
-            ParticleSystem hoopParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
-            ParticleSystem.MainModule settings = hoopParticles.main;
-            settings.startColor = parentColor;
-            hoopParticles.Play();
-            parent.GetComponent<SpriteRenderer>().enabled = false;
+            // Color parentColor = parent.GetComponent<SpriteRenderer>().color;
+            // ParticleSystem hoopParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
+            // ParticleSystem.MainModule settings = hoopParticles.main;
+            // settings.startColor = parentColor;
+            // hoopParticles.Play();
+            // parent.GetComponent<SpriteRenderer>().enabled = false;
+            GameObject hoop = other.gameObject;
+            GameObject parent = currentCollider.gameObject;
+
+            ParticleSystem abParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
+            abParticles.Play();
+            hoop.GetComponent<SpriteRenderer>().enabled = false;
             
         }
 
