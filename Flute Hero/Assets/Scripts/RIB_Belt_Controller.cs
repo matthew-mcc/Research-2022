@@ -137,11 +137,22 @@ public class RIB_Belt_Controller : MonoBehaviour
     void initializePhidget(){
         ch = new VoltageInput();
         ch.Channel = phidgetChannel;
+        ch.Error+=phidgetErrorHandler;
+        try{
+            ch.Open(5000);
+        }
+        catch (PhidgetException ex){
+            Debug.Log("Failed to open: " + ex.Description);
+        }
         
-        ch.Open(5000);
         ch.VoltageChangeTrigger = 0;
         ch.DataInterval = 50;
         ch.SensorType = VoltageSensorType.Voltage; //Not sure if we need this...
+    }
+
+    void phidgetErrorHandler(object sender, Phidget22.Events.ErrorEventArgs e){
+        Debug.Log("Code: " + e.Code.ToString());
+        Debug.Log("Description: " + e.Description);
     }
 
     //Helper function to take the average of a list
@@ -185,5 +196,16 @@ public class RIB_Belt_Controller : MonoBehaviour
         }
         
         
+    }
+    private void OnApplicationQuit() {
+        ch.Close();
+        ch = null;
+
+        if(Application.isEditor){
+            Phidget.ResetLibrary();
+        }
+        else{
+            Phidget.FinalizeLibrary(0);
+        }
     }
 }

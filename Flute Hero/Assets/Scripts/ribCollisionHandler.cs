@@ -24,7 +24,7 @@ public class ribCollisionHandler : MonoBehaviour
     private void Start() {
         currentCollider = GetComponent<Collider2D>();
         currentScene = SceneManager.GetActiveScene();
-        scoreText.color = ribAtBarColor;
+        //scoreText.color = ribAtBarColor;
         
     }
     private void OnCollisionEnter2D(Collision2D other) {
@@ -72,7 +72,7 @@ public class ribCollisionHandler : MonoBehaviour
             
             ribParticles.Play();
 
-            scoreText.color = ribAtBarColor;
+            //scoreText.color = ribAtBarColor;
             totalScore += (1f/score_modifier);
 
 

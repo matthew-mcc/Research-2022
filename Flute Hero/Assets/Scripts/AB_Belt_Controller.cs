@@ -54,10 +54,12 @@ public class AB_Belt_Controller : MonoBehaviour
     private List<double> minVoltageArr = new List<double>();
 
 
+    public float newCurrentVoltage = 0f;
     
 
 
     public VoltageInput ch;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -75,9 +77,11 @@ public class AB_Belt_Controller : MonoBehaviour
     {
         //Always checking for full calibration
 
+        
+
         currentVoltageForText = (float) ch.Voltage;
 
-        
+        Debug.Log(newCurrentVoltage);
 
         
         if(minCalibrated && maxCalibrated){
@@ -153,11 +157,29 @@ public class AB_Belt_Controller : MonoBehaviour
     void initializePhidget(){
         ch = new VoltageInput();
         ch.Channel = phidgetChannel;
+        ch.Error += phidgetErrorHandler;
+        ch.VoltageChange+= voltageChange;
         
-        ch.Open(5000);
+        try{
+            ch.Open(5000);
+        }
+        catch (PhidgetException ex){
+            Debug.Log("Failed to open: " + ex.Description);
+        }
+        
         ch.VoltageChangeTrigger = 0;
         ch.DataInterval = 50;
         ch.SensorType = VoltageSensorType.Voltage; //Not sure if we need this...
+    }
+
+    void phidgetErrorHandler(object sender, Phidget22.Events.ErrorEventArgs e){
+        Debug.Log("Code: " + e.Code.ToString());
+        Debug.Log("Description: " + e.Description);
+    }
+
+    public void voltageChange(object sender, Phidget22.Events.VoltageInputVoltageChangeEventArgs e){
+        float voltage = (float) e.Voltage;
+        newCurrentVoltage = voltage;
     }
 
     //Helper function to take the average of a list
@@ -203,5 +225,18 @@ public class AB_Belt_Controller : MonoBehaviour
         }
         
         
+    }
+
+    private void OnApplicationQuit() {
+        ch.Close();
+        ch = null;
+
+        if(Application.isEditor){
+            Debug.Log("In Editor!");
+            Phidget.ResetLibrary();
+        }
+        else{
+            Phidget.FinalizeLibrary(0);
+        }
     }
 }

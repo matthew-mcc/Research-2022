@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NAudio.Wave;
 using System;
+using TMPro;
 
 public class PitchDetection : MonoBehaviour
 {
@@ -23,8 +24,16 @@ public class PitchDetection : MonoBehaviour
 
     [SerializeField] int mic_number = 0;
 
+    [SerializeField] Sprite happyFace;
+    [SerializeField] Sprite angryFace;
+    [SerializeField] TextMeshProUGUI scoreText;
+
     WaveInEvent wave;
     SpriteRenderer sr;
+
+    //scoring
+    [SerializeField] float score_modifier = 2f;
+    float totalScore = 0f;
 
 
     // Start is called before the first frame update
@@ -40,6 +49,7 @@ public class PitchDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        scoreText.text = totalScore.ToString();
         if(Input.GetKeyDown(KeyCode.P)){
             wave.StopRecording();
             wave.Dispose();
@@ -47,10 +57,13 @@ public class PitchDetection : MonoBehaviour
         
         //This will be the happy / sad thing..
         if(Math.Abs(hzToMidi(freq_per, 3) - hzToMidi(targetFrequency, 3)) < accuracyThreshold){
-            sr.color = onTarget;
+            //sr.color = onTarget;
+            sr.sprite = happyFace;
+            totalScore+= 1/score_modifier;
         }
         else{
-            sr.color = offTarget;
+            //sr.color = offTarget;
+            sr.sprite = angryFace;
         }
     }
 

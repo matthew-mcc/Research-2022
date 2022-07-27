@@ -24,7 +24,7 @@ public class abCollisionHandler : MonoBehaviour
     private void Start() {
         currentCollider = GetComponent<Collider2D>();
         currentScene = SceneManager.GetActiveScene();
-        scoreText.color = abAtBarColor;
+        //scoreText.color = abAtBarColor;
         
     }
     private void OnCollisionEnter2D(Collision2D other) {
@@ -64,7 +64,8 @@ public class abCollisionHandler : MonoBehaviour
     //This is all for the bar stuff
     private void OnTriggerStay2D(Collider2D other) {
         if(other.gameObject.tag == "Ab_Bar"){
-
+            
+           
             GameObject parent = currentCollider.gameObject;
             
             ParticleSystem abParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
@@ -92,6 +93,7 @@ public class abCollisionHandler : MonoBehaviour
             ParticleSystem abParticles = ab_parent.transform.GetChild(0).GetComponent<ParticleSystem>();
             ParticleSystem.MainModule settings = abParticles.main;
             ParticleSystem.EmissionModule emissionSettings = abParticles.emission;
+            
             if(ab_parent.transform.position.y > (bar.transform.position.y + bar.transform.localScale.y)){
                 //settings.startColor = abAboveBarColor;
                 emissionSettings.rateOverTime = 100;
