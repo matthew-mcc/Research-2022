@@ -79,7 +79,7 @@ public class AB_Belt_Controller : MonoBehaviour
 
         
 
-        currentVoltageForText = (float) ch.Voltage;
+        currentVoltageForText = newCurrentVoltage;
 
         Debug.Log(newCurrentVoltage);
 
@@ -109,7 +109,9 @@ public class AB_Belt_Controller : MonoBehaviour
             //Calibrating Max
             if (toCalibrate == "Max"){
                 currentTime -= Time.deltaTime;
-                maxVoltageArr.Add(ch.Voltage);
+
+                //maxVoltageArr.Add(ch.Voltage);
+                maxVoltageArr.Add(newCurrentVoltage);
 
                 if(currentTime <= 0){
                     ABBeltInformation.maxVoltage = (float) averageList(maxVoltageArr);
@@ -124,7 +126,10 @@ public class AB_Belt_Controller : MonoBehaviour
             //Calibrating Min
             if (toCalibrate == "Min"){
                 currentTime -= Time.deltaTime;
-                minVoltageArr.Add(ch.Voltage);
+
+
+                //minVoltageArr.Add(ch.Voltage);
+                minVoltageArr.Add(newCurrentVoltage);
 
                 if (currentTime <= 0){
                     ABBeltInformation.minVoltage = (float) averageList(minVoltageArr);
@@ -197,7 +202,11 @@ public class AB_Belt_Controller : MonoBehaviour
     float VoltageToPosition(){
         
         //ASK LUCIE REGARDING THE ROUNDING OF VOLTAGE... 3 DIGITS SHOULD BE JUST FINE
-        double currentVoltage = Math.Round(ch.Voltage, 3);
+        
+        
+        //double currentVoltage = Math.Round(ch.Voltage, 3);
+
+        double currentVoltage = Math.Round(newCurrentVoltage, 3);
         
         
 
@@ -228,6 +237,7 @@ public class AB_Belt_Controller : MonoBehaviour
     }
 
     private void OnApplicationQuit() {
+        ch.VoltageChange -= voltageChange;
         ch.Close();
         ch = null;
 
