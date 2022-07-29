@@ -26,10 +26,15 @@ public class PitchDetection : MonoBehaviour
 
     [SerializeField] Sprite happyFace;
     [SerializeField] Sprite angryFace;
+    [SerializeField] Sprite flatFace;
+    [SerializeField] Sprite sharpFace;
+
     [SerializeField] TextMeshProUGUI scoreText;
 
     WaveInEvent wave;
     SpriteRenderer sr;
+
+    List<float> freqChunks = new List<float>();
 
     //scoring
     [SerializeField] float score_modifier = 2f;
@@ -49,22 +54,38 @@ public class PitchDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
         scoreText.text = totalScore.ToString();
         if(Input.GetKeyDown(KeyCode.P)){
             wave.StopRecording();
             wave.Dispose();
         }
+
+        freqChunks.Add(hzToMidi(freq_per, 3));
+
+        if(freqChunks.Count == 10){
+
+            float inputMidi = avgList(freqChunks);
+
+            
+            float targetMidi = hzToMidi(targetFrequency, 3);
+            
+            if(Math.Abs(inputMidi - targetMidi) < accuracyThreshold){
+                sr.sprite = happyFace;
+            }
+            
+            else if(inputMidi - targetMidi < 0){
+                sr.sprite = flatFace;
+            }
+            else if(inputMidi - targetMidi > 0){
+                sr.sprite = sharpFace;
+            }
+
+            freqChunks.Clear();
+        }
         
-        //This will be the happy / sad thing..
-        if(Math.Abs(hzToMidi(freq_per, 3) - hzToMidi(targetFrequency, 3)) < accuracyThreshold){
-            //sr.color = onTarget;
-            sr.sprite = happyFace;
-            totalScore+= 1/score_modifier;
-        }
-        else{
-            //sr.color = offTarget;
-            sr.sprite = angryFace;
-        }
+        
     }
 
     private void beginInput(int deviceNum)
@@ -136,6 +157,14 @@ public class PitchDetection : MonoBehaviour
             float midiVal = (float) Math.Round(rawVal, decPlaces);
             return midiVal;
         }
+
+    float avgList(List<float> arr){
+        float sum = 0;
+        foreach(var val in arr){
+            sum+= val;
+        }
+        return sum/arr.Count;
+    }
 
 
 }

@@ -26,8 +26,8 @@ public class AB_Belt_Controller : MonoBehaviour
 
     [SerializeField] public float verticalMoveSpeed = 100f;
     
-    [SerializeField] public float maxRange = 4;
-    [SerializeField] public float minRange = -4.5f;
+    private float maxRange = 2f;
+    private float minRange = -4f;
 
     
     [SerializeField] int phidgetChannel = 1;
@@ -55,6 +55,8 @@ public class AB_Belt_Controller : MonoBehaviour
 
 
     public float newCurrentVoltage = 0f;
+
+    
     
 
 
@@ -78,10 +80,10 @@ public class AB_Belt_Controller : MonoBehaviour
         //Always checking for full calibration
 
         
-
+        
         currentVoltageForText = newCurrentVoltage;
 
-        Debug.Log(newCurrentVoltage);
+        //Debug.Log(newCurrentVoltage);
 
         
         if(minCalibrated && maxCalibrated){

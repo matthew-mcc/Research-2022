@@ -8,7 +8,8 @@ public class Ab_Bar_Controller : MonoBehaviour
     AB_Belt_Controller AbController;
     [SerializeField] GameObject abBelt;
 
-    [SerializeField] float heightThreshold = 1f;
+    
+    [SerializeField] float height = 2f;
 
     public Rigidbody2D rb;
 
@@ -23,12 +24,12 @@ public class Ab_Bar_Controller : MonoBehaviour
     void Start() {
         rb = GetComponent<Rigidbody2D>();
 
-        if(ABBeltInformation.fullyCalibrated){
+        // if(ABBeltInformation.fullyCalibrated){
             
-            rb.transform.position = new Vector2(rb.transform.position.x, AbController.maxRange - heightThreshold);
-        }
+        //     rb.transform.position = new Vector2(rb.transform.position.x, AbController.maxRange - heightThreshold);
+        // }
         
-        
+        rb.transform.position = new Vector2(rb.transform.position.x, height);
     }
     void Update()
     {

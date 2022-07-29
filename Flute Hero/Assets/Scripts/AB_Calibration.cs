@@ -4,16 +4,16 @@ using UnityEngine;
 using TMPro;
 using System;
 using Phidget22;
-
+using UnityEngine.UI;
 public class AB_Calibration : MonoBehaviour
 {
 
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] TextMeshProUGUI infoText;
     [SerializeField] TextMeshProUGUI currentVoltageText;
-    [SerializeField] TextMeshProUGUI minText;
-    [SerializeField] TextMeshProUGUI maxText;
     
+    
+    [SerializeField] Slider progressSlider;
 
     //PlayerController playerController;
     AB_Belt_Controller AbController;
@@ -21,18 +21,14 @@ public class AB_Calibration : MonoBehaviour
     [SerializeField] GameObject abBelt;
     
     // Start is called before the first frame update --> Maybe make this into start ?? Why is it in awake
-    void Awake() {
-        //playerController = player.GetComponent<PlayerController>();
-        //AbController = abBelt.GetComponent<AB_Belt_Controller>();
-        
-    }
+    
     void Start()
     {
         AbController = abBelt.GetComponent<AB_Belt_Controller>();
         
         infoText.text = "Up Arrow to Calibrate Max," + "\n" + "Down Arrow to Calibrate Min!";
       
-        timerText.text = "Timer!";
+        timerText.text = "BIG BREATH!";
     }
 
     // Update is called once per frame
@@ -42,14 +38,26 @@ public class AB_Calibration : MonoBehaviour
         currentVoltageText.text = "Current Voltage: " + Math.Round(AbController.currentVoltageForText, 4) + " V";
        
         if (AbController.timerStarted && AbController.toCalibrate == "Max"){
-            infoText.text = "Max Voltage Calibration!";
+            infoText.text = "Max Expansion Calibration!";
+            
+           
             
         }
        
         if (AbController.timerStarted && AbController.toCalibrate == "Min"){
-            infoText.text = "Min Voltage Calibration!";
+            infoText.text = "Min Expansion Calibration!";
+            
         }
 
+        if(Input.GetKeyDown(KeyCode.UpArrow)){
+            progressSlider.value = 0;
+            
+            
+        }
+        if(Input.GetKeyDown(KeyCode.DownArrow)){
+            progressSlider.value = 0;
+        }
+        
         
 
         
@@ -59,25 +67,41 @@ public class AB_Calibration : MonoBehaviour
 
             
             if (AbController.toCalibrate == "Max"){
-               
                 
-                timerText.text = Math.Round(AbController.currentTime, 2).ToString();
-      
-                if (AbController.currentTime <= 0){
-                    timerText.text = "Done!";
-                    infoText.text = "MaxVoltage: " + Math.Round(ABBeltInformation.maxVoltage, 4).ToString();
+                progressSlider.value += Time.deltaTime/3;
+                
+                //timerText.text = Math.Round(AbController.currentTime, 2).ToString();
+                timerText.text = "HOLD!";
+                if(Math.Round(AbController.currentTime, 2) <= 0){
+                    timerText.text = "RELEASE!";
+                    
+                    
                 }
+
+                //goes from 0 to 1, the time goes from 3 to 0, with 0.002 increments
+                // progressSlider.value += 0.0008f;
+                
+                // if(progressSlider.value == 1){
+                //     timerText.text = "RELEASE!";
+                //     infoText.text = "MaxVoltage: " + Math.Round(ABBeltInformation.maxVoltage, 4).ToString();
+                // }
+               
 
             }
             
             if (AbController.toCalibrate == "Min"){
-              
-                timerText.text = Math.Round(AbController.currentTime, 2).ToString();
-            
-                if (AbController.currentTime <= 0){
-                    timerText.text = "Done!";
-                    infoText.text = "MinVoltage: " + Math.Round(ABBeltInformation.minVoltage, 4).ToString();
+
+                
+                    
+                //timerText.text = Math.Round(AbController.currentTime, 2).ToString();
+                progressSlider.value+= Time.deltaTime/3;
+
+                timerText.text = "HOLD!";
+                if(Math.Round(AbController.currentTime, 2) <= 0){
+                    timerText.text = "RELEASE!";
+                    
                 }
+                
             }
             
         }
@@ -86,8 +110,8 @@ public class AB_Calibration : MonoBehaviour
        
         if(ABBeltInformation.fullyCalibrated){
             infoText.text = "Calibration Reached, M for Main Menu!";
-            minText.text = "Min: " + Math.Round(ABBeltInformation.minVoltage, 4).ToString() + " V";
-            maxText.text = "Max: " + Math.Round(ABBeltInformation.maxVoltage, 4).ToString() + " V";
+            timerText.text = "GREAT JOB!";
+           
         }
 
         

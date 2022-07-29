@@ -18,10 +18,7 @@ public class SceneController : MonoBehaviour
             SceneManager.LoadScene("Menu");
         }
 
-        //Calibration scene keybind
-        if (Input.GetKey(KeyCode.C)){
-            SceneManager.LoadScene("Calibration");
-        }
+        
 
         //Reload level keybind
         if (Input.GetKey(KeyCode.R)){

@@ -1,8 +1,9 @@
+from operator import truediv
 import time
 from Phidget22.PhidgetException import *
 from Phidget22.Phidget import *
 from Phidget22.Devices.VoltageInput import *
-from pyrsistent import b
+
 
 ch_blue = VoltageInput()
 ch_red = VoltageInput()
@@ -30,4 +31,12 @@ while True:
     time.sleep(0.5)
     #print(current_voltage)
 
-    
+
+
+def forV():
+
+    result = True
+
+    return result["stderror"]
+
+print(forV())

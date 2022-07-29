@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using Phidget22;
+using UnityEngine.UI;
 
 public class RIB_Calibration : MonoBehaviour
 {
@@ -11,14 +12,14 @@ public class RIB_Calibration : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] TextMeshProUGUI infoText;
     [SerializeField] TextMeshProUGUI currentVoltageText;
-    [SerializeField] TextMeshProUGUI minText;
-    [SerializeField] TextMeshProUGUI maxText;
+    
     
 
     //PlayerController playerController;
     RIB_Belt_Controller RibController;
    
     [SerializeField] GameObject ribBelt;
+    [SerializeField] Slider progressSlider;
     
     // Start is called before the first frame update --> Maybe make this into start ?? Why is it in awake
     
@@ -28,7 +29,7 @@ public class RIB_Calibration : MonoBehaviour
         
         infoText.text = "Up Arrow to Calibrate Max," + "\n" + "Down Arrow to Calibrate Min!";
       
-        timerText.text = "Timer!";
+        timerText.text = "BIG BREATH!";
     }
 
     // Update is called once per frame
@@ -46,6 +47,15 @@ public class RIB_Calibration : MonoBehaviour
             infoText.text = "Min Voltage Calibration!";
         }
 
+        if(Input.GetKeyDown(KeyCode.UpArrow)){
+            progressSlider.value = 0;
+            
+            
+        }
+        if(Input.GetKeyDown(KeyCode.DownArrow)){
+            progressSlider.value = 0;
+        }
+
         
 
         
@@ -56,23 +66,21 @@ public class RIB_Calibration : MonoBehaviour
             
             if (RibController.toCalibrate == "Max"){
                
-                    
-                timerText.text = Math.Round(RibController.currentTime, 2).ToString();
-      
-                if (RibController.currentTime <= 0){
-                    timerText.text = "Done!";
-                    infoText.text = "MaxVoltage: " + Math.Round(RibBeltInformation.maxVoltage, 4).ToString();
+                progressSlider.value+= Time.deltaTime/3;
+                timerText.text = "HOLD!";
+                if(Math.Round(RibController.currentTime, 2) <= 0){
+                    timerText.text = "RELEASE!";
                 }
 
             }
             
             if (RibController.toCalibrate == "Min"){
               
-                timerText.text = Math.Round(RibController.currentTime, 2).ToString();
+                progressSlider.value += Time.deltaTime/3;
+                timerText.text = "HOLD!";
             
-                if (RibController.currentTime <= 0){
-                    timerText.text = "Done!";
-                    infoText.text = "MinVoltage: " + Math.Round(RibBeltInformation.minVoltage, 4).ToString();
+                if(Math.Round(RibController.currentTime, 2) <= 0){
+                    timerText.text = "RELEASE!";
                 }
             }
             
@@ -82,8 +90,7 @@ public class RIB_Calibration : MonoBehaviour
        
         if(ABBeltInformation.fullyCalibrated){
             infoText.text = "Calibration Reached, M for Main Menu!";
-            minText.text = "Min: " + Math.Round(RibBeltInformation.minVoltage, 4).ToString() + " V";
-            maxText.text = "Max: " + Math.Round(RibBeltInformation.maxVoltage, 4).ToString() + " V";
+            timerText.text = "GREAT JOB!";
         }
 
         

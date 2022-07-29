@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    
     
     public void PlayGame(){
         SceneManager.LoadScene("Data_Level");
+        
     }
 
     public void CalibrateAB(){
@@ -62,12 +65,20 @@ public class MainMenu : MonoBehaviour
 
     //Bar Levels
     public void Bar_Easy(){
-        SceneManager.LoadScene("Bar_Easy");
+        if(ABBeltInformation.fullyCalibrated && RibBeltInformation.fullyCalibrated){
+            SceneManager.LoadScene("Bar_Easy");
+        }
+        
+        
     }
     public void Bar_Medium(){
-        SceneManager.LoadScene("Bar_Medium");
+        if(ABBeltInformation.fullyCalibrated && RibBeltInformation.fullyCalibrated){
+            SceneManager.LoadScene("Bar_Medium");
+        }
     }
     public void Bar_Hard(){
-        SceneManager.LoadScene("Bar_Hard");
+        if(ABBeltInformation.fullyCalibrated && RibBeltInformation.fullyCalibrated){
+            SceneManager.LoadScene("Bar_Hard");
+        }
     }
 }

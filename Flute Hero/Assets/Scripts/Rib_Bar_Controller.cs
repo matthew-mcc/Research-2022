@@ -7,7 +7,7 @@ public class Rib_Bar_Controller : MonoBehaviour
     RIB_Belt_Controller RibController;
     [SerializeField] GameObject ribBelt;
 
-    [SerializeField] float heightThreshold = 1f;
+    [SerializeField] float height = 3f;
 
     public Rigidbody2D rb;
 
@@ -22,10 +22,11 @@ public class Rib_Bar_Controller : MonoBehaviour
     void Start() {
         rb = GetComponent<Rigidbody2D>();
 
-        if(RibBeltInformation.fullyCalibrated){
+        // if(RibBeltInformation.fullyCalibrated){
             
-            rb.transform.position = new Vector2(rb.transform.position.x, RibController.maxRange - heightThreshold);
-        }
+        //     rb.transform.position = new Vector2(rb.transform.position.x, RibController.maxRange - heightThreshold);
+        // }
+        rb.transform.position = new Vector2(rb.transform.position.x, height);
         
         
     }

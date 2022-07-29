@@ -20,8 +20,8 @@ public class RIB_Belt_Controller : MonoBehaviour
     SpriteRenderer sr;
     Scene currentScene;
     
-    [SerializeField] public float maxRange = 3f;
-    [SerializeField] public float minRange = -3f;
+    private float maxRange = 3f;
+    private float minRange = -4f;
 
     [SerializeField] public float verticalMoveSpeed = 100f;
     
@@ -212,6 +212,8 @@ public class RIB_Belt_Controller : MonoBehaviour
 
         if(Application.isEditor){
             Phidget.ResetLibrary();
+            
+            
         }
         else{
             Phidget.FinalizeLibrary(0);
