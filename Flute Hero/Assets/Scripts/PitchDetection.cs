@@ -5,6 +5,7 @@ using NAudio.Wave;
 using System;
 using TMPro;
 
+
 public class PitchDetection : MonoBehaviour
 {
 
@@ -17,12 +18,12 @@ public class PitchDetection : MonoBehaviour
     [SerializeField] Color onTarget;
     [SerializeField] Color offTarget;
     //NEEDS TO CHANGE --> ITS FINE FOR NOW
-    [SerializeField] float targetFrequency = 440;
+    float targetFrequency = 440;
     [SerializeField] float accuracyThreshold = 0.5f;
     const float sample_freq = 44100;
     float freq_per = 0f;
 
-    [SerializeField] int mic_number = 0;
+    public int mic_number = 0;
 
     [SerializeField] Sprite happyFace;
     [SerializeField] Sprite angryFace;
@@ -30,6 +31,7 @@ public class PitchDetection : MonoBehaviour
     [SerializeField] Sprite sharpFace;
 
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] TextMeshProUGUI noteText;
 
     WaveInEvent wave;
     SpriteRenderer sr;
@@ -44,9 +46,12 @@ public class PitchDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mic_number = SettingsInformation.microphoneNumber;
+        targetFrequency = SettingsInformation.targetFrequency;
         beginInput(mic_number);
 
         sr = GetComponent<SpriteRenderer>();
+        noteText.text = "Target Note: " + targetFrequency + " hz";
     }
 
    

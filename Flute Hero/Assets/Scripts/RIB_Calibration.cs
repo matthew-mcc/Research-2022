@@ -88,7 +88,7 @@ public class RIB_Calibration : MonoBehaviour
 
         
        
-        if(ABBeltInformation.fullyCalibrated){
+        if(RibBeltInformation.fullyCalibrated){
             infoText.text = "Calibration Reached, M for Main Menu!";
             timerText.text = "GREAT JOB!";
         }

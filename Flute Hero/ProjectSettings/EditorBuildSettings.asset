@@ -47,13 +47,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bars/Bar_Easy.unity
     guid: 652222d2db363a14aa4f7fdf8802b905
-  - enabled: 1
-    path: Assets/Scenes/Bars/Bar_Hard.unity
-    guid: 7526e6c5c7c1a804ca8c407f65d7e41e
-  - enabled: 1
-    path: Assets/Scenes/Bars/Bar_Medium.unity
-    guid: 7136bd70b409b9d4fb695ed61795e4cf
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/RIB_Calibration.unity
     guid: 7d1e4f394898fab4491a3cba89ab053c
+  - enabled: 1
+    path: Assets/Scenes/PD_Only.unity
+    guid: 2423101a043ef64478d3e5b93dba0411
+  - enabled: 1
+    path: Assets/Scenes/Bars/Bar_Hard.unity
+    guid: 08072ed37ed6bc544beef407a4cd4172
+  - enabled: 1
+    path: Assets/Scenes/Bars/Bar_Medium.unity
+    guid: c66a815301492104ca92ee86e164c6c8
   m_configObjects: {}

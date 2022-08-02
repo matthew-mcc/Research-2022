@@ -10,6 +10,7 @@ public static class RibBeltInformation{
     public static bool fullyCalibrated = false;
     public static double maxVoltage = 3.6;
     public static double minVoltage = 3.35;
+    public static int port = 2;
 }
 public class RIB_Belt_Controller : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class RIB_Belt_Controller : MonoBehaviour
     [SerializeField] public float verticalMoveSpeed = 100f;
     
     
-    [SerializeField] int phidgetChannel = 2;
+    int phidgetChannel = 2;
     [SerializeField] float defaultXPos = -6.5f;
     
     //Calibration Flags
@@ -59,6 +60,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         currentScene = SceneManager.GetActiveScene();
         
+        int phidgetChannel = RibBeltInformation.port;
         currentTime = calibrationTime;
         initializePhidget();
     }
@@ -205,18 +207,11 @@ public class RIB_Belt_Controller : MonoBehaviour
         
         
     }
-    private void OnApplicationQuit() {
-        ch.VoltageChange-= voltageChange;
-        ch.Close();
-        ch = null;
+    // private void OnApplicationQuit() {
+    //     ch.VoltageChange-= voltageChange;
+    //     ch.Close();
+    //     ch = null;
 
-        if(Application.isEditor){
-            Phidget.ResetLibrary();
-            
-            
-        }
-        else{
-            Phidget.FinalizeLibrary(0);
-        }
-    }
+        
+    // }
 }

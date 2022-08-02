@@ -297,7 +297,7 @@ MonoBehaviour:
   startHoopThreshold: 0
   endHoopThreshold: 0
   startingXPos: 15
-  filePath: C:\GIT\Research\Research-2022\Flute Hero\Assets\Level Texts\AB_Hoop_Medium.txt
+  filePath: C:\GIT\Research-2022\Flute Hero\Assets\Level Texts\AB_Hoop_Medium.txt
 --- !u!1001 &1908768671
 PrefabInstance:
   m_ObjectHideFlags: 0

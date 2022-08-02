@@ -81,4 +81,8 @@ public class MainMenu : MonoBehaviour
             SceneManager.LoadScene("Bar_Hard");
         }
     }
+
+    public void PD_Only(){
+        SceneManager.LoadScene("PD_Only");
+    }
 }
