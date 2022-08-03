@@ -10386,7 +10386,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 106335625}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Bar_Medium
+        m_MethodName: Ab_Hoop_Med
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

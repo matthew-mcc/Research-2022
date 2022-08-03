@@ -78,6 +78,7 @@ public class PitchDetection : MonoBehaviour
             
             if(Math.Abs(inputMidi - targetMidi) < accuracyThreshold){
                 sr.sprite = happyFace;
+                totalScore += 1/score_modifier;
             }
             
             else if(inputMidi - targetMidi < 0){

@@ -8,23 +8,23 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 848b4c426248e30488d3bb682cb10b4b
-  - enabled: 1
-    path: Assets/Scenes/Data_Level.unity
+  - enabled: 0
+    path: Assets/Scenes/Unused Scenes/Data_Level.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/AB_Calibration.unity
     guid: 9345c4f379bb55b49af5a585223c6f73
-  - enabled: 1
-    path: Assets/Scenes/Level_1.unity
+  - enabled: 0
+    path: Assets/Scenes/Unused Scenes/Level_1.unity
     guid: 2d4e86836d02bba428bbef611aacf15d
-  - enabled: 1
-    path: Assets/Scenes/Level_2.unity
+  - enabled: 0
+    path: Assets/Scenes/Unused Scenes/Level_2.unity
     guid: 609e50b4e8420324f8d29afe2a99e61b
-  - enabled: 1
-    path: Assets/Scenes/Level_3.unity
+  - enabled: 0
+    path: Assets/Scenes/Unused Scenes/Level_3.unity
     guid: 5660a9a2c3b0c9e488254a2296ffe4c2
-  - enabled: 1
-    path: Assets/Scenes/Plane_Hoops.unity
+  - enabled: 0
+    path: Assets/Scenes/Unused Scenes/Plane_Hoops.unity
     guid: a3ae7055d1b7140439be74cb04e1251b
   - enabled: 1
     path: Assets/Scenes/Hoops/Ab_Hoop_Easy.unity
