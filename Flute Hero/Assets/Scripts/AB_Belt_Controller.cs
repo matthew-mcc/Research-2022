@@ -10,7 +10,7 @@ public static class ABBeltInformation{
     public static bool fullyCalibrated = false;
     public static double maxVoltage = 3.6;
     public static double minVoltage = 3.35;
-    public static int port = 1;
+    
 }
 
 
@@ -31,7 +31,7 @@ public class AB_Belt_Controller : MonoBehaviour
     private float minRange = -4f;
 
     
-    int phidgetChannel = 1;
+    
     [SerializeField] float defaultXPos = -6.5f;
     
     //Calibration Flags
@@ -70,9 +70,9 @@ public class AB_Belt_Controller : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         currentScene = SceneManager.GetActiveScene();
         
-        phidgetChannel = ABBeltInformation.port;
+        
         currentTime = calibrationTime;
-        initializePhidget();
+        initializePhidget(SettingsInformation.abChannel);
     }
 
     // Update is called once per frame
@@ -162,9 +162,9 @@ public class AB_Belt_Controller : MonoBehaviour
     }
 
     //Initializing Phidget Function -- Called in Start
-    void initializePhidget(){
+    void initializePhidget(int channel){
         ch = new VoltageInput();
-        ch.Channel = phidgetChannel;
+        ch.Channel = channel;
         ch.Error += phidgetErrorHandler;
         ch.VoltageChange+= voltageChange;
         

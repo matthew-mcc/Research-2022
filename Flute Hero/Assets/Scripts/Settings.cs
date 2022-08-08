@@ -4,12 +4,17 @@ using UnityEngine;
 using NAudio.Wave;
 using TMPro;
 using System.Linq;
+using UnityEngine.UI;
 
 public static class SettingsInformation{
 
     public static int microphoneNumber = 0;
     public static float targetFrequency = 261.5f;
-    //going to be name - freq
+    public static int abChannel = 1;
+    public static int ribChannel = 2;
+    public static float PDAccuracyThreshold = 0.5f;
+    public static float PDTimeLatency = 0.25f;
+   
     
 }
 
@@ -25,9 +30,15 @@ public class Settings : MonoBehaviour
     public List<string> microphoneList = new List<string>();
     public Dictionary<string, float> notes = new Dictionary<string, float>();
 
+    public Slider latencySlider;
+    public Slider thresholdSlider;
+
     void Start() {
         micDropdown.options.Clear();
         noteDropdown.options.Clear();
+
+        latencySlider.value = SettingsInformation.PDTimeLatency;
+        thresholdSlider.value = SettingsInformation.PDAccuracyThreshold;
 
         ListMicrophones(microphoneList);
         
@@ -64,10 +75,16 @@ public class Settings : MonoBehaviour
     }
 
     public void SetAbPort(int channel){
-        ABBeltInformation.port = channel;
+        SettingsInformation.abChannel = channel;
     }
     public void SetRibPort(int channel){
-        RibBeltInformation.port = channel;
+        SettingsInformation.ribChannel = channel;
+    }
+    public void SetPDThreshold(float threshold){
+        SettingsInformation.PDAccuracyThreshold = threshold;
+    }
+    public void SetPDLatency(float latency){
+        SettingsInformation.PDTimeLatency = latency;
     }
 
     public void PopulateNotes(Dictionary<string, float> dict){
@@ -100,7 +117,19 @@ public class Settings : MonoBehaviour
         dict.Add("A#5", 932.327f);
         dict.Add("B5", 987.767f);
 
-        //Maybe need more??
+        //Sixth Octave
+        dict.Add("C6", 1046.502f);
+        dict.Add("C#6", 1107.730f);
+        dict.Add("D6", 1174.660f);
+        dict.Add("D#6", 1244.508f);
+        dict.Add("E6", 1318.510f);
+        dict.Add("F6", 1396.913f);
+        dict.Add("F#6", 1479.978f);
+        dict.Add("G6", 1567.982f);
+        dict.Add("G#6", 1661.219f);
+        dict.Add("A6", 1760.000f);
+        dict.Add("A#6", 1864.655f);
+        dict.Add("B6", 1975.533f);
 
     }
 

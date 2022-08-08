@@ -23,6 +23,9 @@ public class PitchDetection : MonoBehaviour
     const float sample_freq = 44100;
     float freq_per = 0f;
 
+    private float timeLatency = 0.25f;
+    public float timeTracker = 0.5f;
+
     public int mic_number = 0;
 
     [SerializeField] Sprite happyFace;
@@ -52,6 +55,9 @@ public class PitchDetection : MonoBehaviour
 
         sr = GetComponent<SpriteRenderer>();
         noteText.text = "Target Note: " + targetFrequency + " hz";
+
+        timeLatency = SettingsInformation.PDTimeLatency;
+        accuracyThreshold = SettingsInformation.PDAccuracyThreshold;
     }
 
    
@@ -60,8 +66,9 @@ public class PitchDetection : MonoBehaviour
     void Update()
     {
         
+        timeTracker+= Time.deltaTime;
         
-        scoreText.text = totalScore.ToString();
+        scoreText.text = totalScore.ToString("00000");
         if(Input.GetKeyDown(KeyCode.P)){
             wave.StopRecording();
             wave.Dispose();
@@ -69,16 +76,18 @@ public class PitchDetection : MonoBehaviour
 
         freqChunks.Add(hzToMidi(freq_per, 3));
 
-        if(freqChunks.Count == 10){
-
+        
+        //if(freqChunks.Count == 100){
+        if(timeTracker >= timeLatency){
+            
             float inputMidi = avgList(freqChunks);
-
+            
             
             float targetMidi = hzToMidi(targetFrequency, 3);
             
             if(Math.Abs(inputMidi - targetMidi) < accuracyThreshold){
                 sr.sprite = happyFace;
-                totalScore += 1/score_modifier;
+                totalScore += 2/score_modifier;
             }
             
             else if(inputMidi - targetMidi < 0){
@@ -89,6 +98,7 @@ public class PitchDetection : MonoBehaviour
             }
 
             freqChunks.Clear();
+            timeTracker = 0;
         }
         
         

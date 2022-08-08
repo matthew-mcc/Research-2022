@@ -1,5 +1,7 @@
-Start -4 End 3
-Start -4 End 3
-Start -4 End 3
-Start -4 End 3
-Done 1000 Done 1000
+-4
+3
+3
+3
+3
+3
+1000

@@ -91,9 +91,9 @@ public class abCollisionHandler : MonoBehaviour
 
     private void Update() {
         
-        
+        scoreText.fontSize = 75;
         if(currentScene.name == "Bar_Easy" || currentScene.name == "Bar_Medium" || currentScene.name == "Bar_Hard"){
-            scoreText.text = totalScore.ToString();
+            scoreText.text = totalScore.ToString("00000");
             
             GameObject ab_parent = currentCollider.gameObject;
             ParticleSystem abParticles = ab_parent.transform.GetChild(0).GetComponent<ParticleSystem>();
@@ -105,6 +105,7 @@ public class abCollisionHandler : MonoBehaviour
                 emissionSettings.rateOverTime = 100;
                 abParticles.Play();
                 //scoreText.color = abAboveBarColor;
+                scoreText.fontSize = 100;
                 totalScore += (2f/score_modifier);
             }
         }

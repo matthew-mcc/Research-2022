@@ -43,15 +43,22 @@ public class ribCollisionHandler : MonoBehaviour
         if(other.gameObject.tag == "Hoop"){
 
     
-            GameObject parent = other.gameObject;
-            //Debug.Log(parent.transform.GetChild(0).name);
+            // GameObject parent = other.gameObject;
+            // //Debug.Log(parent.transform.GetChild(0).name);
 
-            Color parentColor = parent.GetComponent<SpriteRenderer>().color;
-            ParticleSystem hoopParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
-            ParticleSystem.MainModule settings = hoopParticles.main;
-            settings.startColor = parentColor;
-            hoopParticles.Play();
-            parent.GetComponent<SpriteRenderer>().enabled = false;
+            // Color parentColor = parent.GetComponent<SpriteRenderer>().color;
+            // ParticleSystem hoopParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
+            // ParticleSystem.MainModule settings = hoopParticles.main;
+            // settings.startColor = parentColor;
+            // hoopParticles.Play();
+            // parent.GetComponent<SpriteRenderer>().enabled = false;
+
+            GameObject hoop = other.gameObject;
+            GameObject parent = currentCollider.gameObject;
+
+            ParticleSystem ribParticles = parent.transform.GetChild(0).GetComponent<ParticleSystem>();
+            ribParticles.Play();
+            hoop.GetComponent<SpriteRenderer>().enabled = false;
             
         }
 
@@ -82,9 +89,9 @@ public class ribCollisionHandler : MonoBehaviour
 
     private void Update() {
         
-        
+        scoreText.fontSize = 75;
         if(currentScene.name == "Bar_Easy" || currentScene.name == "Bar_Medium" || currentScene.name == "Bar_Hard"){
-            scoreText.text = totalScore.ToString();
+            scoreText.text = totalScore.ToString("00000");
             
             GameObject rib_parent = currentCollider.gameObject;
             ParticleSystem ribParticles = rib_parent.transform.GetChild(0).GetComponent<ParticleSystem>();
@@ -93,6 +100,7 @@ public class ribCollisionHandler : MonoBehaviour
                 emissionSettings.rateOverTime = 100;
                 ribParticles.Play();
                 //scoreText.color = ribAboveBarColor;
+                scoreText.fontSize = 100;
                 totalScore += (2f/score_modifier);
             }
         }

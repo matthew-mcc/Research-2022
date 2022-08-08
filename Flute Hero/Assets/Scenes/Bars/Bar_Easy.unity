@@ -735,22 +735,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: maxRange
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053315742, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: minRange
-      value: -4
-      objectReference: {fileID: 0}
     - target: {fileID: 1558588019079612602, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: m_Name
       value: Rib_Belt
       objectReference: {fileID: 0}
-    - target: {fileID: 3331511179333797872, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7058b220bae40874d97e476c16a72a48, type: 2}
     - target: {fileID: 3919824238165016879, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: bar
       value: 
@@ -759,110 +747,6 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1991756436}
-    - target: {fileID: 7203432543483437077, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: RotationModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7203432543483437077, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: RotationModule.curve.scalar
-      value: 6.283185
-      objectReference: {fileID: 0}
-    - target: {fileID: 7203432543483437077, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: RotationModule.x.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7203432543483437077, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: RotationModule.y.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7203432543483437077, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7203432543483437077, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: RotationModule.curve.minScalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7203432543483437077, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: RotationModule.curve.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7203432543483437077, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: bar
-      value: 
-      objectReference: {fileID: 7245151533119338145}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: scoreText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: atBarColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: atBarColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: atBarColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: atBarColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: abAtBarColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: abAtBarColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: abAtBarColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: abAtBarColor.r
-      value: 0.9098039
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: aboveBarColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: aboveBarColor.b
-      value: 0.48959637
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: aboveBarColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: aboveBarColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: abAboveBarColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: abAboveBarColor.b
-      value: 0.3999815
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: abAboveBarColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869066375336874287, guid: 915e213e5188db844958b84c79101a0f, type: 3}
-      propertyPath: abAboveBarColor.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8723925482477225195, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: m_RootOrder
       value: 2

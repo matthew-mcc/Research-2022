@@ -1,5 +1,6 @@
-Start -3.5 End 1.75
-Start -3.5 End 1.75
-Start -3.5 End 1.75
-Start -3.5 End 1.75
-Done 1000 Done 1000
+-3.5
+1.75
+1.75
+1.75
+1.75
+1000
