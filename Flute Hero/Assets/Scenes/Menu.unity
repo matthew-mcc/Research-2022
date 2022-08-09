@@ -1418,7 +1418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &106335624
 Transform:
   m_ObjectHideFlags: 0
@@ -4474,7 +4474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &827244571
 Transform:
   m_ObjectHideFlags: 0
@@ -14961,7 +14961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.46
+      value: 2.44
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14976,8 +14976,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
+      propertyPath: m_text
+      value: '1. You need to expand / relax BEFORE the respective arrow key is pressed.
+
+
+        2.
+        You can re-calibrate as many times as you wish, you can even go back to the
+        calibration levels after trying the levels.
+
+
+        3. The birds are NOT
+        supposed to reach the top of the screen, they are set to certain heights
+        for each level.
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_fontSize
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_fontSizeBase
