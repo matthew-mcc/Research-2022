@@ -297,7 +297,7 @@ MonoBehaviour:
   startHoopThreshold: 0
   endHoopThreshold: 0
   startingXPos: 15
-  filePath: C:\GIT\Research-2022\Flute Hero\Assets\Level Texts\AB_Hoop_Medium.txt
+  fileName: AB_Hoop_Medium
   infoText: {fileID: 1993755398}
 --- !u!1 &1754823933
 GameObject:

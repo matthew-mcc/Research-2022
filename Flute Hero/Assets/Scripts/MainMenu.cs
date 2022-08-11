@@ -12,6 +12,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Data_Level");
         
     }
+    public void LoadMenu(){
+        SceneManager.LoadScene("Menu");
+    }
 
     public void CalibrateAB(){
         SceneManager.LoadScene("AB_Calibration");
@@ -65,21 +68,21 @@ public class MainMenu : MonoBehaviour
 
     //Bar Levels
     public void Bar_Easy(){
-        if(ABBeltInformation.fullyCalibrated && RibBeltInformation.fullyCalibrated){
-            SceneManager.LoadScene("Bar_Easy");
-        }
+        
+        SceneManager.LoadScene("Bar_Easy");
+        
         
         
     }
     public void Bar_Medium(){
-        if(ABBeltInformation.fullyCalibrated && RibBeltInformation.fullyCalibrated){
-            SceneManager.LoadScene("Bar_Medium");
-        }
+        
+        SceneManager.LoadScene("Bar_Medium");
+        
     }
     public void Bar_Hard(){
-        if(ABBeltInformation.fullyCalibrated && RibBeltInformation.fullyCalibrated){
-            SceneManager.LoadScene("Bar_Hard");
-        }
+        
+        SceneManager.LoadScene("Bar_Hard");
+        
     }
 
     public void PD_Only(){

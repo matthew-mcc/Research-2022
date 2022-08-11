@@ -21,11 +21,13 @@ public class HoopController : MonoBehaviour
 
     [SerializeField] private float startingXPos = 15f;
 
-    [SerializeField] string filePath = @"C:\GIT\Research\Research-2022\Flute Hero\Assets\Level Texts\AB_Hoop_Easy.txt";
+    [SerializeField] string fileName = "AB_Hoop_Easy";
 
     private SpriteRenderer sr;
 
     private bool CR_Running = false;
+
+    private string filePath;
 
     [SerializeField] TextMeshProUGUI infoText;
 
@@ -39,8 +41,10 @@ public class HoopController : MonoBehaviour
         hoopSize = hoop.transform.localScale.y;
         sr = hoop.GetComponent<SpriteRenderer>();
 
+        filePath = Application.streamingAssetsPath + "/Hoop_Texts/" + fileName + ".txt";
+
         
-        
+        Debug.Log(filePath);
 
         ReadFile();
         

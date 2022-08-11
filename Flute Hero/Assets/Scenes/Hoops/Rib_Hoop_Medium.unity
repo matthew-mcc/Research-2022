@@ -592,7 +592,7 @@ MonoBehaviour:
   startHoopThreshold: 0
   endHoopThreshold: 0
   startingXPos: 15
-  filePath: C:\GIT\Research-2022\Flute Hero\Assets\Level Texts\RIB_Hoop_Medium.txt
+  fileName: Rib_Hoop_Medium
   infoText: {fileID: 1084756259}
 --- !u!1001 &1956872406
 PrefabInstance:
