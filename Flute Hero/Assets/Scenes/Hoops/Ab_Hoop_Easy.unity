@@ -659,7 +659,7 @@ MonoBehaviour:
   startHoopThreshold: 0
   endHoopThreshold: 0
   startingXPos: 15
-  filePath: C:\GIT\Research-2022\Flute Hero\Assets\Level Texts\AB_Hoop_Easy.txt
+  fileName: AB_Hoop_Easy
   infoText: {fileID: 1561530909}
 --- !u!1001 &1956872406
 PrefabInstance:
