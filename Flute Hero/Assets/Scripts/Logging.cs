@@ -1,61 +1,79 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Globalization;
-using System;
 using System.IO;
-using UnityEngine.SceneManagement;
-
-
-public static class LoggingInfo{
-    public static bool loggingStarted = false;
-}
+using System.Net.Mail;
+using System.Net;
 public class Logging : MonoBehaviour
 {
-    // Start is called before the first frame update
 
+    
     string fullFilePath;
-    Scene currScene;
+    void OnEnable() {
+        Application.logMessageReceived+= Log;
+    }
+    void OnDisable() {
+        Application.logMessageReceived-= Log;
+    }
+    // Start is called before the first frame update
     void Start()
     {
-        if(LoggingInfo.loggingStarted == false){
-
-            //make a file
-             
-            string fileName = "test";
-            //string filePath = @Application.streamingAssetsPath + "/Logging_Texts/" + fileName + ".txt";
-            string filePath = @"C:\GIT\Research\Research-2022\Flute Hero\Assets\StreamingAssets\Logging_Texts\";
-            fullFilePath = filePath + fileName;
-
-            
-            File.WriteAllText(fullFilePath, "Creating new Logging File at: " + DateTime.Now.ToString());
-            LoggingInfo.loggingStarted = true;
-        }
-        currScene = SceneManager.GetActiveScene();
-        File.WriteAllText(fullFilePath, "Player opened: " + currScene.name + " at: " + DateTime.Now.ToString());
+        fullFilePath = Application.streamingAssetsPath + "/LogFile.txt";
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //multiple if statements based on scenes to record?
-
-        if(currScene.name == "AB_Calibration"){
-
-        }
-        if(currScene.name == "RIB_Calibration"){
-
-        }
-        if(currScene.name == "Bar_Easy"){
-
-        }
-        if(currScene.name == "Bar_Medium"){
-
-        }
-        if(currScene.name == "Bar_Hard"){
-
-        }
-
         
     }
+
+    public void Log(string logString, string stackTrace, LogType type){
+        TextWriter tw = new StreamWriter(fullFilePath, true);
+        tw.WriteLine("[" + System.DateTime.Now + "] " + logString);
+        
+        tw.Close();
+    }
+    private void OnApplicationQuit() {
+        SendLogEmail();
+    }
+
+    private void SendLogEmail(){
+        string SendMailFrom = "flutehero21@gmail.com";
+        string SendMailTo = "flutehero21@gmail.com";
+        string SendMailSubject = "Log File From: " + System.DateTime.Now;
+        string SendMailBody = "This is a test email.";
+
+        
+        
+        SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com",587);
+        SmtpServer.DeliveryMethod = SmtpDeliveryMethod.Network;
+        MailMessage email = new MailMessage();
+    
+        // START
+        email.From = new MailAddress(SendMailFrom);
+        email.To.Add(SendMailTo);
+        email.CC.Add(SendMailFrom);
+        email.Subject = SendMailSubject;
+        email.Body = SendMailBody;
+
+        //ATTACHMENT
+        System.Net.Mail.Attachment attachment;
+        attachment = new System.Net.Mail.Attachment(fullFilePath);
+        email.Attachments.Add(attachment);
+
+        //END
+        SmtpServer.Timeout = 5000;
+        SmtpServer.EnableSsl = true;
+        SmtpServer.UseDefaultCredentials = false;
+        SmtpServer.Credentials = new NetworkCredential(SendMailFrom, "squvmdumukhdejhx");
+        SmtpServer.Send(email);
+
+            
+        
+        
+
+    }
+
+
 }

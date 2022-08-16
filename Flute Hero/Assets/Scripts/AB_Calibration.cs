@@ -26,6 +26,9 @@ public class AB_Calibration : MonoBehaviour
     
     void Start()
     {
+        //Debugging
+        
+
         AbController = abBelt.GetComponent<AB_Belt_Controller>();
         
         infoText.text = "Big Breath, Then Up Key!";
@@ -82,7 +85,12 @@ public class AB_Calibration : MonoBehaviour
                 bigTimer.text = Math.Round(currTime, 1).ToString();
                 if(Math.Round(AbController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
+                    
                     infoText.text = "Relax, Then Down Key!";
+
+                    //FOR DEBUGGING
+                    Debug.Log("Ab Belt Calibrated with Max Voltage: " + ABBeltInformation.maxVoltage);
+                    
 
                     
                     
@@ -111,7 +119,7 @@ public class AB_Calibration : MonoBehaviour
                 bigTimer.text = Math.Round(currTime, 1).ToString();
                 if(Math.Round(AbController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
-                    
+                    Debug.Log("Ab Belt Calibrated with Min Voltage: " + ABBeltInformation.minVoltage);
                 }
                 
             }

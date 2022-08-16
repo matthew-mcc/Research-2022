@@ -1,0 +1,6 @@
+[2022-08-16 1:59:25 PM] Entered Rib-Hoop Easy
+[2022-08-16 1:59:26 PM] Entered Rib Calibration
+[2022-08-16 1:59:30 PM] Rib Belt Calibrated with Max Voltage: 3.6
+[2022-08-16 1:59:33 PM] Rib Belt Calibrated with Min Voltage: 3.35
+[2022-08-16 1:59:36 PM] Entered Pitch Detection Level
+[2022-08-16 1:59:38 PM] Quitting game!

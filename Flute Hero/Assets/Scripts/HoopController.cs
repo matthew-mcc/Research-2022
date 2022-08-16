@@ -44,7 +44,7 @@ public class HoopController : MonoBehaviour
         filePath = Application.streamingAssetsPath + "/Hoop_Texts/" + fileName + ".txt";
 
         
-        Debug.Log(filePath);
+        
 
         ReadFile();
         

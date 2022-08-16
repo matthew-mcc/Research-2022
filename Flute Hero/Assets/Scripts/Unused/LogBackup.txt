@@ -1,0 +1,76 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.Globalization;
+using System;
+using System.IO;
+using UnityEngine.SceneManagement;
+
+
+public static class LoggingInfo{
+    public static bool loggingStarted = false;
+    public static bool abCalibrated = false;
+    public static bool inBarLevel = false;
+}
+public class Logging : MonoBehaviour
+{
+    // Start is called before the first frame update
+
+    string fullFilePath;
+    Scene currScene;
+    void Start()
+    {
+        
+        
+
+        //make a file
+            
+        string fileName = "test";
+        //string filePath = @Application.streamingAssetsPath + "/Logging_Texts/" + fileName + ".txt";
+        string filePath = @"C:\GIT\Research-2022\Flute Hero\Assets\StreamingAssets\Logging_Texts\";
+        fullFilePath = filePath + fileName + ".txt";
+
+        
+        File.WriteAllText(fullFilePath, "Creating new Logging File at: " + DateTime.Now.ToString() + Environment.NewLine);
+        LoggingInfo.loggingStarted = true;
+        
+        currScene = SceneManager.GetActiveScene();
+        File.AppendAllText(fullFilePath, "User Entered : " + currScene.name + " at: " + DateTime.Now.ToShortTimeString() + Environment.NewLine);
+        
+        if(currScene.name == "Bar_Easy" || currScene.name == "Bar_Medium" || currScene.name == "Bar_Hard"){
+            LoggingInfo.inBarLevel = true;
+
+        }
+        else{
+            LoggingInfo.inBarLevel = false;
+        }
+        
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //multiple if statements based on scenes to record?
+
+        if(currScene.name == "AB_Calibration"){
+            if(ABBeltInformation.fullyCalibrated){
+                File.AppendAllText(fullFilePath, "User calibrated ab belt with a min voltage of: " + ABBeltInformation.minVoltage + " and a max voltage of: " + ABBeltInformation.maxVoltage + Environment.NewLine);
+            }
+        }
+        if(currScene.name == "RIB_Calibration"){
+
+        }
+        if(currScene.name == "Bar_Easy"){
+
+        }
+        if(currScene.name == "Bar_Medium"){
+
+        }
+        if(currScene.name == "Bar_Hard"){
+
+        }
+
+        
+    }
+}

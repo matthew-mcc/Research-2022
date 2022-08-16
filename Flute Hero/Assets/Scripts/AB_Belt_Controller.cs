@@ -245,7 +245,7 @@ public class AB_Belt_Controller : MonoBehaviour
         ch = null;
 
         if(Application.isEditor){
-            Debug.Log("In Editor!");
+            
             Phidget.ResetLibrary();
         }
         else{
