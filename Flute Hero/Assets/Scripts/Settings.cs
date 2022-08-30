@@ -10,6 +10,7 @@ public static class SettingsInformation{
 
     public static int microphoneNumber = 0;
     public static float targetFrequency = 261.5f;
+    public static string targetFrequencyName = "C4";
     public static int abChannel = 1;
     public static int ribChannel = 2;
     public static float PDAccuracyThreshold = 0.5f;
@@ -72,6 +73,7 @@ public class Settings : MonoBehaviour
 
     public void SetTargetNote(int noteNameIndex){
         SettingsInformation.targetFrequency = notes.ElementAt(noteNameIndex).Value;
+        SettingsInformation.targetFrequencyName = notes.ElementAt(noteNameIndex).Key;
     }
 
     public void SetAbPort(int channel){

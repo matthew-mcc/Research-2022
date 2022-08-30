@@ -42,7 +42,7 @@ public class Logging : MonoBehaviour
         string SendMailFrom = "flutehero21@gmail.com";
         string SendMailTo = "flutehero21@gmail.com";
         string SendMailSubject = "Log File From: " + System.DateTime.Now;
-        string SendMailBody = "This is a test email.";
+        string SendMailBody = "Logging email, see attached text file.";
 
         
         

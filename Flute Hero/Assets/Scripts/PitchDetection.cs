@@ -54,7 +54,7 @@ public class PitchDetection : MonoBehaviour
         beginInput(mic_number);
 
         sr = GetComponent<SpriteRenderer>();
-        noteText.text = "Target Note: " + targetFrequency + " hz";
+        noteText.text = "Target Note: " + SettingsInformation.targetFrequencyName;
 
         timeLatency = SettingsInformation.PDTimeLatency;
         accuracyThreshold = SettingsInformation.PDAccuracyThreshold;
