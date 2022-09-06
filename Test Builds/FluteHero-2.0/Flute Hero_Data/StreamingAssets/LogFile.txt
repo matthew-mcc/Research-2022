@@ -1,0 +1,8 @@
+[2022-08-23 2:47:42 PM] Entered Pitch Detection Level
+[2022-08-23 2:47:48 PM] Entered Pitch Detection Level
+[2022-08-23 2:47:49 PM] Quitting game!
+[2022-08-30 2:14:16 PM] Entered Pitch Detection Level
+[2022-08-30 2:14:21 PM] Entered Pitch Detection Level
+[2022-08-30 2:14:23 PM] Entered Rib-Hoop Easy
+[2022-08-30 2:14:38 PM] Entered Rib Calibration
+[2022-08-30 2:14:45 PM] Quitting game!

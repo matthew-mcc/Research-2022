@@ -2158,7 +2158,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PD
+  m_text: TUNER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8cf33e0eabac8394a9c506ef14de4962, type: 2}
   m_sharedMaterial: {fileID: 4014430114216725601, guid: 8cf33e0eabac8394a9c506ef14de4962, type: 2}
@@ -2709,7 +2709,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -5, y: 1}
-  m_SizeDelta: {x: 156.4, y: 79.1369}
+  m_SizeDelta: {x: 308.39, y: 79.1369}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399264435
 MonoBehaviour:
@@ -5169,6 +5169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   micDropdown: {fileID: 1447728064}
   noteDropdown: {fileID: 1898939262}
+  abChannelDropdown: {fileID: 1851968994}
+  ribChannelDropdown: {fileID: 147516962}
   microphoneList: []
   latencySlider: {fileID: 597865667}
   thresholdSlider: {fileID: 1792298763}
@@ -10409,7 +10411,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEVELS
+  m_text: GAMES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8cf33e0eabac8394a9c506ef14de4962, type: 2}
   m_sharedMaterial: {fileID: 4014430114216725601, guid: 8cf33e0eabac8394a9c506ef14de4962, type: 2}
@@ -14718,9 +14720,8 @@ PrefabInstance:
         cage belts individually.
 
 
-        2. You can re-calibrate as many times
-        as you wish, you can even go back to the calibration levels after trying
-        the levels.
+        2. You can re-calibrate either belt anytime,
+        and as often as you wish.
 
 
 

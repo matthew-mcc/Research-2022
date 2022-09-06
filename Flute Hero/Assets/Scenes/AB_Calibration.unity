@@ -923,12 +923,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 537331057726982347, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 537331057726982347, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
       propertyPath: scrollSpeed
-      value: -4
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 537331058412828225, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 537331058412828225, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
       propertyPath: scrollSpeed
-      value: -4
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 537331058822957837, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
       propertyPath: m_RootOrder

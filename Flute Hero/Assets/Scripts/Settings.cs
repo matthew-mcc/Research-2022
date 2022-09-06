@@ -11,6 +11,7 @@ public static class SettingsInformation{
     public static int microphoneNumber = 0;
     public static float targetFrequency = 261.5f;
     public static string targetFrequencyName = "C4";
+    public static int targetFrequencyIndex = 1;
     public static int abChannel = 1;
     public static int ribChannel = 2;
     public static float PDAccuracyThreshold = 0.5f;
@@ -26,6 +27,8 @@ public class Settings : MonoBehaviour
 {
     [SerializeField] TMP_Dropdown micDropdown;
     [SerializeField] TMP_Dropdown noteDropdown;
+    [SerializeField] TMP_Dropdown abChannelDropdown;
+    [SerializeField] TMP_Dropdown ribChannelDropdown;
     
 
     public List<string> microphoneList = new List<string>();
@@ -44,7 +47,7 @@ public class Settings : MonoBehaviour
         ListMicrophones(microphoneList);
         
         micDropdown.AddOptions(microphoneList);
-
+        
         PopulateNotes(notes);
 
         List<string> noteNames = new List<string>();
@@ -53,6 +56,11 @@ public class Settings : MonoBehaviour
         }
         noteDropdown.AddOptions(noteNames);
         
+        //resetting curr val
+        micDropdown.value = SettingsInformation.microphoneNumber;
+        abChannelDropdown.value = SettingsInformation.abChannel;
+        ribChannelDropdown.value = SettingsInformation.ribChannel;
+        noteDropdown.value = SettingsInformation.targetFrequencyIndex;
 
 
     }
@@ -72,6 +80,7 @@ public class Settings : MonoBehaviour
     }
 
     public void SetTargetNote(int noteNameIndex){
+        SettingsInformation.targetFrequencyIndex = noteNameIndex;
         SettingsInformation.targetFrequency = notes.ElementAt(noteNameIndex).Value;
         SettingsInformation.targetFrequencyName = notes.ElementAt(noteNameIndex).Key;
     }
