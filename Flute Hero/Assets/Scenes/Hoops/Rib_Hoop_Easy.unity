@@ -141,7 +141,7 @@ PrefabInstance:
     - target: {fileID: 3919824238165016879, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 1565823942}
+      objectReference: {fileID: 0}
     - target: {fileID: 8723925482477225195, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -403,7 +403,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1989185949}
-  - {fileID: 1565823941}
+  - {fileID: 1869864811}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -412,7 +412,61 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &1565823940
+--- !u!1 &1579044914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1579044915}
+  - component: {fileID: 1579044916}
+  m_Layer: 0
+  m_Name: HoopController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1579044915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579044914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.68642867, y: 0.28722346, z: 2.1088934}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1579044916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579044914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c914d756a1175408cb1a8a8ae26e20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoop: {fileID: 5206860396042815956, guid: 9582e09db73159046ba0a826c3971f35, type: 3}
+  timeBetweenJump: 1
+  timeBetweenHold: 1
+  startColor: {r: 1, g: 0, b: 0.77933884, a: 0.8784314}
+  endColor: {r: 0, g: 1, b: 0.97335625, a: 0.9019608}
+  startHoopThreshold: 0
+  endHoopThreshold: 0
+  startingXPos: 15
+  fileName: Rib_Hoop_Easy
+  infoText: {fileID: 1989185950}
+--- !u!1001 &1869864810
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -501,7 +555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5010964
+      value: 469.99997
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -517,96 +571,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_text
-      value: Press the Space Bar to Spawn a Set of Targets. This Action is Repeatable!
+      value: 'SCORE: 0'
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_fontSize
-      value: 0
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_fontSizeBase
-      value: 0
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389117, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_Name
-      value: DummyText
+      value: Dummy Text
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389117, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
---- !u!224 &1565823941 stripped
+--- !u!224 &1869864811 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
-  m_PrefabInstance: {fileID: 1565823940}
+  m_PrefabInstance: {fileID: 1869864810}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1565823942 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
-  m_PrefabInstance: {fileID: 1565823940}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1579044914
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1579044915}
-  - component: {fileID: 1579044916}
-  m_Layer: 0
-  m_Name: HoopController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1579044915
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579044914}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.68642867, y: 0.28722346, z: 2.1088934}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1579044916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579044914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8c914d756a1175408cb1a8a8ae26e20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoop: {fileID: 5206860396042815956, guid: 9582e09db73159046ba0a826c3971f35, type: 3}
-  timeBetweenJump: 1
-  timeBetweenHold: 1
-  startColor: {r: 1, g: 0, b: 0.77933884, a: 0.8784314}
-  endColor: {r: 0, g: 1, b: 0.97335625, a: 0.9019608}
-  startHoopThreshold: 0
-  endHoopThreshold: 0
-  startingXPos: 15
-  fileName: Rib_Hoop_Easy
-  infoText: {fileID: 1989185950}
 --- !u!1001 &1956872406
 PrefabInstance:
   m_ObjectHideFlags: 0

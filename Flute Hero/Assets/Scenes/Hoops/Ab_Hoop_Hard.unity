@@ -567,7 +567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -438
+      value: 470
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -583,15 +583,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_text
-      value: Press the Space Bar to Spawn a Set of Targets. This Action is Repeatable!
+      value: 'SCORE: 0'
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_fontSize
-      value: 0
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_fontSizeBase
-      value: 0
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389117, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_Name
@@ -599,7 +599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389117, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}

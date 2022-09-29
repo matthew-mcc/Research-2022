@@ -5,6 +5,7 @@ using TMPro;
 using System;
 using Phidget22;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class AB_Calibration : MonoBehaviour
 {
 
@@ -21,6 +22,8 @@ public class AB_Calibration : MonoBehaviour
     [SerializeField] GameObject abBelt;
 
     private float currTime = 3f;
+
+    
     
     // Start is called before the first frame update --> Maybe make this into start ?? Why is it in awake
     
@@ -28,7 +31,7 @@ public class AB_Calibration : MonoBehaviour
     {
         //Debugging
         
-
+        
         AbController = abBelt.GetComponent<AB_Belt_Controller>();
         
         infoText.text = "Big Breath, Then Up Key!";
@@ -129,10 +132,15 @@ public class AB_Calibration : MonoBehaviour
         
        
         if(ABBeltInformation.fullyCalibrated){
+            
+            //If anything breaks it will be here
+            //Need to test this with belts..
+            //Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
             infoText.text = "Calibration Reached, M for Main Menu!";
             timerText.text = "GREAT JOB!";
            
         }
+        
 
         
     }

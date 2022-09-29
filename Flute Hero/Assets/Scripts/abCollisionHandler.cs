@@ -9,6 +9,7 @@ public class abCollisionHandler : MonoBehaviour
 
     int score;
     float totalScore = 0f;
+    int hoopScore = 0;
 
     [SerializeField] float score_modifier = 2f;
     [SerializeField] TextMeshProUGUI scoreText;
@@ -52,6 +53,9 @@ public class abCollisionHandler : MonoBehaviour
             // settings.startColor = parentColor;
             // hoopParticles.Play();
             // parent.GetComponent<SpriteRenderer>().enabled = false;
+        
+            hoopScore += 1;
+            scoreText.text = "SCORE: " + hoopScore.ToString();
             GameObject hoop = other.gameObject;
             GameObject parent = currentCollider.gameObject;
 

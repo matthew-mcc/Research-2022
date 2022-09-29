@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 1584652813}
     - target: {fileID: 8723925482477225195, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8723925482477225195, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -197,7 +197,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7245151533781671616, guid: 9de0aef3c5c1a7b4c81bc177be256951, type: 3}
       propertyPath: m_LocalPosition.x
@@ -623,7 +623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 537331058822957837, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 537331058822957837, guid: 628d4b4330f723d498ea043997c9ec6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -825,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -438
+      value: 467
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -841,15 +841,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_text
-      value: Press the Space Bar to Spawn a Set of Targets. This Action is Repeatable!
+      value: 'SCORE: 0'
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_fontSize
-      value: 0
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_fontSizeBase
-      value: 0
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389117, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_Name
@@ -857,7 +857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389117, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}

@@ -60,6 +60,7 @@ public class HoopController : MonoBehaviour
             infoText.text = "Targets Already Spawned!";
             
         }
+        
     }
 
     private void ReadFile()
@@ -88,12 +89,14 @@ public class HoopController : MonoBehaviour
             }
             else if(positions[i] == 1000){
                 yield return new WaitForSeconds(5);
+                infoText.text = "Press Space bar to Spawn a set of Hoops!";
                 CR_Running = false;
                 
             }
             else{
                 infoText.text = "";
                 spawnHoop(positions[i], "End");
+                
                 yield return new WaitForSeconds(timeBetweenHold);
             }
 
