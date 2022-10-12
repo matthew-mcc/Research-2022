@@ -28,6 +28,7 @@ public class abCollisionHandler : MonoBehaviour
         //scoreText.color = abAtBarColor;
         
     }
+    
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "Player"){
             Physics2D.IgnoreCollision(other.collider, currentCollider);
@@ -117,6 +118,7 @@ public class abCollisionHandler : MonoBehaviour
         
         
     }
+    
     
     
 }

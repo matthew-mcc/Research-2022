@@ -16,6 +16,9 @@ public class SceneController : MonoBehaviour
         //Main menu keybind
         if (Input.GetKey(KeyCode.M)){
             SceneManager.LoadScene("Menu");
+            Scene scene = SceneManager.GetActiveScene();
+            Debug.Log("Going Back to Menu From Scene: " + scene.name);
+            
         }
 
         

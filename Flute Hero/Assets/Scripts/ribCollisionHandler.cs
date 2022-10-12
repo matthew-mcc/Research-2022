@@ -110,6 +110,8 @@ public class ribCollisionHandler : MonoBehaviour
         
         
     }
+
+    
     
     
 }

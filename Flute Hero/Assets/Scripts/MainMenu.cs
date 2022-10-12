@@ -92,4 +92,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("PD_Only");
         
     }
+
+    public void BaseCamp(){
+        Debug.Log("Entered Base Camp!");
+        SceneManager.LoadScene("BaseCamp");
+    }
 }
