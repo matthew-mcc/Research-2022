@@ -4,12 +4,14 @@ using UnityEngine;
 using Phidget22;
 using UnityEngine.SceneManagement;
 using System;
+using System.IO.Ports;
 
 public static class ABBeltInformation{
 
     public static bool fullyCalibrated = false;
     public static double maxVoltage = 3.6;
     public static double minVoltage = 3.35;
+    
     
 }
 
@@ -56,12 +58,14 @@ public class AB_Belt_Controller : MonoBehaviour
 
 
     public float newCurrentVoltage = 0f;
+    public float abComPortVoltage = 0f;
 
     
     
 
 
-    public VoltageInput ch;
+    //public VoltageInput ch;
+    public static SerialPort comPort;
     
     // Start is called before the first frame update
     void Start()
@@ -72,7 +76,8 @@ public class AB_Belt_Controller : MonoBehaviour
         
         
         currentTime = calibrationTime;
-        initializePhidget(SettingsInformation.abChannel);
+        initializeComPort();
+        //initializePhidget(SettingsInformation.abChannel);
     }
 
     // Update is called once per frame
@@ -82,9 +87,9 @@ public class AB_Belt_Controller : MonoBehaviour
 
         
         
-        currentVoltageForText = newCurrentVoltage;
-
-        //Debug.Log(newCurrentVoltage);
+        //currentVoltageForText = newCurrentVoltage;
+        currentVoltageForText = abComPortVoltage;
+       
 
         
         if(minCalibrated && maxCalibrated){
@@ -114,14 +119,16 @@ public class AB_Belt_Controller : MonoBehaviour
                 currentTime -= Time.deltaTime;
 
                 //maxVoltageArr.Add(ch.Voltage);
-                maxVoltageArr.Add(newCurrentVoltage);
+                maxVoltageArr.Add(abComPortVoltage);
 
                 if(currentTime <= 0){
                     ABBeltInformation.maxVoltage = (float) averageList(maxVoltageArr);
                     float maxVoltage = (float) averageList(maxVoltageArr);
+                    
                     maxCalibrated = true;
                     timerStarted = false;
                     currentTime = calibrationTime;
+                   
                     
                 }
             }
@@ -132,7 +139,7 @@ public class AB_Belt_Controller : MonoBehaviour
 
 
                 //minVoltageArr.Add(ch.Voltage);
-                minVoltageArr.Add(newCurrentVoltage);
+                minVoltageArr.Add(abComPortVoltage);
 
                 if (currentTime <= 0){
                     ABBeltInformation.minVoltage = (float) averageList(minVoltageArr);
@@ -160,35 +167,53 @@ public class AB_Belt_Controller : MonoBehaviour
         }
         
     }
+    void initializeComPort(){
+        // UISING system.io.ports.6.0.0.zip\runtimes\win\lib\netstandard2.0 dll
+
+        comPort = new SerialPort("COM4", 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+        comPort.Handshake = Handshake.None;
+        comPort.DtrEnable = true;
+
+        
+        comPort.DataReceived += new SerialDataReceivedEventHandler(DataRecievedHandler);
+        comPort.Open(); // could be dangerous, not sure when to close it.
+    
+    }
+    public void DataRecievedHandler(object sender, SerialDataReceivedEventArgs e){
+        string indata = comPort.ReadLine();
+        string[] subs = indata.Split(' ');
+        abComPortVoltage = float.Parse(subs[3]);
+        
+    }
 
     //Initializing Phidget Function -- Called in Start
-    void initializePhidget(int channel){
-        ch = new VoltageInput();
-        ch.Channel = channel;
-        ch.Error += phidgetErrorHandler;
-        ch.VoltageChange+= voltageChange;
+    // void initializePhidget(int channel){
+    //     ch = new VoltageInput();
+    //     ch.Channel = channel;
+    //     ch.Error += phidgetErrorHandler;
+    //     ch.VoltageChange+= voltageChange;
         
-        try{
-            ch.Open(5000);
-        }
-        catch (PhidgetException ex){
-            Debug.Log("Failed to open: " + ex.Description);
-        }
+    //     try{
+    //         ch.Open(5000);
+    //     }
+    //     catch (PhidgetException ex){
+    //         Debug.Log("Failed to open: " + ex.Description);
+    //     }
         
-        ch.VoltageChangeTrigger = 0;
-        ch.DataInterval = 50;
-        ch.SensorType = VoltageSensorType.Voltage; //Not sure if we need this...
-    }
+    //     ch.VoltageChangeTrigger = 0;
+    //     ch.DataInterval = 50;
+    //     ch.SensorType = VoltageSensorType.Voltage; //Not sure if we need this...
+    // }
 
-    void phidgetErrorHandler(object sender, Phidget22.Events.ErrorEventArgs e){
-        Debug.Log("Code: " + e.Code.ToString());
-        Debug.Log("Description: " + e.Description);
-    }
+    // void phidgetErrorHandler(object sender, Phidget22.Events.ErrorEventArgs e){
+    //     Debug.Log("Code: " + e.Code.ToString());
+    //     Debug.Log("Description: " + e.Description);
+    // }
 
-    public void voltageChange(object sender, Phidget22.Events.VoltageInputVoltageChangeEventArgs e){
-        float voltage = (float) e.Voltage;
-        newCurrentVoltage = voltage;
-    }
+    // public void voltageChange(object sender, Phidget22.Events.VoltageInputVoltageChangeEventArgs e){
+    //     float voltage = (float) e.Voltage;
+    //     newCurrentVoltage = voltage;
+    // }
 
     //Helper function to take the average of a list
     double averageList(List<double> arr){
@@ -209,8 +234,8 @@ public class AB_Belt_Controller : MonoBehaviour
         
         //double currentVoltage = Math.Round(ch.Voltage, 3);
 
-        double currentVoltage = Math.Round(newCurrentVoltage, 3);
-        
+        //double currentVoltage = Math.Round(newCurrentVoltage, 3);
+        double currentVoltage = Math.Round(abComPortVoltage, 3);
         
 
         /*
@@ -240,13 +265,15 @@ public class AB_Belt_Controller : MonoBehaviour
     }
 
     private void OnApplicationQuit() {
-        ch.VoltageChange -= voltageChange;
-        ch.Close();
-        ch = null;
+        // ch.VoltageChange -= voltageChange;
+        // ch.Close();
+        // ch = null;
+        comPort.Close();
 
         if(Application.isEditor){
             
             Phidget.ResetLibrary();
+            
         }
         else{
             Phidget.FinalizeLibrary(0);

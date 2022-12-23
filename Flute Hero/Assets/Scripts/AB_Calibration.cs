@@ -98,6 +98,7 @@ public class AB_Calibration : MonoBehaviour
                     
                     
                 }
+                Debug.Log(ABBeltInformation.maxVoltage);
 
                 //goes from 0 to 1, the time goes from 3 to 0, with 0.002 increments
                 // progressSlider.value += 0.0008f;

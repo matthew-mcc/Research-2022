@@ -4,6 +4,7 @@ using UnityEngine;
 using Phidget22;
 using System;
 using UnityEngine.SceneManagement;
+using System.IO.Ports;
 
 
 public static class RibBeltInformation{
@@ -52,7 +53,10 @@ public class RIB_Belt_Controller : MonoBehaviour
     public float currentVoltageForText;
     public VoltageInput ch;
 
+    public static SerialPort comPort;
+
     public float newCurrentVoltage = 0f;
+    public float ribComPortVoltage = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,7 +66,8 @@ public class RIB_Belt_Controller : MonoBehaviour
         
         
         currentTime = calibrationTime;
-        initializePhidget(SettingsInformation.ribChannel);
+        //initializePhidget(SettingsInformation.ribChannel);
+        initializeComPort();
     }
 
     // Update is called once per frame
@@ -70,7 +75,7 @@ public class RIB_Belt_Controller : MonoBehaviour
     {
         //Always checking for full calibration
 
-        currentVoltageForText = newCurrentVoltage;
+        currentVoltageForText = ribComPortVoltage;
         if(minCalibrated && maxCalibrated){
             RibBeltInformation.fullyCalibrated = true;
         }
@@ -96,7 +101,7 @@ public class RIB_Belt_Controller : MonoBehaviour
             //Calibrating Max
             if (toCalibrate == "Max"){
                 currentTime -= Time.deltaTime;
-                maxVoltageArr.Add(newCurrentVoltage);
+                maxVoltageArr.Add(ribComPortVoltage);
 
                 if(currentTime <= 0){
                     RibBeltInformation.maxVoltage = (float) averageList(maxVoltageArr);
@@ -110,7 +115,7 @@ public class RIB_Belt_Controller : MonoBehaviour
             //Calibrating Min
             if (toCalibrate == "Min"){
                 currentTime -= Time.deltaTime;
-                minVoltageArr.Add(newCurrentVoltage);
+                minVoltageArr.Add(ribComPortVoltage);
 
                 if (currentTime <= 0){
                     RibBeltInformation.minVoltage = (float) averageList(minVoltageArr);
@@ -136,34 +141,53 @@ public class RIB_Belt_Controller : MonoBehaviour
             
         }
     }
+    void initializeComPort(){
+        // UISING system.io.ports.6.0.0.zip\runtimes\win\lib\netstandard2.0 dll
+
+        comPort = new SerialPort("COM4", 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+        comPort.Handshake = Handshake.None;
+        comPort.DtrEnable = true;
+
+        
+        comPort.DataReceived += new SerialDataReceivedEventHandler(DataRecievedHandler);
+        comPort.Open(); // could be dangerous, not sure when to close it.
+    
+    }
+    public void DataRecievedHandler(object sender, SerialDataReceivedEventArgs e){
+        string indata = comPort.ReadLine();
+        string[] subs = indata.Split(' ');
+        
+        ribComPortVoltage = float.Parse(subs[6]);
+        
+    }
 
     //Initializing Phidget Function -- Called in Start
-    void initializePhidget(int channel){
-        ch = new VoltageInput();
-        ch.Channel = channel;
-        ch.Error+=phidgetErrorHandler;
-        ch.VoltageChange += voltageChange;
-        try{
-            ch.Open(5000);
-        }
-        catch (PhidgetException ex){
-            Debug.Log("Failed to open: " + ex.Description);
-        }
+    // void initializePhidget(int channel){
+    //     ch = new VoltageInput();
+    //     ch.Channel = channel;
+    //     ch.Error+=phidgetErrorHandler;
+    //     ch.VoltageChange += voltageChange;
+    //     try{
+    //         ch.Open(5000);
+    //     }
+    //     catch (PhidgetException ex){
+    //         Debug.Log("Failed to open: " + ex.Description);
+    //     }
         
-        ch.VoltageChangeTrigger = 0;
-        ch.DataInterval = 50;
-        ch.SensorType = VoltageSensorType.Voltage; //Not sure if we need this...
-    }
+    //     ch.VoltageChangeTrigger = 0;
+    //     ch.DataInterval = 50;
+    //     ch.SensorType = VoltageSensorType.Voltage; //Not sure if we need this...
+    // }
 
-    void phidgetErrorHandler(object sender, Phidget22.Events.ErrorEventArgs e){
-        Debug.Log("Code: " + e.Code.ToString());
-        Debug.Log("Description: " + e.Description);
-    }
+    // void phidgetErrorHandler(object sender, Phidget22.Events.ErrorEventArgs e){
+    //     Debug.Log("Code: " + e.Code.ToString());
+    //     Debug.Log("Description: " + e.Description);
+    // }
 
-    public void voltageChange(object sender, Phidget22.Events.VoltageInputVoltageChangeEventArgs e){
-        float voltage = (float) e.Voltage;
-        newCurrentVoltage = voltage;
-    }
+    // public void voltageChange(object sender, Phidget22.Events.VoltageInputVoltageChangeEventArgs e){
+    //     float voltage = (float) e.Voltage;
+    //     newCurrentVoltage = voltage;
+    // }
 
     //Helper function to take the average of a list
     double averageList(List<double> arr){
@@ -179,7 +203,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         
         //ASK LUCIE REGARDING THE ROUNDING OF VOLTAGE... 3 DIGITS SHOULD BE JUST FINE
         
-        double currentVoltage = Math.Round(newCurrentVoltage, 3);
+        double currentVoltage = Math.Round(ribComPortVoltage, 3);
         
 
         /*
@@ -206,6 +230,21 @@ public class RIB_Belt_Controller : MonoBehaviour
         }
         
         
+    }
+    private void OnApplicationQuit() {
+        // ch.VoltageChange -= voltageChange;
+        // ch.Close();
+        // ch = null;
+        comPort.Close();
+
+        if(Application.isEditor){
+            
+            Phidget.ResetLibrary();
+            
+        }
+        else{
+            Phidget.FinalizeLibrary(0);
+        }
     }
     // private void OnApplicationQuit() {
     //     ch.VoltageChange-= voltageChange;
