@@ -47,14 +47,14 @@ public class AB_Calibration : MonoBehaviour
         currentVoltageText.text = "Current Voltage: " + Math.Round(AbController.currentVoltageForText, 4) + " V";
        
         if (AbController.timerStarted && AbController.toCalibrate == "Max"){
-            infoText.text = "Max Expansion Calibration!";
+            infoText.text = "Hold that big breath!";
             
            
             
         }
        
         if (AbController.timerStarted && AbController.toCalibrate == "Min"){
-            infoText.text = "Min Expansion Calibration!";
+            infoText.text = "Stay relaxed!";
             
         }
 
@@ -137,7 +137,7 @@ public class AB_Calibration : MonoBehaviour
             //If anything breaks it will be here
             //Need to test this with belts..
             //Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
-            infoText.text = "Calibration Reached, M for Main Menu!";
+            infoText.text = "All done, M for Main Menu!";
             timerText.text = "GREAT JOB!";
            
         }

@@ -43,12 +43,12 @@ public class RIB_Calibration : MonoBehaviour
         currentVoltageText.text = "Current Voltage: " + Math.Round(RibController.currentVoltageForText, 4) + " V";
        
         if (RibController.timerStarted && RibController.toCalibrate == "Max"){
-            infoText.text = "Max Expansion Calibration!";
+            infoText.text = "Hold that big breath!";
             
         }
        
         if (RibController.timerStarted && RibController.toCalibrate == "Min"){
-            infoText.text = "Min Expansion Calibration!";
+            infoText.text = "Stay relaxed!";
         }
 
         if(Input.GetKeyDown(KeyCode.UpArrow)){
@@ -102,7 +102,7 @@ public class RIB_Calibration : MonoBehaviour
         
        
         if(RibBeltInformation.fullyCalibrated){
-            infoText.text = "Calibration Reached, M for Main Menu!";
+            infoText.text = "All done, M for Main Menu!";
             timerText.text = "GREAT JOB!";
         }
 

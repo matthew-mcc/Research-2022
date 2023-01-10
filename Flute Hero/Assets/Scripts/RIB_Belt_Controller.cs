@@ -146,6 +146,7 @@ public class RIB_Belt_Controller : MonoBehaviour
 
         comPort = new SerialPort("COM4", 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
         comPort.Handshake = Handshake.None;
+        
         comPort.DtrEnable = true;
 
         

@@ -67,22 +67,22 @@ public class BaseCamp : MonoBehaviour
         measureNormal = true;
         //Start text timer
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Deep Breathing!";
+        infoText.text = "Get Ready For Deep Breaths!";
         yield return new WaitForSeconds(inBetweenTime);
         measureNormal = false;
     
 
-        infoText.text = "Breath Deep!";
+        infoText.text = "Breath Deeply!";
         measureDeep = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Normal Breathing!";
+        infoText.text = "Get Ready For Normal Breaths!";
         yield return new WaitForSeconds(3);
         measureDeep = false;
 
         infoText.text = "Breathe Normally!";
         measureNormal = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Deep Breathing!";
+        infoText.text = "Get Ready For Deep Breaths!";
         yield return new WaitForSeconds(3);
         measureNormal = false;
 

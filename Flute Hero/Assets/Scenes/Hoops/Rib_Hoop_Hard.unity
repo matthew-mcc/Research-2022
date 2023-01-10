@@ -197,7 +197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
       propertyPath: m_AnchorMax.x
@@ -310,6 +310,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1895151596617389114, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
   m_PrefabInstance: {fileID: 903608047}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &903608049 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}
+  m_PrefabInstance: {fileID: 903608047}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1115116167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -328,7 +339,7 @@ PrefabInstance:
     - target: {fileID: 3919824238165016879, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 903608049}
     - target: {fileID: 8723925482477225195, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: m_RootOrder
       value: 4
