@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using System;
 using System.IO.Ports;
 
+
 public static class ABBeltInformation{
 
     public static bool fullyCalibrated = false;
@@ -59,6 +60,8 @@ public class AB_Belt_Controller : MonoBehaviour
 
     public float newCurrentVoltage = 0f;
     public float abComPortVoltage = 0f;
+
+   
 
     
     

@@ -328,6 +328,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1295463405745884418, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295463406645057355, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1558588019079612602, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: m_Name
       value: Rib_Belt
@@ -340,6 +348,14 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 903608049}
+    - target: {fileID: 3919824238165016879, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: scoreSlider
+      value: 
+      objectReference: {fileID: 1115116168}
+    - target: {fileID: 8485295206179553163, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8723925482477225195, guid: 915e213e5188db844958b84c79101a0f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -386,6 +402,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+--- !u!114 &1115116168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1295463406817381736, guid: 915e213e5188db844958b84c79101a0f, type: 3}
+  m_PrefabInstance: {fileID: 1115116167}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1154418314
 GameObject:
   m_ObjectHideFlags: 0

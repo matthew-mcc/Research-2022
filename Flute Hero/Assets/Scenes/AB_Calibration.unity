@@ -927,11 +927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6964430152199701287, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6964430153719667054, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7279603369763477251, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_AnchorMax.y
@@ -939,6 +939,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7279603371297066314, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7553665480487532295, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7869066375336874287, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
@@ -949,6 +953,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 610771787}
+    - target: {fileID: 7869066375336874287, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+      propertyPath: scoreSlider
+      value: 
+      objectReference: {fileID: 1982162173}
     - target: {fileID: 8723925482477225195, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1204,6 +1212,17 @@ MonoBehaviour:
   bigTimer: {fileID: 1253495871}
   progressSlider: {fileID: 542903672}
   abBelt: {fileID: 50295032}
+--- !u!114 &1982162173 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6964430153279357773, guid: 93c2f08b862e70e4fad11e38a53ffbaa, type: 3}
+  m_PrefabInstance: {fileID: 1166193027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2135696377
 PrefabInstance:
   m_ObjectHideFlags: 0

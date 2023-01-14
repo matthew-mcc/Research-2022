@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class abCollisionHandler : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class abCollisionHandler : MonoBehaviour
     [SerializeField] Color abAtBarColor;
     Scene currentScene;
     
+
+    [SerializeField] Slider scoreSlider;
     private void Start() {
         currentCollider = GetComponent<Collider2D>();
         currentScene = SceneManager.GetActiveScene();
@@ -95,6 +98,8 @@ public class abCollisionHandler : MonoBehaviour
     }
 
     private void Update() {
+
+        scoreSlider.value = totalScore/1000;
         
         scoreText.fontSize = 75;
         if(currentScene.name == "Bar_Easy" || currentScene.name == "Bar_Medium" || currentScene.name == "Bar_Hard"){

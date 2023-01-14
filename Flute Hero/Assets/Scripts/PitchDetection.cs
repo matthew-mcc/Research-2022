@@ -4,6 +4,7 @@ using UnityEngine;
 using NAudio.Wave;
 using System;
 using TMPro;
+using UnityEngine.UI;
 
 
 public class PitchDetection : MonoBehaviour
@@ -44,6 +45,7 @@ public class PitchDetection : MonoBehaviour
     //scoring
     [SerializeField] float score_modifier = 2f;
     float totalScore = 0f;
+    [SerializeField] Slider scoreSlider;    
 
 
     // Start is called before the first frame update
@@ -69,6 +71,8 @@ public class PitchDetection : MonoBehaviour
         timeTracker+= Time.deltaTime;
         
         scoreText.text = totalScore.ToString("00000");
+
+        scoreSlider.value = totalScore/100;
         if(Input.GetKeyDown(KeyCode.P)){
             wave.StopRecording();
             wave.Dispose();
