@@ -14,6 +14,7 @@ public static class ABBeltInformation{
     public static double minVoltage = 3.35;
     
     
+    
 }
 
 
@@ -173,7 +174,17 @@ public class AB_Belt_Controller : MonoBehaviour
     void initializeComPort(){
         // UISING system.io.ports.6.0.0.zip\runtimes\win\lib\netstandard2.0 dll
 
-        comPort = new SerialPort("COM4", 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+        string[] portNames = SerialPort.GetPortNames();
+
+        
+        foreach(string pn in portNames){
+            Debug.Log(pn);
+        }
+
+        
+        
+
+        comPort = new SerialPort(SettingsInformation.portName, 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
         comPort.Handshake = Handshake.None;
         comPort.DtrEnable = true;
 

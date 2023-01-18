@@ -11,6 +11,7 @@ public static class RibBeltInformation{
     public static bool fullyCalibrated = false;
     public static double maxVoltage = 3.6;
     public static double minVoltage = 3.35;
+   
     
 }
 public class RIB_Belt_Controller : MonoBehaviour
@@ -144,7 +145,7 @@ public class RIB_Belt_Controller : MonoBehaviour
     void initializeComPort(){
         // UISING system.io.ports.6.0.0.zip\runtimes\win\lib\netstandard2.0 dll
 
-        comPort = new SerialPort("COM4", 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+        comPort = new SerialPort(SettingsInformation.portName, 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
         comPort.Handshake = Handshake.None;
         
         comPort.DtrEnable = true;

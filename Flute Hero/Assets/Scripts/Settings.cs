@@ -5,6 +5,7 @@ using NAudio.Wave;
 using TMPro;
 using System.Linq;
 using UnityEngine.UI;
+using System.IO.Ports;
 
 public static class SettingsInformation{
 
@@ -16,6 +17,7 @@ public static class SettingsInformation{
     public static int ribChannel = 2;
     public static float PDAccuracyThreshold = 0.5f;
     public static float PDTimeLatency = 0.25f;
+    public static string portName = "COM4";
    
     
 }
@@ -29,8 +31,9 @@ public class Settings : MonoBehaviour
     [SerializeField] TMP_Dropdown noteDropdown;
     [SerializeField] TMP_Dropdown abChannelDropdown;
     [SerializeField] TMP_Dropdown ribChannelDropdown;
+    [SerializeField] TMP_Dropdown portNameDropdown;
     
-
+    public List<string> portNames;
     public List<string> microphoneList = new List<string>();
     public Dictionary<string, float> notes = new Dictionary<string, float>();
 
@@ -40,12 +43,16 @@ public class Settings : MonoBehaviour
     void Start() {
         micDropdown.options.Clear();
         noteDropdown.options.Clear();
+        portNameDropdown.options.Clear();
 
         latencySlider.value = SettingsInformation.PDTimeLatency;
         thresholdSlider.value = SettingsInformation.PDAccuracyThreshold;
 
         ListMicrophones(microphoneList);
+        ListPortNames(portNames);
         
+    
+        portNameDropdown.AddOptions(portNames);
         micDropdown.AddOptions(microphoneList);
         
         PopulateNotes(notes);
@@ -75,9 +82,25 @@ public class Settings : MonoBehaviour
     }
 }
 
+    public void ListPortNames(List<string> pns){
+        string[] port_names = SerialPort.GetPortNames();
+
+        foreach(string pn in port_names){
+            pns.Add(pn);
+        }
+    }
+
     public void SetMic(int micNumber){
         SettingsInformation.microphoneNumber = micNumber;
     }
+
+    public void SetPort(string port){
+        SettingsInformation.portName = port;
+    }
+
+
+
+    
 
     public void SetTargetNote(int noteNameIndex){
         SettingsInformation.targetFrequencyIndex = noteNameIndex;
