@@ -40,6 +40,8 @@ public class Settings : MonoBehaviour
     public Slider latencySlider;
     public Slider thresholdSlider;
 
+    //public static SerialPort comPort;
+
     void Start() {
         micDropdown.options.Clear();
         noteDropdown.options.Clear();
@@ -88,6 +90,8 @@ public class Settings : MonoBehaviour
         foreach(string pn in port_names){
             pns.Add(pn);
         }
+
+        CheckValidPort(portNames);
     }
 
     public void SetMic(int micNumber){
@@ -96,6 +100,7 @@ public class Settings : MonoBehaviour
 
     public void SetPort(string port){
         SettingsInformation.portName = port;
+        
     }
 
 
@@ -120,6 +125,41 @@ public class Settings : MonoBehaviour
     public void SetPDLatency(float latency){
         SettingsInformation.PDTimeLatency = latency;
     }
+
+    public void CheckValidPort(List<string> ports){
+        foreach(string port in ports){
+
+
+            try{
+                SerialPort comPort = new SerialPort(port, 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+                comPort.Handshake = Handshake.None;
+                comPort.DtrEnable = true;
+
+                comPort.Open();
+                for(int i = 0; i < 10; i++){
+                    string indata = comPort.ReadLine();
+                    string[] subs = indata.Split(' ');
+                    Debug.Log(indata);
+                    if(subs[0] == "ATEMP:"){
+                        Debug.Log("Found the Right PORT!");
+                        SettingsInformation.portName = port;
+                        break;
+                    }
+                }
+                comPort.Close();
+                
+                
+                
+                //comPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+
+            }
+            catch{
+                Debug.Log("Failed to use: " + port);
+            }
+        }
+    }
+
+    
 
     public void PopulateNotes(Dictionary<string, float> dict){
 
