@@ -52,3 +52,6 @@
 [2023-01-23 4:08:50 PM] Going Back to Menu From Scene: RIB_Calibration
 [2023-01-23 4:09:42 PM] Entered Rib Calibration
 [2023-01-23 4:09:42 PM] Entered Rib Calibration
+[2023-01-23 4:10:39 PM] Entered Rib Calibration
+[2023-01-23 4:10:39 PM] Entered Rib Calibration
+[2023-01-23 4:10:40 PM] DllNotFoundException: phidget22 assembly:<unknown assembly> type:<unknown type> member:(null)

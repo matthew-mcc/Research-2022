@@ -1,0 +1,67 @@
+[2023-01-23 3:26:08 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023].txt
+[2023-01-23 3:26:08 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023].txt
+[2023-01-23 3:26:08 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023].txt
+[2023-01-23 3:26:15 PM] Entered Rib Calibration
+[2023-01-23 3:26:15 PM] Entered Rib Calibration
+[2023-01-23 3:26:15 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023].txt
+[2023-01-23 3:26:15 PM] COM4
+[2023-01-23 3:26:21 PM] Rib Belt Calibrated with Max Voltage: 3.6
+[2023-01-23 3:26:21 PM] Rib Belt Calibrated with Max Voltage: 3.6
+[2023-01-23 3:26:25 PM] Rib Belt Calibrated with Min Voltage: 3.35
+[2023-01-23 3:26:25 PM] Rib Belt Calibrated with Min Voltage: 3.35
+[2023-01-23 3:27:07 PM] Entered Bar-Level Easy
+[2023-01-23 3:27:07 PM] Entered Bar-Level Easy
+[2023-01-23 4:01:44 PM] Entered Rib Calibration
+[2023-01-23 4:01:44 PM] Entered Rib Calibration
+[2023-01-23 4:01:44 PM] FileNotFoundException: Could not find file 'COM3'.
+[2023-01-23 4:01:46 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-01-23 4:04:18 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:04:28 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:04:28 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:04:29 PM] Going Back to Menu From Scene: Menu
+[2023-01-23 4:04:29 PM] Going Back to Menu From Scene: Menu
+[2023-01-23 4:05:35 PM] ATEMP: 3 abd: 1.59666  rib: 2.48101
+[2023-01-23 4:05:35 PM] ATEMP: 3 abd: 1.59666  rib: 2.48101
+[2023-01-23 4:05:35 PM] Found the Right PORT!
+[2023-01-23 4:05:35 PM] Found the Right PORT!
+[2023-01-23 4:05:36 PM] Entered Rib Calibration
+[2023-01-23 4:05:36 PM] Entered Rib Calibration
+[2023-01-23 4:05:37 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-01-23 4:05:39 PM] Failed to use: COM4
+[2023-01-23 4:05:39 PM] Failed to use: COM4
+[2023-01-23 4:05:39 PM] Failed to use: COM4
+[2023-01-23 4:05:39 PM] Failed to use: COM4
+[2023-01-23 4:05:53 PM] Failed to use: COM4
+[2023-01-23 4:05:53 PM] Failed to use: COM4
+[2023-01-23 4:05:58 PM] Failed to use: COM4
+[2023-01-23 4:05:58 PM] Failed to use: COM4
+[2023-01-23 4:06:53 PM] ATEMP: 3 abd: 1.59383  rib: 2.48094
+[2023-01-23 4:06:53 PM] ATEMP: 3 abd: 1.59383  rib: 2.48094
+[2023-01-23 4:06:53 PM] Found the Right PORT!
+[2023-01-23 4:06:53 PM] Found the Right PORT!
+[2023-01-23 4:07:09 PM] Entered Rib Calibration
+[2023-01-23 4:07:09 PM] Entered Rib Calibration
+[2023-01-23 4:07:09 PM] FileNotFoundException: Could not find file 'COM3'.
+[2023-01-23 4:07:10 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-01-23 4:08:48 PM] ATEMP: 3 abd: 1.59621  rib: 2.47935
+[2023-01-23 4:08:48 PM] ATEMP: 3 abd: 1.59621  rib: 2.47935
+[2023-01-23 4:08:48 PM] Found the Right PORT!
+[2023-01-23 4:08:48 PM] Found the Right PORT!
+[2023-01-23 4:08:48 PM] Entered Rib Calibration
+[2023-01-23 4:08:48 PM] Entered Rib Calibration
+[2023-01-23 4:08:50 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-01-23 4:09:42 PM] Entered Rib Calibration
+[2023-01-23 4:09:42 PM] Entered Rib Calibration
+[2023-01-23 4:10:39 PM] Entered Rib Calibration
+[2023-01-23 4:10:39 PM] Entered Rib Calibration
+[2023-01-23 4:10:40 PM] DllNotFoundException: phidget22 assembly:<unknown assembly> type:<unknown type> member:(null)
+[2023-01-23 4:11:46 PM] Entered Rib Calibration
+[2023-01-23 4:11:46 PM] Entered Rib Calibration
+[2023-01-23 4:11:55 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-01-23 4:11:56 PM] Failed to use: COM3
+[2023-01-23 4:11:56 PM] Failed to use: COM3
+[2023-01-23 4:12:00 PM] Entered Rib Calibration
+[2023-01-23 4:12:00 PM] Entered Rib Calibration
+[2023-01-23 4:12:01 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-01-23 4:12:03 PM] Quitting game!
+[2023-01-23 4:12:03 PM] Quitting game!
