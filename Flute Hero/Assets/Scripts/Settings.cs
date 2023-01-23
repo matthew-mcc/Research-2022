@@ -127,8 +127,9 @@ public class Settings : MonoBehaviour
     }
 
     public void CheckValidPort(List<string> ports){
+        
         foreach(string port in ports){
-
+           
 
             try{
                 SerialPort comPort = new SerialPort(port, 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
@@ -150,7 +151,7 @@ public class Settings : MonoBehaviour
                 
                 
                 
-                //comPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+                
 
             }
             catch{

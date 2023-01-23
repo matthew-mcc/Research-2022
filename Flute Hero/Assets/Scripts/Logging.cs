@@ -4,13 +4,19 @@ using UnityEngine;
 using System.IO;
 using System.Net.Mail;
 using System.Net;
+using UnityEngine.SceneManagement;
+using System.Text.RegularExpressions;
+
 public class Logging : MonoBehaviour
 {
 
+    TextWriter tw ;
+
     
-    string fullFilePath;
+    public string fullFilePath;
     void OnEnable() {
         Application.logMessageReceived+= Log;
+        
     }
     void OnDisable() {
         Application.logMessageReceived-= Log;
@@ -18,7 +24,13 @@ public class Logging : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fullFilePath = Application.streamingAssetsPath + "/LogFile.txt";
+        
+        // string date = System.DateTime.Now.ToString("MM_dd_yyyy_hh_mm_ss_tt");
+        // //date.Replace(" ", string.Empty);
+        // Debug.Log(date);
+        fullFilePath = Application.streamingAssetsPath + "/LogFile" + "[" + System.DateTime.Now.ToString("MM_dd_yyyy") + "]" + ".txt";
+        //fullFilePath = Application.streamingAssetsPath + "/LogFile.txt";  
+        
         
     }
 
@@ -29,14 +41,23 @@ public class Logging : MonoBehaviour
     }
 
     public void Log(string logString, string stackTrace, LogType type){
-        TextWriter tw = new StreamWriter(fullFilePath, true);
+
+
+        tw = new StreamWriter(fullFilePath, true);
+        
         tw.WriteLine("[" + System.DateTime.Now + "] " + logString);
         
         tw.Close();
     }
+    
     private void OnApplicationQuit() {
         SendLogEmail();
+        
+        
+        
     }
+
+    
 
     private void SendLogEmail(){
         string SendMailFrom = "flutehero21@gmail.com";
@@ -69,11 +90,16 @@ public class Logging : MonoBehaviour
         SmtpServer.Credentials = new NetworkCredential(SendMailFrom, "squvmdumukhdejhx");
         SmtpServer.Send(email);
 
+        
+      
+
             
         
         
 
     }
+
+    
 
 
 }

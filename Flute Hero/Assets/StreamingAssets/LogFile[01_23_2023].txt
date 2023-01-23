@@ -1,0 +1,13 @@
+[2023-01-23 3:26:08 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023].txt
+[2023-01-23 3:26:08 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023].txt
+[2023-01-23 3:26:08 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023].txt
+[2023-01-23 3:26:15 PM] Entered Rib Calibration
+[2023-01-23 3:26:15 PM] Entered Rib Calibration
+[2023-01-23 3:26:15 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023].txt
+[2023-01-23 3:26:15 PM] COM4
+[2023-01-23 3:26:21 PM] Rib Belt Calibrated with Max Voltage: 3.6
+[2023-01-23 3:26:21 PM] Rib Belt Calibrated with Max Voltage: 3.6
+[2023-01-23 3:26:25 PM] Rib Belt Calibrated with Min Voltage: 3.35
+[2023-01-23 3:26:25 PM] Rib Belt Calibrated with Min Voltage: 3.35
+[2023-01-23 3:27:07 PM] Entered Bar-Level Easy
+[2023-01-23 3:27:07 PM] Entered Bar-Level Easy

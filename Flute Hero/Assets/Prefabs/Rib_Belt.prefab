@@ -4981,6 +4981,7 @@ MonoBehaviour:
   bar: {fileID: 0}
   ribAboveBarColor: {r: 1, g: 0, b: 0.9041023, a: 1}
   ribAtBarColor: {r: 1, g: 0, b: 0.293252, a: 1}
+  scoreSlider: {fileID: 0}
 --- !u!95 &133214777
 Animator:
   serializedVersion: 4

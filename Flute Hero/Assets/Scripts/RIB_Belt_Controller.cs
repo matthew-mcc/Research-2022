@@ -54,7 +54,7 @@ public class RIB_Belt_Controller : MonoBehaviour
     public float currentVoltageForText;
     public VoltageInput ch;
 
-    public static SerialPort comPort;
+    //public static SerialPort comPort;
 
     public float newCurrentVoltage = 0f;
     public float ribComPortVoltage = 0f;
@@ -68,7 +68,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         
         currentTime = calibrationTime;
         //initializePhidget(SettingsInformation.ribChannel);
-        initializeComPort();
+        //initializeComPort();
     }
 
     // Update is called once per frame
@@ -142,26 +142,26 @@ public class RIB_Belt_Controller : MonoBehaviour
             
         }
     }
-    void initializeComPort(){
-        // UISING system.io.ports.6.0.0.zip\runtimes\win\lib\netstandard2.0 dll
+    // void initializeComPort(){
+    //     // UISING system.io.ports.6.0.0.zip\runtimes\win\lib\netstandard2.0 dll
 
-        comPort = new SerialPort(SettingsInformation.portName, 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
-        comPort.Handshake = Handshake.None;
+    //     comPort = new SerialPort(SettingsInformation.portName, 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+    //     comPort.Handshake = Handshake.None;
         
-        comPort.DtrEnable = true;
+    //     comPort.DtrEnable = true;
 
         
-        comPort.DataReceived += new SerialDataReceivedEventHandler(DataRecievedHandler);
-        comPort.Open(); // could be dangerous, not sure when to close it.
+    //     comPort.DataReceived += new SerialDataReceivedEventHandler(DataRecievedHandler);
+    //     comPort.Open(); // could be dangerous, not sure when to close it.
     
-    }
-    public void DataRecievedHandler(object sender, SerialDataReceivedEventArgs e){
-        string indata = comPort.ReadLine();
-        string[] subs = indata.Split(' ');
+    // }
+    // public void DataRecievedHandler(object sender, SerialDataReceivedEventArgs e){
+    //     string indata = comPort.ReadLine();
+    //     string[] subs = indata.Split(' ');
         
-        ribComPortVoltage = float.Parse(subs[6]);
+    //     ribComPortVoltage = float.Parse(subs[6]);
         
-    }
+    // }
 
     //Initializing Phidget Function -- Called in Start
     // void initializePhidget(int channel){
@@ -237,7 +237,7 @@ public class RIB_Belt_Controller : MonoBehaviour
         // ch.VoltageChange -= voltageChange;
         // ch.Close();
         // ch = null;
-        comPort.Close();
+       // comPort.Close();
 
         if(Application.isEditor){
             
