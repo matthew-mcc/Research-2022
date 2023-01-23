@@ -17,7 +17,7 @@ public static class SettingsInformation{
     public static int ribChannel = 2;
     public static float PDAccuracyThreshold = 0.5f;
     public static float PDTimeLatency = 0.25f;
-    public static string portName = "COM4";
+    public static string portName = "COM3";
    
     
 }

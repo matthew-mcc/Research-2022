@@ -2,11 +2,51 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System.IO.Ports;
 public class MainMenu : MonoBehaviour
 {
+    public static bool initDone = false;
+    List<string> initialPortNames = new List<string>();
+    void Awake(){
+        if(initDone == false){
 
-    
+        
+        string[] port_names = SerialPort.GetPortNames();
+
+        foreach(string pn in port_names){
+            initialPortNames.Add(pn);
+        }
+        foreach(string port in initialPortNames){
+            try{
+                SerialPort comPort = new SerialPort(port, 19200, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
+                comPort.Handshake = Handshake.None;
+                comPort.DtrEnable = true;
+
+                comPort.Open();
+                for(int i = 0; i < 10; i++){
+                    string indata = comPort.ReadLine();
+                    string[] subs = indata.Split(' ');
+                    Debug.Log(indata);
+                    if(subs[0] == "ATEMP:"){
+                        Debug.Log("Found the Right PORT!");
+                        SettingsInformation.portName = port;
+                        break;
+                    }
+                }
+                comPort.Close();
+                
+                
+                
+                
+
+            }
+            catch{
+                Debug.Log("Failed to use: " + port);
+            }
+        }
+        initDone =true;
+        }
+    }
     
     
     public void LoadMenu(){
