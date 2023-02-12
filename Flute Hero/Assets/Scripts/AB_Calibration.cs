@@ -16,6 +16,7 @@ public class AB_Calibration : MonoBehaviour
     
     [SerializeField] Slider progressSlider;
 
+    bool textFlag = false;
     //PlayerController playerController;
     AB_Belt_Controller AbController;
    
@@ -34,7 +35,9 @@ public class AB_Calibration : MonoBehaviour
         
         AbController = abBelt.GetComponent<AB_Belt_Controller>();
         
-        infoText.text = "Big Breath, Then Up Key!";
+        textFlag = false;
+        if(!textFlag)
+            infoText.text = "Breathe, HOLD, Then UP Key!";
       
         timerText.text = "BIG BREATH!";
         bigTimer.text = 3.ToString();
@@ -89,11 +92,13 @@ public class AB_Calibration : MonoBehaviour
                 if(Math.Round(AbController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
                     
-                    infoText.text = "Relax, Then Down Key!";
+                    infoText.text = "Relax, HOLD, Then DOWN Key!";
 
                     //FOR DEBUGGING
                     Debug.Log("Ab Belt Calibrated with Max Voltage: " + ABBeltInformation.maxVoltage);
-                    
+                    if(AbController.minCalibrated){
+                        textFlag = true;
+                    }
 
                     
                     
@@ -124,6 +129,10 @@ public class AB_Calibration : MonoBehaviour
                 if(Math.Round(AbController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
                     Debug.Log("Ab Belt Calibrated with Min Voltage: " + ABBeltInformation.minVoltage);
+
+                    if(AbController.maxCalibrated){
+                        textFlag = true;
+                    }
                 }
                 
             }
@@ -132,11 +141,12 @@ public class AB_Calibration : MonoBehaviour
 
         
        
-        if(ABBeltInformation.fullyCalibrated){
+        if(textFlag){
             
             //If anything breaks it will be here
             //Need to test this with belts..
             //Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+            
             infoText.text = "All done, M for Main Menu!";
             timerText.text = "GREAT JOB!";
            

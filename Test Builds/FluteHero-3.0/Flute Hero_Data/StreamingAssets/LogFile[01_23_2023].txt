@@ -55,13 +55,1007 @@
 [2023-01-23 4:10:39 PM] Entered Rib Calibration
 [2023-01-23 4:10:39 PM] Entered Rib Calibration
 [2023-01-23 4:10:40 PM] DllNotFoundException: phidget22 assembly:<unknown assembly> type:<unknown type> member:(null)
-[2023-01-23 4:11:46 PM] Entered Rib Calibration
-[2023-01-23 4:11:46 PM] Entered Rib Calibration
-[2023-01-23 4:11:55 PM] Going Back to Menu From Scene: RIB_Calibration
-[2023-01-23 4:11:56 PM] Failed to use: COM3
-[2023-01-23 4:11:56 PM] Failed to use: COM3
-[2023-01-23 4:12:00 PM] Entered Rib Calibration
-[2023-01-23 4:12:00 PM] Entered Rib Calibration
-[2023-01-23 4:12:01 PM] Going Back to Menu From Scene: RIB_Calibration
-[2023-01-23 4:12:03 PM] Quitting game!
-[2023-01-23 4:12:03 PM] Quitting game!
+[2023-01-23 4:22:47 PM] Entered Rib Calibration
+[2023-01-23 4:22:47 PM] Entered Rib Calibration
+[2023-01-23 4:22:49 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-01-23 4:22:50 PM] Entered Base Camp!
+[2023-01-23 4:22:50 PM] Entered Base Camp!
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:50 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Normal Breathing (AB): 0 Normal Breathing (Rib): 0
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:51 PM] Going Back to Menu From Scene: BaseCamp
+[2023-01-23 4:22:51 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] Entered Pitch Detection Level
+[2023-01-23 4:22:53 PM] Entered Pitch Detection Level
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:54 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:55 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:22:56 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:23:00 PM] Quitting game!
+[2023-01-23 4:23:00 PM] Quitting game!

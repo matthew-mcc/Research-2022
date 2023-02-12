@@ -1,0 +1,44 @@
+[2023-01-23 3:17:25 PM] Entered Rib Calibration
+[2023-01-23 3:17:25 PM] Entered Rib Calibration
+[2023-01-23 3:17:25 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 3:17:26 PM] COM4
+[2023-01-23 3:19:22 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile.txt
+[2023-01-23 3:19:22 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile.txt
+[2023-01-23 3:19:22 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile.txt
+[2023-01-23 3:19:22 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile.txt
+[2023-01-23 3:22:26 PM] 2023-01-23 3:22:26 PM
+[2023-01-23 3:22:26 PM] 2023-01-23 3:22:26 PM
+[2023-01-23 3:22:53 PM] 2023-01-23 3:22:53 PM
+[2023-01-23 3:22:53 PM] 2023-01-23 3:22:53 PM
+[2023-01-23 3:23:43 PM] 01232023032343PM
+[2023-01-23 3:23:43 PM] 01232023032343PM
+[2023-01-23 3:24:16 PM] 01_23_2023_03_24_16_PM
+[2023-01-23 3:24:16 PM] 01_23_2023_03_24_16_PM
+[2023-01-23 3:24:50 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023_03_24_50_PM].txt
+[2023-01-23 3:24:59 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 3:25:08 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023_03_25_08_PM].txt
+[2023-01-23 3:26:08 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023].txt
+[2023-01-23 3:26:15 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 3:27:07 PM] COM4
+[2023-01-23 4:01:44 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:04:58 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:05:33 PM] ATEMP: 3 abd: 1.59595  rib: 2.48237
+[2023-01-23 4:05:33 PM] Found the Right PORT!
+[2023-01-23 4:05:36 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:07:09 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:08:45 PM] ATEMP: 3 abd: 1.59518  rib: 2.47661
+[2023-01-23 4:08:45 PM] Found the Right PORT!
+[2023-01-23 4:08:48 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-01-23 4:09:39 PM] ATEMP: 3 abd: 1.59349  rib: 2.48133
+[2023-01-23 4:09:39 PM] Found the Right PORT!
+[2023-01-23 4:09:42 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-02-03 9:27:37 AM] NullReferenceException: Object reference not set to an instance of an object
+[2023-02-03 9:27:48 AM] FileNotFoundException: Could not find file 'COM3'.
+[2023-02-03 9:29:18 AM] NullReferenceException: Object reference not set to an instance of an object
+[2023-02-03 9:29:21 AM] FileNotFoundException: Could not find file 'COM3'.
+[2023-02-03 9:30:54 AM] NullReferenceException: Object reference not set to an instance of an object
+[2023-02-03 9:31:06 AM] FileNotFoundException: Could not find file 'COM3'.
+[2023-02-03 9:33:11 AM] NullReferenceException: Object reference not set to an instance of an object
+[2023-02-03 9:33:45 AM] FileNotFoundException: Could not find file 'COM3'.
+[2023-02-03 9:33:54 AM] FileNotFoundException: Could not find file 'COM3'.
+[2023-02-03 9:33:57 AM] FileNotFoundException: Could not find file 'COM3'.

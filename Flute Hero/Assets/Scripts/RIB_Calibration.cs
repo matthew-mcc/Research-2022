@@ -15,6 +15,7 @@ public class RIB_Calibration : MonoBehaviour
     [SerializeField] TextMeshProUGUI bigTimer;
     
     
+    bool textFlag = false;
 
     //PlayerController playerController;
     RIB_Belt_Controller RibController;
@@ -31,7 +32,8 @@ public class RIB_Calibration : MonoBehaviour
         
         RibController = ribBelt.GetComponent<RIB_Belt_Controller>();
         
-        infoText.text = "Big Breath, Then Up Key!";      
+        textFlag = false;
+        infoText.text = "Breathe, HOLD, Then UP Key!";      
         timerText.text = "BIG BREATH!";
         bigTimer.text = 3.ToString();
     }
@@ -78,8 +80,11 @@ public class RIB_Calibration : MonoBehaviour
                 bigTimer.text = Math.Round(currTime, 1).ToString();
                 if(Math.Round(RibController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
-                    infoText.text = "Relax, Then Down Key!";
+                    infoText.text = "Relax, HOLD, Then DOWN Key!";
                     Debug.Log("Rib Belt Calibrated with Max Voltage: " + RibBeltInformation.maxVoltage);
+                    if(RibController.minCalibrated){
+                        textFlag = true;
+                    }
                 }
 
             }
@@ -94,6 +99,9 @@ public class RIB_Calibration : MonoBehaviour
                 if(Math.Round(RibController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
                     Debug.Log("Rib Belt Calibrated with Min Voltage: " + RibBeltInformation.minVoltage);
+                    if(RibController.maxCalibrated){
+                        textFlag = true;
+                    }
                 }
             }
             
@@ -101,7 +109,7 @@ public class RIB_Calibration : MonoBehaviour
 
         
        
-        if(RibBeltInformation.fullyCalibrated){
+        if(textFlag){
             infoText.text = "All done, M for Main Menu!";
             timerText.text = "GREAT JOB!";
         }
