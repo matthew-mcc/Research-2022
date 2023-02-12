@@ -1,0 +1,6 @@
+[2023-02-11 9:10:45 PM] Entered Rib Calibration
+[2023-02-11 9:10:45 PM] Entered Rib Calibration
+[2023-02-11 9:10:49 PM] Rib Belt Calibrated with Max Voltage: 3.6
+[2023-02-11 9:10:51 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-02-11 9:10:52 PM] Quitting game!
+[2023-02-11 9:10:52 PM] Quitting game!

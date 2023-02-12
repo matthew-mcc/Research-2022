@@ -106,6 +106,7 @@ public class RIB_Belt_Controller : MonoBehaviour
 
                 if(currentTime <= 0){
                     RibBeltInformation.maxVoltage = (float) averageList(maxVoltageArr);
+                    Debug.Log("Rib Belt Calibrated with Max Voltage: " + RibBeltInformation.maxVoltage);
                     float maxVoltage = (float) averageList(maxVoltageArr);
                     maxCalibrated = true;
                     timerStarted = false;
@@ -120,7 +121,7 @@ public class RIB_Belt_Controller : MonoBehaviour
 
                 if (currentTime <= 0){
                     RibBeltInformation.minVoltage = (float) averageList(minVoltageArr);
-                    
+                    Debug.Log("Rib Belt Calibrated with Min Voltage: " + RibBeltInformation.minVoltage);
                     float minVoltage = (float) averageList(minVoltageArr);
                     minCalibrated = true;
                     timerStarted = false;

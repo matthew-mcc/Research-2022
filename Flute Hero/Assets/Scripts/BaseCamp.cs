@@ -46,27 +46,27 @@ public class BaseCamp : MonoBehaviour
         }
 
         if(measureNormal){
-            string logString = "Normal Breathing (AB): " + AbController.newCurrentVoltage.ToString() + " Normal Breathing (Rib): " + RibController.newCurrentVoltage.ToString();
+            string logString = "Normal Breathing (AB): " + AbController.abComPortVoltage.ToString() + " Normal Breathing (Rib): " + RibController.ribComPortVoltage.ToString();
             Debug.Log(logString);
         }
         if(measureDeep){
-            string logString = "Deep Breathing (AB): " + AbController.newCurrentVoltage.ToString() + " Deep Breathing (Rib): " + RibController.newCurrentVoltage.ToString();
+            string logString = "Deep Breathing (AB): " + AbController.abComPortVoltage.ToString() + " Deep Breathing (Rib): " + RibController.ribComPortVoltage.ToString();
             Debug.Log(logString);
         }
         if(measureABOnly){
-            string logString = "Holding Abdomen Only (AB): " + AbController.newCurrentVoltage.ToString() + " Holding Abdomen Only (Rib): " + RibController.newCurrentVoltage.ToString();
+            string logString = "Holding Abdomen Only (AB): " + AbController.abComPortVoltage.ToString() + " Holding Abdomen Only (Rib): " + RibController.ribComPortVoltage.ToString();
             Debug.Log(logString);
         }
         if(measureRibOnly){
-            string logString = "Holding Ribcage Only (AB): " + AbController.newCurrentVoltage.ToString() + " Holding Ribcage Only (Rib): " + RibController.newCurrentVoltage.ToString();
+            string logString = "Holding Ribcage Only (AB): " + AbController.abComPortVoltage.ToString() + " Holding Ribcage Only (Rib): " + RibController.ribComPortVoltage.ToString();
             Debug.Log(logString);
         }
         if(measureBoth){
-            string logString = "Deep Abdomen and Ribcage (AB): " + AbController.newCurrentVoltage.ToString() + " Deep Abdomen and Ribcage (Rib): " + RibController.newCurrentVoltage.ToString();
+            string logString = "Deep Abdomen and Ribcage (AB): " + AbController.abComPortVoltage.ToString() + " Deep Abdomen and Ribcage (Rib): " + RibController.ribComPortVoltage.ToString();
             Debug.Log(logString);
         }
         if(measureBigBreath){
-            string logString = "Big Breath (AB): " + AbController.newCurrentVoltage.ToString() + " Big Breath (Rib): " + RibController.newCurrentVoltage.ToString();
+            string logString = "Big Breath (AB): " + AbController.abComPortVoltage.ToString() + " Big Breath (Rib): " + RibController.ribComPortVoltage.ToString();
             Debug.Log(logString);
         }
         

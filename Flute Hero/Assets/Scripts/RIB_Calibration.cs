@@ -81,7 +81,7 @@ public class RIB_Calibration : MonoBehaviour
                 if(Math.Round(RibController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
                     infoText.text = "Relax, HOLD, Then DOWN Key!";
-                    Debug.Log("Rib Belt Calibrated with Max Voltage: " + RibBeltInformation.maxVoltage);
+                    //Debug.Log("Rib Belt Calibrated with Max Voltage: " + RibBeltInformation.maxVoltage);
                     if(RibController.minCalibrated){
                         textFlag = true;
                     }
@@ -98,7 +98,7 @@ public class RIB_Calibration : MonoBehaviour
                 bigTimer.text = Math.Round(currTime, 0).ToString();
                 if(Math.Round(RibController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
-                    Debug.Log("Rib Belt Calibrated with Min Voltage: " + RibBeltInformation.minVoltage);
+                    
                     if(RibController.maxCalibrated){
                         textFlag = true;
                     }

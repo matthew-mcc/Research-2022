@@ -54,3 +54,18 @@
 [2023-02-11 9:06:19 PM] NullReferenceException: Object reference not set to an instance of an object
 [2023-02-11 9:06:21 PM] ATEMP: 3 abd: 1.59474  rib: 2.47935
 [2023-02-11 9:06:21 PM] Found the Right PORT!
+[2023-02-11 9:11:22 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-02-11 9:11:25 PM] ATEMP: 3 abd: 1.58983  rib: 2.48214
+[2023-02-11 9:11:25 PM] Found the Right PORT!
+[2023-02-11 9:11:39 PM] ATEMP: 3 abd: 1.59438  rib: 2.48044
+[2023-02-11 9:11:39 PM] Found the Right PORT!
+[2023-02-11 9:11:42 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-02-11 9:15:49 PM] ATEMP: 3 abd: 1.59279  rib: 2.48168
+[2023-02-11 9:15:49 PM] Found the Right PORT!
+[2023-02-11 9:15:53 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-02-11 9:36:22 PM] ATEMP: 3 abd: 1.59417  rib: 2.48288
+[2023-02-11 9:36:22 PM] Found the Right PORT!
+[2023-02-11 9:36:34 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-02-11 9:38:12 PM] ATEMP: 3 abd: 1.59537  rib: 2.48374
+[2023-02-11 9:38:12 PM] Found the Right PORT!
+[2023-02-11 9:38:17 PM] NullReferenceException: Object reference not set to an instance of an object

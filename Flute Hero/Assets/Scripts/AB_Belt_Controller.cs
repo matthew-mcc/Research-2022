@@ -127,6 +127,7 @@ public class AB_Belt_Controller : MonoBehaviour
 
                 if(currentTime <= 0){
                     ABBeltInformation.maxVoltage = (float) averageList(maxVoltageArr);
+                    Debug.Log("Ab Belt Calibrated with Max Voltage: " + ABBeltInformation.maxVoltage);
                     float maxVoltage = (float) averageList(maxVoltageArr);
                     
                     maxCalibrated = true;
@@ -147,7 +148,7 @@ public class AB_Belt_Controller : MonoBehaviour
 
                 if (currentTime <= 0){
                     ABBeltInformation.minVoltage = (float) averageList(minVoltageArr);
-                    
+                    Debug.Log("Ab Belt Calibrated with Min Voltage: " + ABBeltInformation.minVoltage);
                     float minVoltage = (float) averageList(minVoltageArr);
                     minCalibrated = true;
                     timerStarted = false;
