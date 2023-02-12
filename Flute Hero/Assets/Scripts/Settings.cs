@@ -165,46 +165,46 @@ public class Settings : MonoBehaviour
     public void PopulateNotes(Dictionary<string, float> dict){
 
         //Fourth Octave
-        dict.Add("C0", 261.625f);
-        dict.Add("C#0", 277.183f);
-        dict.Add("D0", 293.366f);
-        dict.Add("D#0", 311.127f);
-        dict.Add("E0", 329.627f);
-        dict.Add("F0", 349.228f);
-        dict.Add("F#0", 369.994f);
-        dict.Add("G0", 391.995f);
-        dict.Add("G#0", 415.304f);
-        dict.Add("A0", 440.000f);
-        dict.Add("A#0", 466.164f);
-        dict.Add("B40", 493.883f);
+        dict.Add("C:0", 261.625f);
+        dict.Add("C#:0", 277.183f);
+        dict.Add("D:0", 293.366f);
+        dict.Add("D#:0", 311.127f);
+        dict.Add("E:0", 329.627f);
+        dict.Add("F:0", 349.228f);
+        dict.Add("F#:0", 369.994f);
+        dict.Add("G:0", 391.995f);
+        dict.Add("G#:0", 415.304f);
+        dict.Add("A:0", 440.000f);
+        dict.Add("A#:0", 466.164f);
+        dict.Add("B:0", 493.883f);
 
         //Fifth Octave
-        dict.Add("C1", 523.251f);
-        dict.Add("C#1", 554.365f);
-        dict.Add("D1", 587.330f);
-        dict.Add("D#1", 622.254f);
-        dict.Add("E1", 659.255f);
-        dict.Add("F1", 698.456f);
-        dict.Add("F#1", 739.988f);
-        dict.Add("G1", 783.990f);
-        dict.Add("G#1", 830.609f);
-        dict.Add("A1", 880.000f);
-        dict.Add("A#1", 932.327f);
-        dict.Add("B1", 987.767f);
+        dict.Add("C:1", 523.251f);
+        dict.Add("C#:1", 554.365f);
+        dict.Add("D:1", 587.330f);
+        dict.Add("D#:1", 622.254f);
+        dict.Add("E:1", 659.255f);
+        dict.Add("F:1", 698.456f);
+        dict.Add("F#:1", 739.988f);
+        dict.Add("G:1", 783.990f);
+        dict.Add("G#:1", 830.609f);
+        dict.Add("A:1", 880.000f);
+        dict.Add("A#:1", 932.327f);
+        dict.Add("B:1", 987.767f);
 
         //Sixth Octave
-        dict.Add("C2", 1046.502f);
-        dict.Add("C#2", 1107.730f);
-        dict.Add("D2", 1174.660f);
-        dict.Add("D#3", 1244.508f);
-        dict.Add("E3", 1318.510f);
-        dict.Add("F3", 1396.913f);
-        dict.Add("F#3", 1479.978f);
-        dict.Add("G3", 1567.982f);
-        dict.Add("G#3", 1661.219f);
-        dict.Add("A3", 1760.000f);
-        dict.Add("A#3", 1864.655f);
-        dict.Add("B3", 1975.533f);
+        dict.Add("C:2", 1046.502f);
+        dict.Add("C#:2", 1107.730f);
+        dict.Add("D:2", 1174.660f);
+        dict.Add("D#:3", 1244.508f);
+        dict.Add("E:3", 1318.510f);
+        dict.Add("F:3", 1396.913f);
+        dict.Add("F#:3", 1479.978f);
+        dict.Add("G:3", 1567.982f);
+        dict.Add("G#:3", 1661.219f);
+        dict.Add("A:3", 1760.000f);
+        dict.Add("A#:3", 1864.655f);
+        dict.Add("B:3", 1975.533f);
 
     }
 

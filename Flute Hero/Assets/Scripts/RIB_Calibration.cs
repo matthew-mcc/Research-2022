@@ -77,7 +77,7 @@ public class RIB_Calibration : MonoBehaviour
                
                 progressSlider.value+= Time.deltaTime/3;
                 timerText.text = "HOLD!";
-                bigTimer.text = Math.Round(currTime, 1).ToString();
+                bigTimer.text = Math.Round(currTime, 0).ToString();
                 if(Math.Round(RibController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
                     infoText.text = "Relax, HOLD, Then DOWN Key!";
@@ -95,7 +95,7 @@ public class RIB_Calibration : MonoBehaviour
                 progressSlider.value += Time.deltaTime/3;
                 timerText.text = "RELAX!";
 
-                bigTimer.text = Math.Round(currTime, 1).ToString();
+                bigTimer.text = Math.Round(currTime, 0).ToString();
                 if(Math.Round(RibController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
                     Debug.Log("Rib Belt Calibrated with Min Voltage: " + RibBeltInformation.minVoltage);

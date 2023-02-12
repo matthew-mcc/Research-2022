@@ -88,7 +88,7 @@ public class AB_Calibration : MonoBehaviour
                 
                 //timerText.text = Math.Round(AbController.currentTime, 2).ToString();
                 timerText.text = "HOLD!";
-                bigTimer.text = Math.Round(currTime, 1).ToString();
+                bigTimer.text = Math.Round(currTime, 0).ToString();
                 if(Math.Round(AbController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
                     
@@ -125,7 +125,7 @@ public class AB_Calibration : MonoBehaviour
                 progressSlider.value+= Time.deltaTime/3;
 
                 timerText.text = "RELAX!";
-                bigTimer.text = Math.Round(currTime, 1).ToString();
+                bigTimer.text = Math.Round(currTime, 0).ToString();
                 if(Math.Round(AbController.currentTime, 2) <= 0){
                     timerText.text = "RELEASE!";
                     Debug.Log("Ab Belt Calibrated with Min Voltage: " + ABBeltInformation.minVoltage);

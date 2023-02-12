@@ -17,6 +17,8 @@ public class BaseCamp : MonoBehaviour
     private bool measureBoth = false;
     private bool measureBigBreath = false;
 
+    private bool CR_Running = false;
+
     AB_Belt_Controller AbController;
     [SerializeField] GameObject abBelt;
 
@@ -28,12 +30,21 @@ public class BaseCamp : MonoBehaviour
     {
         AbController = abBelt.GetComponent<AB_Belt_Controller>();
         RibController = ribBelt.GetComponent<RIB_Belt_Controller>();
-        StartCoroutine(bcRoutine());
+        //StartCoroutine(bcRoutine());
+        infoText.text = "Press Space to Start!";
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.Space) && CR_Running == false){
+            StartCoroutine(bcRoutine());
+        }
+        else if(Input.GetKeyDown(KeyCode.Space) && CR_Running == true){
+            Debug.Log("Sorry, Basecamp already started");
+        }
+
         if(measureNormal){
             string logString = "Normal Breathing (AB): " + AbController.newCurrentVoltage.ToString() + " Normal Breathing (Rib): " + RibController.newCurrentVoltage.ToString();
             Debug.Log(logString);
@@ -62,80 +73,81 @@ public class BaseCamp : MonoBehaviour
     }
 
     IEnumerator bcRoutine(){
-
-        infoText.text = "Take Normal Breaths!";
+        
+        CR_Running = true;
+        infoText.text = "NORMAL breathing";
         measureNormal = true;
         //Start text timer
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Deep Breaths!";
+        infoText.text = "get ready for deep breathing";
         yield return new WaitForSeconds(inBetweenTime);
         measureNormal = false;
     
 
-        infoText.text = "Take Deep Breaths!";
+        infoText.text = "DEEP breathing";
         measureDeep = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Normal Breaths!";
+        infoText.text = "get ready for normal breathing";
         yield return new WaitForSeconds(3);
         measureDeep = false;
 
-        infoText.text = "Take Normal Breaths!";
+        infoText.text = "NORMAL breathing";
         measureNormal = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Deep Breaths!";
+        infoText.text = "get ready for abdominal breathing";
         yield return new WaitForSeconds(3);
         measureNormal = false;
 
-        infoText.text = "Try breathing through your Abdomen!";
+        infoText.text = "ABDOMINAL breathing";
         measureABOnly = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Normal Breathing!";
+        infoText.text = "get ready for normal breathing";
         yield return new WaitForSeconds(inBetweenTime);
         measureABOnly = false;
 
-        infoText.text = "Take Normal Breaths!";
+        infoText.text = "NORMAL breathing";
         measureNormal = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Deep Breathing!";
+        infoText.text = "get ready for ribcage breathing";
         yield return new WaitForSeconds(inBetweenTime);
         measureNormal = false;
 
-        infoText.text = "Try breathing through your Ribs!";
+        infoText.text = "RIBCAGE breathing";
         measureRibOnly = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Normal Breathing!";
+        infoText.text = "get ready for normal breathing";
         yield return new WaitForSeconds(inBetweenTime);
         measureRibOnly = false;
 
-        infoText.text = "Take Normal Breaths!";
+        infoText.text = "NORMAL breathing";
         measureNormal = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Deep Breathing!";
+        infoText.text = "get ready for abdominal and ribcage breathing";
         yield return new WaitForSeconds(inBetweenTime);
         measureNormal = false;
 
-        infoText.text = "Deep Breaths through your Ribs and Abdomen!";
+        infoText.text = "ABDOMINAL & RIBCAGE breathing";
         measureBoth = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For Normal Breathing!";
+        infoText.text = "get ready for normal breathing";
         yield return new WaitForSeconds(inBetweenTime);
         measureBoth = false;
 
-        infoText.text = "Take Normal Breaths!";
+        infoText.text = "NORMAL breathing";
         measureNormal = true;
         yield return new WaitForSeconds(sequenceTime);
-        infoText.text = "Get Ready For a Big Breath!";
+        infoText.text = "get ready to hold a deep breath";
         yield return new WaitForSeconds(inBetweenTime);
         measureNormal = false;
 
-        infoText.text = "Take a Big Breath!";
+        infoText.text = "Take deep breath and HOLD, repeat";
         measureBigBreath = true;
         yield return new WaitForSeconds(20);
-        infoText.text = "Get ready for the next!";
+        infoText.text = "get ready to hold a deep breath";
         yield return new WaitForSeconds(inBetweenTime);
         measureBigBreath = false;
 
-        infoText.text = "Take a Big Breath!";
+        infoText.text = "Take deep breath and HOLD";
         measureBigBreath = true;
         yield return new WaitForSeconds(20);
         measureBigBreath = false;
