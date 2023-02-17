@@ -68,8 +68,8 @@ public class ComPortController : MonoBehaviour
     public void DataRecievedHandler(object sender, SerialDataReceivedEventArgs e){
         string indata = comPort.ReadLine();
         string[] subs = indata.Split(' ');
-        AbController.abComPortVoltage = float.Parse(subs[3]);
-        RibController.ribComPortVoltage = float.Parse(subs[6]);
+        AbController.abComPortVoltage = float.Parse(subs[6]);
+        RibController.ribComPortVoltage = float.Parse(subs[3]);
         
     }
 
