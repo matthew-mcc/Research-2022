@@ -64,20 +64,24 @@ public class AB_Belt_Controller : MonoBehaviour
 
    
 
-    
+    public string deviceName;
     
 
 
     //public VoltageInput ch;
    
-    
+    void Awake(){
+        Debug.Log("### DEVICE_NAME: " + deviceName + " ###");
+    }
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         currentScene = SceneManager.GetActiveScene();
         
+        Debug.Log("### DEVICE_NAME: " + deviceName + " ###");
         
         currentTime = calibrationTime;
         //initializeComPort();
@@ -94,6 +98,10 @@ public class AB_Belt_Controller : MonoBehaviour
         //currentVoltageForText = newCurrentVoltage;
         currentVoltageForText = abComPortVoltage;
        
+       if(currentScene.name == "Bar_Easy" || currentScene.name == "Bar_Medium" || currentScene.name == "Bar_Hard"
+       || currentScene.name == "Ab_Hoop_Easy" || currentScene.name == "Ab_Hoop_Medium" || currentScene.name == "Ab_Hoop_Hard"){
+        Debug.Log(currentScene.name + " Ab Voltage: " + currentVoltageForText.ToString());
+       }
 
         
         if(minCalibrated && maxCalibrated){
@@ -166,7 +174,8 @@ public class AB_Belt_Controller : MonoBehaviour
             Vector2 endPos = new Vector2(defaultXPos, VoltageToPosition());
             
             rb.transform.position = Vector2.Lerp(currentPos, endPos, Time.deltaTime); //woot woot this is mucho bueno 
-           
+
+            
             
             
         }

@@ -77,6 +77,14 @@ public class RIB_Belt_Controller : MonoBehaviour
         //Always checking for full calibration
 
         currentVoltageForText = ribComPortVoltage;
+
+        if(currentScene.name == "Bar_Easy" || currentScene.name == "Bar_Medium" || currentScene.name == "Bar_Hard"
+       || currentScene.name == "Rib_Hoop_Easy" || currentScene.name == "Rib_Hoop_Medium" || currentScene.name == "Rib_Hoop_Hard"){
+        Debug.Log(currentScene.name + " Rib Voltage: " + currentVoltageForText.ToString());
+       }
+
+
+
         if(minCalibrated && maxCalibrated){
             RibBeltInformation.fullyCalibrated = true;
         }

@@ -63,6 +63,8 @@ public class ComPortController : MonoBehaviour
         
         comPort.DataReceived += new SerialDataReceivedEventHandler(DataRecievedHandler);
         comPort.Open(); // could be dangerous, not sure when to close it.
+
+       
     
     }
     public void DataRecievedHandler(object sender, SerialDataReceivedEventArgs e){
@@ -70,6 +72,11 @@ public class ComPortController : MonoBehaviour
         string[] subs = indata.Split(' ');
         AbController.abComPortVoltage = float.Parse(subs[6]);
         RibController.ribComPortVoltage = float.Parse(subs[3]);
+
+        AbController.deviceName = (subs[0] + subs[1]);
+        Debug.Log("### DEVICE_NAME: " + AbController.deviceName + " ###");
+       
+        
         
     }
 
