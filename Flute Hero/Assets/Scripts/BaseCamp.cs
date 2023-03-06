@@ -44,7 +44,7 @@ public class BaseCamp : MonoBehaviour
         else if(Input.GetKeyDown(KeyCode.Space) && CR_Running == true){
             Debug.Log("Sorry, Basecamp already started");
         }
-
+        
         if(measureNormal){
             string logString = "Normal Breathing (AB): " + AbController.abComPortVoltage.ToString() + " Normal Breathing (Rib): " + RibController.ribComPortVoltage.ToString();
             Debug.Log(logString);

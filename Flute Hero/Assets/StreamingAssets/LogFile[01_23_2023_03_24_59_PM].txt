@@ -1,7 +1,0 @@
-[2023-01-23 3:24:59 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023_03_24_59_PM].txt
-[2023-01-23 3:24:59 PM] COM4
-[2023-01-23 3:25:03 PM] Rib Belt Calibrated with Max Voltage: 3.6
-[2023-01-23 3:25:03 PM] Rib Belt Calibrated with Max Voltage: 3.6
-[2023-01-23 3:25:07 PM] Rib Belt Calibrated with Min Voltage: 3.35
-[2023-01-23 3:25:07 PM] Rib Belt Calibrated with Min Voltage: 3.35
-[2023-01-23 3:25:08 PM] Going Back to Menu From Scene: RIB_Calibration

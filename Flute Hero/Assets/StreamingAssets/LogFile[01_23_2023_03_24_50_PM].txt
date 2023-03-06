@@ -1,5 +1,0 @@
-[2023-01-23 3:24:50 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023_03_24_50_PM].txt
-[2023-01-23 3:24:50 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023_03_24_50_PM].txt
-[2023-01-23 3:24:50 PM] C:/GIT/Research-2022/Flute Hero/Assets/StreamingAssets/LogFile[01_23_2023_03_24_50_PM].txt
-[2023-01-23 3:24:59 PM] Entered Rib Calibration
-[2023-01-23 3:24:59 PM] Entered Rib Calibration

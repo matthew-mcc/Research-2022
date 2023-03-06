@@ -28,7 +28,7 @@ public class Logging : MonoBehaviour
         // string date = System.DateTime.Now.ToString("MM_dd_yyyy_hh_mm_ss_tt");
         // //date.Replace(" ", string.Empty);
         // Debug.Log(date);
-        fullFilePath = Application.streamingAssetsPath + "/LogFile" + "[" + System.DateTime.Now.ToString("MM_dd_yyyy") + "]" + ".txt";
+        fullFilePath = Application.streamingAssetsPath + "/LogFile" + "[" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "]" + ".txt";
         //fullFilePath = Application.streamingAssetsPath + "/LogFile.txt";  
         
         
