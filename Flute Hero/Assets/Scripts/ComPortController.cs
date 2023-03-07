@@ -48,7 +48,7 @@ public class ComPortController : MonoBehaviour
        || currentScene.name == "Ab_Hoop_Easy" || currentScene.name == "Ab_Hoop_Medium" || currentScene.name == "Ab_Hoop_Hard"
        || currentScene.name == "Rib_Hoop_Easy" || currentScene.name == "Rib_Hoop_Medium" || currentScene.name == "Rib_Hoop_Hard"){
         
-        string logString = currentScene.name + " (Ab): " + AbController.abComPortVoltage.ToString() + " " + currentScene.name + " (Ab): " + RibController.ribComPortVoltage.ToString();
+        string logString = currentScene.name + " (Ab): " + AbController.abComPortVoltage.ToString() + " " + currentScene.name + " (Rib): " + RibController.ribComPortVoltage.ToString();
         Debug.Log(logString);
         //Debug.Log(currentScene.name + " Ab Voltage: " + currentVoltageForText.ToString());
        }
@@ -83,7 +83,7 @@ public class ComPortController : MonoBehaviour
         RibController.ribComPortVoltage = float.Parse(subs[3]);
 
         AbController.deviceName = (subs[0] + subs[1]);
-        Debug.Log("### DEVICE_NAME: " + AbController.deviceName + " ###");
+        //Debug.Log("### DEVICE_NAME: " + AbController.deviceName + " ###");
        
         
         

@@ -26,7 +26,8 @@ public class MainMenu : MonoBehaviour
                 for(int i = 0; i < 10; i++){
                     string indata = comPort.ReadLine();
                     string[] subs = indata.Split(' ');
-                    Debug.Log(indata);
+                    //Debug.Log(indata);
+                    Debug.Log("### DEVICE NAME: " + subs[0] + subs[1] + " ###");
                     if(subs[0] == "ATEMP:"){
                         Debug.Log("Found the Right PORT!");
                         SettingsInformation.portName = port;

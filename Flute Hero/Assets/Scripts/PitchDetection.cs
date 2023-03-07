@@ -33,6 +33,7 @@ public class PitchDetection : MonoBehaviour
     [SerializeField] Sprite angryFace;
     [SerializeField] Sprite flatFace;
     [SerializeField] Sprite sharpFace;
+    [SerializeField] Sprite defaultFace;
 
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI noteText;
@@ -93,6 +94,14 @@ public class PitchDetection : MonoBehaviour
                 sr.sprite = happyFace;
                 totalScore += 2/score_modifier;
             }
+
+            else if(inputMidi - targetMidi < -10000){
+                sr.sprite = defaultFace;
+            }
+            
+            else if(inputMidi - targetMidi > 10000){
+                sr.sprite = defaultFace;
+            }
             
             else if(inputMidi - targetMidi < 0){
                 sr.sprite = flatFace;
@@ -100,6 +109,9 @@ public class PitchDetection : MonoBehaviour
             else if(inputMidi - targetMidi > 0){
                 sr.sprite = sharpFace;
             }
+
+            
+
 
             freqChunks.Clear();
             timeTracker = 0;

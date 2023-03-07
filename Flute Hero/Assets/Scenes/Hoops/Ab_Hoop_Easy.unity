@@ -861,7 +861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoop: {fileID: 5206860396042815956, guid: 9582e09db73159046ba0a826c3971f35, type: 3}
   timeBetweenJump: 1
-  timeBetweenHold: 1
+  timeBetweenHold: 1.15
   startColor: {r: 1, g: 0, b: 0.77933884, a: 0.8784314}
   endColor: {r: 0, g: 1, b: 0.97335625, a: 0.9019608}
   startHoopThreshold: 0

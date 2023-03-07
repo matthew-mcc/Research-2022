@@ -1,0 +1,4 @@
+[2023-03-07 4:55:27 PM] Failed to use: COM5
+[2023-03-07 4:55:32 PM] Entered Pitch Detection Level
+[2023-03-07 4:56:42 PM] Entered Pitch Detection Level
+[2023-03-07 4:56:45 PM] Quitting game!

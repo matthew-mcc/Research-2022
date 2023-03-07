@@ -840,6 +840,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7106484310739576811, guid: a4cc88d3dbb90684492a57cf9372a2d4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7106484310844276166, guid: a4cc88d3dbb90684492a57cf9372a2d4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7106484311793772431, guid: a4cc88d3dbb90684492a57cf9372a2d4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7454857607159149899, guid: a4cc88d3dbb90684492a57cf9372a2d4, type: 3}
       propertyPath: m_Name
       value: PD
@@ -904,8 +916,27 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 2087845548}
+    - target: {fileID: 7454857607159149902, guid: a4cc88d3dbb90684492a57cf9372a2d4, type: 3}
+      propertyPath: defaultFace
+      value: 
+      objectReference: {fileID: 21300000, guid: 31168b4de0c4a2440bb9af890623f6dc, type: 3}
+    - target: {fileID: 7454857607159149902, guid: a4cc88d3dbb90684492a57cf9372a2d4, type: 3}
+      propertyPath: scoreSlider
+      value: 
+      objectReference: {fileID: 2080519766}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4cc88d3dbb90684492a57cf9372a2d4, type: 3}
+--- !u!114 &2080519766 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7106484310739576805, guid: a4cc88d3dbb90684492a57cf9372a2d4, type: 3}
+  m_PrefabInstance: {fileID: 1997500760}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2087845548 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1895151596617389115, guid: 8452ea43763e83844bbcc27c521d2ffe, type: 3}

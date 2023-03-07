@@ -70,9 +70,7 @@ public class AB_Belt_Controller : MonoBehaviour
 
     //public VoltageInput ch;
    
-    void Awake(){
-        Debug.Log("### DEVICE_NAME: " + deviceName + " ###");
-    }
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -81,7 +79,7 @@ public class AB_Belt_Controller : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         currentScene = SceneManager.GetActiveScene();
         
-        Debug.Log("### DEVICE_NAME: " + deviceName + " ###");
+        
         
         currentTime = calibrationTime;
         //initializeComPort();

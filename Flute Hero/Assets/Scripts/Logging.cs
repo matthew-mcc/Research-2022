@@ -32,7 +32,7 @@ public class Logging : MonoBehaviour
         Application.logMessageReceived-= Log;
     }
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         
        
