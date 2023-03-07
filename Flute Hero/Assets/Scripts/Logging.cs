@@ -7,13 +7,23 @@ using System.Net;
 using UnityEngine.SceneManagement;
 using System.Text.RegularExpressions;
 
+public static class LogInfo{
+
+    public static string fullFilePath;
+    public static bool fileStarted;
+    
+    
+}
+
+
 public class Logging : MonoBehaviour
 {
 
     TextWriter tw ;
 
+
     
-    public string fullFilePath;
+    
     void OnEnable() {
         Application.logMessageReceived+= Log;
         
@@ -25,11 +35,14 @@ public class Logging : MonoBehaviour
     void Start()
     {
         
-        // string date = System.DateTime.Now.ToString("MM_dd_yyyy_hh_mm_ss_tt");
-        // //date.Replace(" ", string.Empty);
-        // Debug.Log(date);
-        fullFilePath = Application.streamingAssetsPath + "/LogFile" + "[" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "]" + ".txt";
-        //fullFilePath = Application.streamingAssetsPath + "/LogFile.txt";  
+       
+        if(!LogInfo.fileStarted){
+            Debug.Log("lets make a new file!");
+            LogInfo.fullFilePath = Application.streamingAssetsPath + "/LogFile" + "[" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "]" + ".txt";
+            LogInfo.fileStarted = true;
+        }
+        
+  
         
         
     }
@@ -37,13 +50,13 @@ public class Logging : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       // Debug.Log(fullFilePath);
     }
 
     public void Log(string logString, string stackTrace, LogType type){
 
 
-        tw = new StreamWriter(fullFilePath, true);
+        tw = new StreamWriter(LogInfo.fullFilePath, true);
         
         tw.WriteLine("[" + System.DateTime.Now + "] " + logString);
         
@@ -80,7 +93,7 @@ public class Logging : MonoBehaviour
 
         //ATTACHMENT
         System.Net.Mail.Attachment attachment;
-        attachment = new System.Net.Mail.Attachment(fullFilePath);
+        attachment = new System.Net.Mail.Attachment(LogInfo.fullFilePath);
         email.Attachments.Add(attachment);
 
         //END

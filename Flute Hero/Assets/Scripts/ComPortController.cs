@@ -14,6 +14,8 @@ public class ComPortController : MonoBehaviour
 
     [SerializeField] GameObject abBelt;
     [SerializeField] GameObject ribBelt;
+
+    Scene currentScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class ComPortController : MonoBehaviour
         AbController = abBelt.GetComponent<AB_Belt_Controller>();
         RibController = ribBelt.GetComponent<RIB_Belt_Controller>();
         initializeComPort();
-
+        currentScene = SceneManager.GetActiveScene();
         //initializeComPort();
         
     }
@@ -42,7 +44,14 @@ public class ComPortController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(currentScene.name == "Bar_Easy" || currentScene.name == "Bar_Medium" || currentScene.name == "Bar_Hard"
+       || currentScene.name == "Ab_Hoop_Easy" || currentScene.name == "Ab_Hoop_Medium" || currentScene.name == "Ab_Hoop_Hard"
+       || currentScene.name == "Rib_Hoop_Easy" || currentScene.name == "Rib_Hoop_Medium" || currentScene.name == "Rib_Hoop_Hard"){
         
+        string logString = currentScene.name + " (Ab): " + AbController.abComPortVoltage.ToString() + " " + currentScene.name + " (Ab): " + RibController.ribComPortVoltage.ToString();
+        Debug.Log(logString);
+        //Debug.Log(currentScene.name + " Ab Voltage: " + currentVoltageForText.ToString());
+       }
     }
 
     void initializeComPort(){

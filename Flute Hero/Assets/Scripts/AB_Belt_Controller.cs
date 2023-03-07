@@ -98,10 +98,10 @@ public class AB_Belt_Controller : MonoBehaviour
         //currentVoltageForText = newCurrentVoltage;
         currentVoltageForText = abComPortVoltage;
        
-       if(currentScene.name == "Bar_Easy" || currentScene.name == "Bar_Medium" || currentScene.name == "Bar_Hard"
-       || currentScene.name == "Ab_Hoop_Easy" || currentScene.name == "Ab_Hoop_Medium" || currentScene.name == "Ab_Hoop_Hard"){
-        Debug.Log(currentScene.name + " Ab Voltage: " + currentVoltageForText.ToString());
-       }
+    //    if(currentScene.name == "Bar_Easy" || currentScene.name == "Bar_Medium" || currentScene.name == "Bar_Hard"
+    //    || currentScene.name == "Ab_Hoop_Easy" || currentScene.name == "Ab_Hoop_Medium" || currentScene.name == "Ab_Hoop_Hard"){
+    //     Debug.Log(currentScene.name + " Ab Voltage: " + currentVoltageForText.ToString());
+    //    }
 
         
         if(minCalibrated && maxCalibrated){
