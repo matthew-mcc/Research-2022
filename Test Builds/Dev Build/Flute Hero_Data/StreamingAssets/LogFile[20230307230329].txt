@@ -1,0 +1,156 @@
+[2023-03-07 11:03:30 PM] ### DEVICE NAME: ATEMP:9 ###
+[2023-03-07 11:03:30 PM] Found the Right PORT!
+[2023-03-07 11:03:31 PM] Entered Rib Calibration
+[2023-03-07 11:03:31 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-03-07 11:03:34 PM] Rib Belt Calibrated with Max Voltage: 0.0104079861193895
+[2023-03-07 11:03:38 PM] Rib Belt Calibrated with Min Voltage: 0.010449250228703
+[2023-03-07 11:03:38 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-03-07 11:03:39 PM] Entered Ab Calibration
+[2023-03-07 11:03:43 PM] Ab Belt Calibrated with Max Voltage: 0.0104004070162773
+[2023-03-07 11:03:46 PM] Ab Belt Calibrated with Min Voltage: 0.010464321821928
+[2023-03-07 11:03:46 PM] Going Back to Menu From Scene: AB_Calibration
+[2023-03-07 11:03:51 PM] Entered Bar-Level Easy
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0 Bar_Easy (Rib): 0
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0 Bar_Easy (Rib): 0
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0 Bar_Easy (Rib): 0
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0 Bar_Easy (Rib): 0
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0 Bar_Easy (Rib): 0
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0 Bar_Easy (Rib): 0
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0 Bar_Easy (Rib): 0
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0111975 Bar_Easy (Rib): 0.00982676
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0111975 Bar_Easy (Rib): 0.00982676
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0111975 Bar_Easy (Rib): 0.00982676
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0111975 Bar_Easy (Rib): 0.00982676
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0111975 Bar_Easy (Rib): 0.00982676
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0111975 Bar_Easy (Rib): 0.00982676
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0111975 Bar_Easy (Rib): 0.00982676
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0111975 Bar_Easy (Rib): 0.00982676
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0111975 Bar_Easy (Rib): 0.00982676
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0110391 Bar_Easy (Rib): 0.011612
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0110391 Bar_Easy (Rib): 0.011612
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0110391 Bar_Easy (Rib): 0.011612
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0110391 Bar_Easy (Rib): 0.011612
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0110391 Bar_Easy (Rib): 0.011612
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0110391 Bar_Easy (Rib): 0.011612
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0110391 Bar_Easy (Rib): 0.011612
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0110391 Bar_Easy (Rib): 0.011612
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0109995 Bar_Easy (Rib): 0.0120583
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0109995 Bar_Easy (Rib): 0.0120583
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0109995 Bar_Easy (Rib): 0.0120583
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0109995 Bar_Easy (Rib): 0.0120583
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0109995 Bar_Easy (Rib): 0.0120583
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0109995 Bar_Easy (Rib): 0.0120583
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0109995 Bar_Easy (Rib): 0.0120583
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0109995 Bar_Easy (Rib): 0.0120583
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0109995 Bar_Easy (Rib): 0.0120583
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0100741 Bar_Easy (Rib): 0.0103388
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0100741 Bar_Easy (Rib): 0.0103388
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0100741 Bar_Easy (Rib): 0.0103388
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0100741 Bar_Easy (Rib): 0.0103388
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0100741 Bar_Easy (Rib): 0.0103388
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0100741 Bar_Easy (Rib): 0.0103388
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0100741 Bar_Easy (Rib): 0.0103388
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.0100741 Bar_Easy (Rib): 0.0103388
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00801169 Bar_Easy (Rib): 0.00441575
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00801169 Bar_Easy (Rib): 0.00441575
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00801169 Bar_Easy (Rib): 0.00441575
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00801169 Bar_Easy (Rib): 0.00441575
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00801169 Bar_Easy (Rib): 0.00441575
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00801169 Bar_Easy (Rib): 0.00441575
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00801169 Bar_Easy (Rib): 0.00441575
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00801169 Bar_Easy (Rib): 0.00441575
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00841161 Bar_Easy (Rib): 0.0111747
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00841161 Bar_Easy (Rib): 0.0111747
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00841161 Bar_Easy (Rib): 0.0111747
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00841161 Bar_Easy (Rib): 0.0111747
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00841161 Bar_Easy (Rib): 0.0111747
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00841161 Bar_Easy (Rib): 0.0111747
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00841161 Bar_Easy (Rib): 0.0111747
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00841161 Bar_Easy (Rib): 0.0111747
+[2023-03-07 11:03:51 PM] Bar_Easy (Ab): 0.00841161 Bar_Easy (Rib): 0.0111747
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.00942712 Bar_Easy (Rib): 0.0101179
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.00942712 Bar_Easy (Rib): 0.0101179
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.00942712 Bar_Easy (Rib): 0.0101179
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.00942712 Bar_Easy (Rib): 0.0101179
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.00942712 Bar_Easy (Rib): 0.0101179
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.00942712 Bar_Easy (Rib): 0.0101179
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.00942712 Bar_Easy (Rib): 0.0101179
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.00942712 Bar_Easy (Rib): 0.0101179
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.009681 Bar_Easy (Rib): 0.00985369
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.009681 Bar_Easy (Rib): 0.00985369
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.009681 Bar_Easy (Rib): 0.00985369
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.009681 Bar_Easy (Rib): 0.00985369
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.009681 Bar_Easy (Rib): 0.00985369
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.009681 Bar_Easy (Rib): 0.00985369
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.009681 Bar_Easy (Rib): 0.00985369
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.009681 Bar_Easy (Rib): 0.00985369
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.01066 Bar_Easy (Rib): 0.0107032
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.01066 Bar_Easy (Rib): 0.0107032
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.01066 Bar_Easy (Rib): 0.0107032
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.01066 Bar_Easy (Rib): 0.0107032
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.01066 Bar_Easy (Rib): 0.0107032
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.01066 Bar_Easy (Rib): 0.0107032
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.01066 Bar_Easy (Rib): 0.0107032
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.01066 Bar_Easy (Rib): 0.0107032
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.01066 Bar_Easy (Rib): 0.0107032
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109047 Bar_Easy (Rib): 0.0109155
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109047 Bar_Easy (Rib): 0.0109155
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109047 Bar_Easy (Rib): 0.0109155
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109047 Bar_Easy (Rib): 0.0109155
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109047 Bar_Easy (Rib): 0.0109155
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109047 Bar_Easy (Rib): 0.0109155
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109047 Bar_Easy (Rib): 0.0109155
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109047 Bar_Easy (Rib): 0.0109155
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100504 Bar_Easy (Rib): 0.0127997
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100504 Bar_Easy (Rib): 0.0127997
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100504 Bar_Easy (Rib): 0.0127997
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100504 Bar_Easy (Rib): 0.0127997
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100504 Bar_Easy (Rib): 0.0127997
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100504 Bar_Easy (Rib): 0.0127997
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100504 Bar_Easy (Rib): 0.0127997
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100504 Bar_Easy (Rib): 0.0127997
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100504 Bar_Easy (Rib): 0.0127997
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107523 Bar_Easy (Rib): 0.0105241
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107523 Bar_Easy (Rib): 0.0105241
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107523 Bar_Easy (Rib): 0.0105241
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107523 Bar_Easy (Rib): 0.0105241
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107523 Bar_Easy (Rib): 0.0105241
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107523 Bar_Easy (Rib): 0.0105241
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107523 Bar_Easy (Rib): 0.0105241
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107523 Bar_Easy (Rib): 0.0105241
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100123 Bar_Easy (Rib): 0.0108708
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100123 Bar_Easy (Rib): 0.0108708
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100123 Bar_Easy (Rib): 0.0108708
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100123 Bar_Easy (Rib): 0.0108708
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100123 Bar_Easy (Rib): 0.0108708
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100123 Bar_Easy (Rib): 0.0108708
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100123 Bar_Easy (Rib): 0.0108708
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0100123 Bar_Easy (Rib): 0.0108708
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107428 Bar_Easy (Rib): 0.0100419
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107428 Bar_Easy (Rib): 0.0100419
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107428 Bar_Easy (Rib): 0.0100419
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107428 Bar_Easy (Rib): 0.0100419
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107428 Bar_Easy (Rib): 0.0100419
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107428 Bar_Easy (Rib): 0.0100419
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107428 Bar_Easy (Rib): 0.0100419
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107428 Bar_Easy (Rib): 0.0100419
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0107428 Bar_Easy (Rib): 0.0100419
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109255 Bar_Easy (Rib): 0.0107502
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109255 Bar_Easy (Rib): 0.0107502
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109255 Bar_Easy (Rib): 0.0107502
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109255 Bar_Easy (Rib): 0.0107502
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109255 Bar_Easy (Rib): 0.0107502
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109255 Bar_Easy (Rib): 0.0107502
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109255 Bar_Easy (Rib): 0.0107502
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0109255 Bar_Easy (Rib): 0.0107502
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0118866 Bar_Easy (Rib): 0.0100118
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0118866 Bar_Easy (Rib): 0.0100118
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0118866 Bar_Easy (Rib): 0.0100118
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0118866 Bar_Easy (Rib): 0.0100118
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0118866 Bar_Easy (Rib): 0.0100118
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0118866 Bar_Easy (Rib): 0.0100118
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0118866 Bar_Easy (Rib): 0.0100118
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0118866 Bar_Easy (Rib): 0.0100118
+[2023-03-07 11:03:52 PM] Bar_Easy (Ab): 0.0118866 Bar_Easy (Rib): 0.0100118
+[2023-03-07 11:03:52 PM] Going Back to Menu From Scene: Bar_Easy
+[2023-03-07 11:03:53 PM] Quitting game!

@@ -1,0 +1,9 @@
+[2023-03-07 11:04:19 PM] ### DEVICE NAME: ATEMP:9 ###
+[2023-03-07 11:04:19 PM] Found the Right PORT!
+[2023-03-07 11:04:21 PM] Entered Ab Calibration
+[2023-03-07 11:04:21 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-03-07 11:04:24 PM] Ab Belt Calibrated with Max Voltage: 0.0104686142876744
+[2023-03-07 11:04:27 PM] Ab Belt Calibrated with Min Voltage: 0.0104187121614814
+[2023-03-07 11:04:28 PM] Going Back to Menu From Scene: AB_Calibration
+[2023-03-07 11:04:34 PM] Entered Pitch Detection Level
+[2023-03-07 11:04:51 PM] Quitting game!

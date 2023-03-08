@@ -1,0 +1,7 @@
+[2023-03-07 11:16:38 PM] ### DEVICE NAME: ATEMP:9 ###
+[2023-03-07 11:16:38 PM] Found the Right PORT!
+[2023-03-07 11:16:40 PM] Entered Pitch Detection Level
+[2023-03-07 11:16:41 PM] ATEMP: 9 abd: 0.0116484  rib: 0.0103042
+[2023-03-07 11:16:41 PM] Found the Right PORT!
+[2023-03-07 11:16:50 PM] Entered Pitch Detection Level
+[2023-03-07 11:16:53 PM] Quitting game!

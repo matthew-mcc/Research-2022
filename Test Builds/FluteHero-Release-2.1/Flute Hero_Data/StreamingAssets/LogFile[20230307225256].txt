@@ -1,0 +1,5 @@
+[2023-03-07 10:52:56 PM] ### DEVICE NAME: ATEMP:9 ###
+[2023-03-07 10:52:56 PM] Found the Right PORT!
+[2023-03-07 10:53:00 PM] Entered Rib Calibration
+[2023-03-07 10:53:00 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-03-07 10:53:01 PM] Going Back to Menu From Scene: RIB_Calibration

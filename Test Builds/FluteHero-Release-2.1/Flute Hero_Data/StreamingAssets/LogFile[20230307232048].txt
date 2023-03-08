@@ -1,0 +1,9 @@
+[2023-03-07 11:20:48 PM] ### DEVICE NAME: ATEMP:9 ###
+[2023-03-07 11:20:48 PM] Found the Right PORT!
+[2023-03-07 11:21:01 PM] Entered Pitch Detection Level
+[2023-03-07 11:21:18 PM] Entered Rib Calibration
+[2023-03-07 11:21:18 PM] NullReferenceException: Object reference not set to an instance of an object
+[2023-03-07 11:21:22 PM] Rib Belt Calibrated with Max Voltage: 0.0104350754991174
+[2023-03-07 11:21:25 PM] Rib Belt Calibrated with Min Voltage: 0.0101418104022741
+[2023-03-07 11:21:25 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-03-07 11:21:27 PM] Quitting game!

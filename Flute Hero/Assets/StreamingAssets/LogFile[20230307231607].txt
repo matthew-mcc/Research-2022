@@ -1,0 +1,3 @@
+[2023-03-07 11:16:07 PM] ### DEVICE NAME: ATEMP:9 ###
+[2023-03-07 11:16:07 PM] Found the Right PORT!
+[2023-03-07 11:16:11 PM] Entered Pitch Detection Level

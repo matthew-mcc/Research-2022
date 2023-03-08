@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public static bool initDone = false;
     List<string> initialPortNames = new List<string>();
-    void Awake(){
+    void Start(){
         if(initDone == false){
 
         

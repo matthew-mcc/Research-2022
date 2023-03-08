@@ -10,7 +10,7 @@ using System.IO.Ports;
 public static class SettingsInformation{
 
     public static int microphoneNumber = 0;
-    public static float targetFrequency = 261.5f;
+    public static float targetFrequency = 523.5f;
     public static string targetFrequencyName = "C:1";
     public static int targetFrequencyIndex = 12;
     public static int abChannel = 1;

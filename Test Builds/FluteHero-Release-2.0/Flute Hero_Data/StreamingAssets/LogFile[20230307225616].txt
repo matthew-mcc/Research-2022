@@ -1,0 +1,6 @@
+[2023-03-07 10:56:22 PM] Entered Pitch Detection Level
+[2023-03-07 10:56:24 PM] Entered Rib Calibration
+[2023-03-07 10:56:24 PM] FileNotFoundException: Could not find file 'COM3'.
+[2023-03-07 10:56:25 PM] Going Back to Menu From Scene: RIB_Calibration
+[2023-03-07 10:56:26 PM] Failed to use: COM5
+[2023-03-07 10:56:29 PM] Quitting game!
