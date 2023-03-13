@@ -16,6 +16,7 @@ public class BaseCamp : MonoBehaviour
     private bool measureRibOnly = false;
     private bool measureBoth = false;
     private bool measureBigBreath = false;
+    private bool routineDone = false;
 
     private bool CR_Running = false;
 
@@ -67,6 +68,11 @@ public class BaseCamp : MonoBehaviour
         }
         if(measureBigBreath){
             string logString = "Big Breath (AB): " + AbController.abComPortVoltage.ToString() + " Big Breath (Rib): " + RibController.ribComPortVoltage.ToString();
+            Debug.Log(logString);
+        }
+
+        if(routineDone){
+            string logString = "Finished (AB): " + AbController.abComPortVoltage.ToString() + " Finished (Rib): " + RibController.ribComPortVoltage.ToString();
             Debug.Log(logString);
         }
         
@@ -154,7 +160,7 @@ public class BaseCamp : MonoBehaviour
 
         infoText.text = "All done - Great job!";
         Debug.Log("Finished BaseCamp Sequence");
-
+        routineDone = true;
 
     }
 }

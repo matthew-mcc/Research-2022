@@ -1,0 +1,3 @@
+[2023-03-08 11:58:03 AM] Entered Bar-Level Easy
+[2023-03-08 11:58:03 AM] NullReferenceException: Object reference not set to an instance of an object
+[2023-03-08 11:58:03 AM] FileNotFoundException: Could not find file 'COM3'.
