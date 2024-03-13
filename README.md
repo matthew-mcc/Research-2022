@@ -29,6 +29,13 @@ Usage Basics:
 2. Select the Required Settings, specifically important for the pitch detection.
 3. Try any of the 10 levels.
 
+# Screenshots:
+
+![Alt text](/Flute_Hero_Screenshots/menu.jpg?raw=true, "Menu")
+![Alt text](/Flute_Hero_Screenshots/bars.jpg?raw=true, "bars")
+![Alt text](/Flute_Hero_Screenshots/tuner.jpg?raw=true, "tuner")
+![Alt text](/Flute_Hero_Screenshots/walls.jpg?raw=true, "Walls")
+![Alt text](/Flute_Hero_Screenshots/walls2.jpg?raw=true, "Walls")
 # Versions:
 Currently in release version 2.0. Other versions can be found dating further back in this repository, all found in the Test Builds Folder.
 
